@@ -1,0 +1,259 @@
+{
+  "positions": [
+    {
+      "id": "tahliq",
+      "organization": {
+        "en": "Tahliq Digital Agency",
+        "ar": "تحليق — Tahliq Digital Agency"
+      },
+      "title": {
+        "en": "Digital Marketing & Growth Specialist",
+        "ar": "Digital Marketing & Growth Specialist"
+      },
+      "period": {
+        "en": "January 2024–present",
+        "ar": "يناير 2024–الآن"
+      },
+      "type": {
+        "en": "Project-based engagement",
+        "ar": "تعاون قائم على المشاريع"
+      },
+      "location": {
+        "en": "Remote",
+        "ar": "عن بُعد"
+      },
+      "details": {
+        "en": [
+          "Personally handled work for more than 20 clients, covering Google Ads, websites, landing pages, SEO foundations and tracking.",
+          "Created more than 200 landing pages for the agency, connecting messaging, offers and page experience to conversion goals.",
+          "Contributed to offer design, channel strategy, marketing funnels, budget allocation and performance review.",
+          "Reviewed team output, guided delivery and contributed to proposals, sales meetings and client advisory work.",
+          "Developed tracking, analytics, CRM and automation workflows using Python, n8n and AI tools.",
+          "Designed and hosted AI agents, configured Codex and Claude Code, built MCP integrations and custom skills, and trained the team to use them in daily work.",
+          "Evaluated models and operating environments, then built a shared model setup serving four people at less than $8 during the working day, with stronger models allocated to harder tasks.",
+          "Diagnosed AI tooling problems and used agents to develop fixes, with contributions to LocalAI, OpenClaw and n8n-skills."
+        ],
+        "ar": [
+          "توليت العمل على مشاريع أكثر من 20 عميلًا، شملت حملات Google Ads ومواقع وصفحات هبوط وتأسيس SEO والتتبع.",
+          "أنشأت أكثر من 200 صفحة هبوط لصالح الوكالة، وربطت الرسائل والعروض وتجربة الصفحة بهدف التحويل.",
+          "شاركت في تصميم العروض التسويقية، ووضع استراتيجيات القنوات ومسارات التحويل، وتوزيع الميزانيات، ومراجعة الأداء.",
+          "راجعت أعمال الفريق، ووجهت التنفيذ، وشاركت في إعداد المقترحات واجتماعات المبيعات وتقديم الاستشارات للعملاء.",
+          "طورت سير عمل للتتبع والتحليل وCRM والأتمتة باستخدام Python وn8n وأدوات AI.",
+          "صممت واستضفت وكلاء AI، وجهزت Codex وClaude Code وتكاملات MCP ومهارات مخصصة، ودربت الفريق على استخدامها في العمل اليومي.",
+          "قيّمت النماذج وبيئات التشغيل، وبنيت بيئة AI مشتركة لفريق من أربعة أشخاص بتكلفة تشغيل أقل من 8 دولارات خلال يوم العمل، مع تخصيص النماذج الأقوى للمهام الأصعب.",
+          "تتبعت مشكلات أدوات AI ونفذت إصلاحات بمساعدة الوكلاء، وقدمت مساهمات في LocalAI وOpenClaw وn8n-skills."
+        ]
+      }
+    },
+    {
+      "id": "brandria",
+      "organization": {
+        "en": "Digital Brandria",
+        "ar": "Digital Brandria"
+      },
+      "title": {
+        "en": "Digital Marketing Strategist",
+        "ar": "Digital Marketing Strategist"
+      },
+      "period": {
+        "en": "May–October 2025",
+        "ar": "مايو–أكتوبر 2025"
+      },
+      "type": {
+        "en": "Full-time",
+        "ar": "دوام كامل"
+      },
+      "location": {
+        "en": "Maadi, Egypt",
+        "ar": "المعادي، مصر"
+      },
+      "details": {
+        "en": [
+          "Worked directly with the CEO on market and competitor research, strategy, commercial proposals, pricing proposals and feasibility studies.",
+          "Audited campaigns, ad accounts, websites and SEO, identifying conversion-tracking errors and issues affecting the assessment of lead quality.",
+          "Led a five-person team on media presenter Youssef El Sherif’s digital presence project, assigning work and reviewing delivery and performance.",
+          "Coordinated improvements to thumbnails, video openings, clips, publishing schedules, content discoverability and comment management.",
+          "Contributed to a team effort that doubled average YouTube video views within the project’s first six weeks."
+        ],
+        "ar": [
+          "عملت مباشرة مع الرئيس التنفيذي في بحث الأسواق والمنافسين، وإعداد الاستراتيجيات والمقترحات التجارية وعروض الأسعار ودراسات الجدوى.",
+          "راجعت حملات وحسابات إعلانية ومواقع وSEO، وكشفت أخطاء في تتبع التحويلات ومشكلات تؤثر في تقييم جودة العملاء المحتملين.",
+          "قدت فريقًا من خمسة أشخاص في مشروع الحضور الرقمي للإعلامي يوسف الشريف، ووزعت المهام وتابعت التنفيذ والأداء.",
+          "نسقت تطوير العناوين والصور المصغرة والمقاطع القصيرة وجدولة النشر وتحسين قابلية العثور على المحتوى وإدارة التعليقات.",
+          "ساهم عمل الفريق في مضاعفة متوسط مشاهدات فيديوهات YouTube خلال أول ستة أسابيع من المشروع."
+        ]
+      }
+    },
+    {
+      "id": "independent",
+      "organization": {
+        "en": "Independent client work",
+        "ar": "مشاريع مستقلة"
+      },
+      "title": {
+        "en": "Digital Marketing & Growth Specialist",
+        "ar": "Digital Marketing & Growth Specialist"
+      },
+      "period": {
+        "en": "Direct engagements, Upwork and Mostaql",
+        "ar": "عمل مباشر مع العملاء وعبر Upwork ومستقل"
+      },
+      "type": {
+        "en": "Independent",
+        "ar": "عمل مستقل"
+      },
+      "location": {
+        "en": "",
+        "ar": ""
+      },
+      "details": {
+        "en": [
+          "Delivered digital marketing work across acquisition, content, SEO and the technical foundations of conversion.",
+          "Worked with clients in Egypt, Saudi Arabia, the UAE, Kuwait and Jordan, and markets including the United States, Canada, Brazil and Australia.",
+          "Earned five-star ratings on Upwork and Mostaql."
+        ],
+        "ar": [
+          "نفذت مشاريع في التسويق الرقمي واكتساب العملاء والمحتوى وSEO والبنية التقنية المرتبطة بالتحويل.",
+          "عملت مع عملاء في مصر والسعودية والإمارات والكويت والأردن، وأسواق منها الولايات المتحدة وكندا والبرازيل وأستراليا.",
+          "حصلت على تقييم 5 نجوم على Upwork ومستقل."
+        ]
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "strategy",
+      "name": {
+        "en": "Strategy",
+        "ar": "الاستراتيجية"
+      },
+      "scope": {
+        "en": "Market and competitor research, offers, positioning, messaging, channel selection and funnel planning",
+        "ar": "بحث السوق والمنافسين، صياغة العرض والرسائل، اختيار القنوات، تخطيط مسار التحويل"
+      }
+    },
+    {
+      "id": "performance",
+      "name": {
+        "en": "Performance marketing",
+        "ar": "Performance Marketing"
+      },
+      "scope": {
+        "en": "Google Ads, keyword and search-term research, negative keywords, budget allocation and Meta Ads",
+        "ar": "Google Ads، بحث الكلمات، عبارات البحث والكلمات السلبية، توزيع الميزانية، Meta Ads"
+      }
+    },
+    {
+      "id": "measurement",
+      "name": {
+        "en": "Conversion and measurement",
+        "ar": "التحويل والقياس"
+      },
+      "scope": {
+        "en": "Landing pages, GA4, Google Tag Manager, Microsoft Clarity and contact-action tracking",
+        "ar": "صفحات الهبوط، GA4، Google Tag Manager، Microsoft Clarity، تتبع إجراءات التواصل"
+      }
+    },
+    {
+      "id": "content",
+      "name": {
+        "en": "Content and growth",
+        "ar": "المحتوى والنمو"
+      },
+      "scope": {
+        "en": "Content strategy, hooks, retention, distribution and Facebook, YouTube and TikTok audience development",
+        "ar": "استراتيجية المحتوى، Hooks، الاحتفاظ، التوزيع، نمو Facebook وYouTube وTikTok"
+      }
+    },
+    {
+      "id": "seo",
+      "name": {
+        "en": "SEO",
+        "ar": "SEO"
+      },
+      "scope": {
+        "en": "Local SEO, search intent, content architecture, internal linking, technical SEO, Search Console and Ahrefs",
+        "ar": "Local SEO، بحث النية، بنية المحتوى، الربط الداخلي، Technical SEO، Search Console، Ahrefs"
+      }
+    },
+    {
+      "id": "ai",
+      "name": {
+        "en": "AI for marketing and execution",
+        "ar": "AI في التسويق والتنفيذ"
+      },
+      "scope": {
+        "en": "Model, agent and environment selection, context and skills, task direction, output review and MCP integrations",
+        "ar": "اختيار النماذج والوكلاء وبيئات العمل، تجهيز السياق والمهارات، توجيه التنفيذ ومراجعة المخرجات، وربط الأدوات عبر MCP"
+      }
+    },
+    {
+      "id": "operations",
+      "name": {
+        "en": "Operations and building",
+        "ar": "تطوير التشغيل والبناء"
+      },
+      "scope": {
+        "en": "Python, n8n, CRM workflows, AI-assisted tool development, model hosting with LocalAI and llama.cpp, and team training",
+        "ar": "Python، n8n، CRM Workflows، برمجة أدوات بمساعدة AI، تشغيل نماذج عبر LocalAI وllama.cpp، تدريب الفرق"
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": {
+        "en": "Al-Azhar University — Faculty of Islamic Da‘wah",
+        "ar": "جامعة الأزهر — كلية الدعوة الإسلامية"
+      }
+    }
+  ],
+  "credentials": [
+    {
+      "name": {
+        "en": "Google Ads Search Certification",
+        "ar": "Google Ads Search Certification"
+      },
+      "issuer": "Google · Skillshop"
+    },
+    {
+      "name": {
+        "en": "Google AI Professional Certificate",
+        "ar": "Google AI Professional Certificate"
+      },
+      "issuer": "Google · Coursera",
+      "date": "2026-04"
+    },
+    {
+      "name": {
+        "en": "Advertising with Meta",
+        "ar": "Advertising with Meta"
+      },
+      "issuer": "Meta · Coursera",
+      "date": "2026-01"
+    },
+    {
+      "name": {
+        "en": "Measure and Optimize Social Media Marketing Campaigns",
+        "ar": "Measure and Optimize Social Media Marketing Campaigns"
+      },
+      "issuer": "Meta · Coursera",
+      "date": "2026-01"
+    }
+  ],
+  "contributions": [
+    {
+      "title": {
+        "en": "Codex WebSocket compatibility improvements",
+        "ar": "تحسين توافق Codex عبر WebSocket"
+      },
+      "url": "https://github.com/mudler/LocalAI/pull/11608"
+    },
+    {
+      "title": {
+        "en": "Runtime-tested vision and acceleration documentation",
+        "ar": "تصحيح توثيق الرؤية وتسريع التوليد باختبارات تشغيل"
+      },
+      "url": "https://github.com/mudler/LocalAI/pull/11700"
+    }
+  ]
+}

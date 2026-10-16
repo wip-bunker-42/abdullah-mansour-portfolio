@@ -1,0 +1,317 @@
+{
+  "zone-overview": {
+    "id": "zone-overview",
+    "source": "src/assets/evidence/zone10/01-riyadh-performance.png",
+    "publicPath": "/media/evidence/zone10/01-riyadh-performance.png",
+    "width": 737,
+    "height": 219,
+    "alt": {
+      "ar": "تقرير Google Ads لحملة الرياض من 1 إلى 18 فبراير 2026: 131 نقرة و33 إجراء تحويل ومعدل 25.19%.",
+      "en": "Google Ads results for Riyadh, February 1–18, 2026: 131 clicks, 33 conversion actions and a 25.19% conversion rate."
+    },
+    "caption": {
+      "ar": "أداء الحملة خلال 1–18 فبراير 2026. إجراءات التحويل تقيس التفاعل مع أزرار التواصل.",
+      "en": "Campaign performance for February 1–18, 2026. Conversion actions track interactions with the contact buttons."
+    }
+  },
+  "zone-location": {
+    "id": "zone-location",
+    "source": "src/assets/evidence/zone10/03-riyadh-location.png",
+    "publicPath": "/media/evidence/zone10/03-riyadh-location.png",
+    "width": 1241,
+    "height": 269,
+    "alt": {
+      "ar": "تقرير استهداف الرياض في Google Ads: 33 إجراء تحويل، وتكلفة تعادل 12.42 دولار أمريكي للإجراء بعد تحويل العملة.",
+      "en": "Google Ads location report for Riyadh: 33 conversion actions, at the USD equivalent of US$12.42 per action."
+    },
+    "caption": {
+      "ar": "استهداف الرياض، بتكلفة تعادل 12.42 دولار أمريكي لإجراء التحويل. اللقطة الأصلية بعملة حساب الفوترة المصري؛ أساس التحويل موضح مع النتائج.",
+      "en": "Riyadh targeting, at the USD equivalent of US$12.42 per conversion action. The original screenshot uses the Egyptian billing currency; the conversion basis is stated with the results."
+    }
+  },
+  "zone-keywords": {
+    "id": "zone-keywords",
+    "source": "src/assets/evidence/zone10/02-keywords.png",
+    "publicPath": "/media/evidence/zone10/02-keywords.png",
+    "width": 1257,
+    "height": 447,
+    "alt": {
+      "ar": "تقرير الكلمات المفتاحية، وفيه «التصميم الداخلي» تحقق 9 تحويلات من 28 نقرة بمعدل 32.14%.",
+      "en": "Keyword report showing “التصميم الداخلي” with 9 conversions from 28 clicks and a 32.14% conversion rate."
+    },
+    "caption": {
+      "ar": "قراءة الأداء على مستوى الكلمة: «التصميم الداخلي»، بصيغة Phrase Match، سجلت 9 تحويلات من 28 نقرة.",
+      "en": "Keyword-level performance: the phrase-match term “التصميم الداخلي” recorded 9 conversions from 28 clicks."
+    }
+  },
+  "zone-landing-report": {
+    "id": "zone-landing-report",
+    "source": "src/assets/evidence/zone10/04-landing-page-performance.png",
+    "publicPath": "/media/evidence/zone10/04-landing-page-performance.png",
+    "width": 1257,
+    "height": 271,
+    "alt": {
+      "ar": "تقرير صفحة الهبوط الأساسية: 116 نقرة و27 إجراء تحويل ومعدل 23.28% خلال 1–18 فبراير 2026.",
+      "en": "Primary landing-page report: 116 clicks, 27 conversion actions and a 23.28% conversion rate for February 1–18, 2026."
+    },
+    "caption": {
+      "ar": "أداء صفحة الهبوط الأساسية في الفترة نفسها: 27 إجراء تحويل من 116 نقرة.",
+      "en": "The primary landing page recorded 27 conversion actions from 116 clicks in the same reporting window."
+    }
+  },
+  "zone-desktop": {
+    "id": "zone-desktop",
+    "source": "src/assets/evidence/zone10/01-desktop-hero.png",
+    "publicPath": "/media/evidence/zone10/01-desktop-hero.png",
+    "width": 995,
+    "height": 877,
+    "alt": {
+      "ar": "بداية صفحة Zone10 على الكمبيوتر، برسالة للتصميم الداخلي في الرياض وزر واتساب رئيسي.",
+      "en": "Zone10 desktop landing page with Riyadh interior-design messaging and a prominent WhatsApp action."
+    },
+    "caption": {
+      "ar": "رسالة تربط الخدمة بالرياض، مع عرض التصميم والتنفيذ والإشراف وخطوة مباشرة للتواصل.",
+      "en": "Service and location are explicit, with design, execution and supervision supporting a direct contact action."
+    }
+  },
+  "zone-residential": {
+    "id": "zone-residential",
+    "source": "src/assets/evidence/zone10/02-residential-service.png",
+    "publicPath": "/media/evidence/zone10/02-residential-service.png",
+    "width": 978,
+    "height": 495,
+    "alt": {
+      "ar": "قسم يخاطب أصحاب الفلل والمنازل، مع تفاصيل الخدمات وصورة داخلية وزر واتساب.",
+      "en": "Residential service section for villa and home owners, with service details and a WhatsApp action."
+    },
+    "caption": {
+      "ar": "تخصيص الرسالة للقطاع السكني، بما يشمل الفلل والقصور والتجديد والتشطيب.",
+      "en": "Residential messaging addresses villas, large homes, renovation and finishing."
+    }
+  },
+  "zone-mobile": {
+    "id": "zone-mobile",
+    "source": "src/assets/evidence/zone10/03-mobile-hero.png",
+    "publicPath": "/media/evidence/zone10/03-mobile-hero.png",
+    "width": 375,
+    "height": 844,
+    "alt": {
+      "ar": "نسخة الهاتف من صفحة Zone10، يظهر فيها الاتصال السريع وواتساب ورسالة التصميم الداخلي في الرياض.",
+      "en": "Zone10 mobile landing page with call and WhatsApp actions alongside the Riyadh interiors message."
+    },
+    "caption": {
+      "ar": "مسار التواصل حاضر على الهاتف، مع زر اتصال في الأعلى وواتساب داخل العرض.",
+      "en": "The mobile experience keeps a call action in the header and WhatsApp within the offer."
+    }
+  },
+  "news-facebook-overview": {
+    "id": "news-facebook-overview",
+    "source": "src/assets/evidence/elkhabar-bewodooh/01-facebook-overview.png",
+    "publicPath": "/media/evidence/elkhabar-bewodooh/01-facebook-overview.png",
+    "width": 1154,
+    "height": 632,
+    "alt": {
+      "ar": "أداء Facebook من 1 مارس إلى 31 مايو: 1,339,533 مشاهدة، منها 94.9% من غير المتابعين.",
+      "en": "Facebook analytics for March 1–May 31, showing 1,339,533 views and a 94.9% non-follower share."
+    },
+    "caption": {
+      "ar": "مشاهدات Facebook في 1 مارس–31 مايو 2026. حصة غير المتابعين تساعد على قراءة امتداد المحتوى إلى جمهور جديد.",
+      "en": "Facebook views for March 1–May 31, 2026. The non-follower share helps assess distribution beyond the existing audience."
+    }
+  },
+  "news-facebook-engagement": {
+    "id": "news-facebook-engagement",
+    "source": "src/assets/evidence/elkhabar-bewodooh/03-facebook-video-engagement.png",
+    "publicPath": "/media/evidence/elkhabar-bewodooh/03-facebook-video-engagement.png",
+    "width": 585,
+    "height": 270,
+    "alt": {
+      "ar": "تفاصيل تفاعل محتوى على Facebook، تشمل 1,042 مشاركة و390 تعليقًا.",
+      "en": "Facebook content-engagement detail showing 1,042 shares and 390 comments."
+    },
+    "caption": {
+      "ar": "لقطة تفصيلية من تحليلات محتوى Facebook؛ من مؤشرات الاستجابة فيها 1,042 مشاركة.",
+      "en": "A detailed Facebook content report, including 1,042 shares as one measure of audience response."
+    }
+  },
+  "news-facebook-audience": {
+    "id": "news-facebook-audience",
+    "source": "src/assets/evidence/elkhabar-bewodooh/04-facebook-video-audience-growth.png",
+    "publicPath": "/media/evidence/elkhabar-bewodooh/04-facebook-video-audience-growth.png",
+    "width": 805,
+    "height": 363,
+    "alt": {
+      "ar": "لقطة من تحليلات Facebook تعرض 3,422 متابعة وتقسيم الجمهور بين المتابعين وغير المتابعين.",
+      "en": "Facebook analytics detail showing 3,422 follows and an audience split between followers and non-followers."
+    },
+    "caption": {
+      "ar": "قراءة أخرى لاكتساب الجمهور في تحليلات Facebook: 3,422 متابعة في التقرير المعروض.",
+      "en": "Another view of audience acquisition in Facebook analytics: 3,422 follows in the report shown."
+    }
+  },
+  "news-youtube-growth": {
+    "id": "news-youtube-growth",
+    "source": "src/assets/evidence/elkhabar-bewodooh/05-youtube-shorts-growth.png",
+    "publicPath": "/media/evidence/elkhabar-bewodooh/05-youtube-shorts-growth.png",
+    "width": 1232,
+    "height": 553,
+    "alt": {
+      "ar": "أداء YouTube Shorts من 13 مارس إلى 15 أبريل 2026: 48.1 ألف مشاهدة و277 مشتركًا جديدًا.",
+      "en": "YouTube Shorts analytics for March 13–April 15, 2026: 48.1K views and 277 new subscribers."
+    },
+    "caption": {
+      "ar": "أداء Shorts خلال فترة مستقلة: 48.1 ألف مشاهدة و30.2 ألف مشاهدة متفاعلة و277 مشتركًا جديدًا.",
+      "en": "A separate Shorts reporting window: 48.1K views, 30.2K engaged views and 277 new subscribers."
+    }
+  },
+  "news-youtube-retention": {
+    "id": "news-youtube-retention",
+    "source": "src/assets/evidence/elkhabar-bewodooh/06-youtube-retention.png",
+    "publicPath": "/media/evidence/elkhabar-bewodooh/06-youtube-retention.png",
+    "width": 690,
+    "height": 700,
+    "alt": {
+      "ar": "احتفاظ فيديو YouTube مدته 2:19؛ متوسط المشاهدة 1:47، و92% مستمرون عند الثانية 30.",
+      "en": "Retention for a 2:19 YouTube video, with 1:47 average view duration and 92% still watching at 30 seconds."
+    },
+    "caption": {
+      "ar": "قراءة الاحتفاظ لفيديو واحد: 1:47 متوسط مشاهدة، و92% بقاء عند الثانية 30، و78.1% اختاروا مواصلة المشاهدة.",
+      "en": "One video’s retention: 1:47 average view duration, 92% still watching at 30 seconds and 78.1% choosing to stay."
+    }
+  },
+  "news-tiktok": {
+    "id": "news-tiktok",
+    "source": "src/assets/evidence/elkhabar-bewodooh/07-tiktok-overview.png",
+    "publicPath": "/media/evidence/elkhabar-bewodooh/07-tiktok-overview.png",
+    "width": 1280,
+    "height": 500,
+    "alt": {
+      "ar": "أداء TikTok من 1 أكتوبر 2025 إلى 7 يناير 2026: 399.5 ألف مشاهدة و8.5 آلاف إعجاب و838 مشاركة.",
+      "en": "TikTok analytics for October 1, 2025–January 7, 2026: 399.5K views, 8.5K likes and 838 shares."
+    },
+    "caption": {
+      "ar": "نتائج TikTok لفترة 1 أكتوبر 2025–7 يناير 2026، وهي فترة مختلفة عن لقطات Facebook وYouTube.",
+      "en": "TikTok performance for October 1, 2025–January 7, 2026, a different window from the Facebook and YouTube reports."
+    }
+  },
+  "news-meta-ads": {
+    "id": "news-meta-ads",
+    "source": "src/assets/evidence/elkhabar-bewodooh/09-meta-ads-campaign-performance.png",
+    "publicPath": "/media/evidence/elkhabar-bewodooh/09-meta-ads-campaign-performance.png",
+    "width": 886,
+    "height": 626,
+    "alt": {
+      "ar": "حملة Meta في 24–27 أكتوبر 2025: 2,605 متابعات أو إعجابات، بتكلفة 0.34 جنيه للنتيجة وإنفاق 877.19 جنيه.",
+      "en": "Meta campaign for October 24–27, 2025: 2,605 follows or likes, EGP 0.34 per result and EGP 877.19 spend."
+    },
+    "caption": {
+      "ar": "حملة تأسيس الجمهور. اسم النتيجة في التقرير «متابعات أو إعجابات»، بتكلفة 0.34 جنيه للنتيجة.",
+      "en": "The audience-seeding campaign reports “follows or likes,” at EGP 0.34 per result."
+    }
+  },
+  "sorouh-home": {
+    "id": "sorouh-home",
+    "source": "src/assets/evidence/sorouh/01-homepage-desktop.png",
+    "publicPath": "/media/evidence/sorouh/01-homepage-desktop.png",
+    "width": 1650,
+    "height": 1080,
+    "alt": {
+      "ar": "الصفحة الرئيسية لصروح الشرقية، تعرض خدمات المقاولات في المنطقة الشرقية وأزرار الاتصال وواتساب.",
+      "en": "Sorouh’s homepage presenting contracting services in the Eastern Province with call and WhatsApp actions."
+    },
+    "caption": {
+      "ar": "تعريف بالخدمة والمنطقة في بداية الموقع، مع مسارات مباشرة للتواصل والوصول إلى الخدمات والمشاريع.",
+      "en": "Service and regional coverage lead the page, with direct contact actions and routes to services and projects."
+    }
+  },
+  "sorouh-local": {
+    "id": "sorouh-local",
+    "source": "src/assets/evidence/sorouh/02-local-landing-dammam.png",
+    "publicPath": "/media/evidence/sorouh/02-local-landing-dammam.png",
+    "width": 1665,
+    "height": 915,
+    "alt": {
+      "ar": "صفحة «مقاول بناء في الدمام للمنازل والفلل»، مع وصف محلي للخدمة وأزرار التواصل.",
+      "en": "Dammam building-contractor page for homes and villas, with a local service description and contact actions."
+    },
+    "caption": {
+      "ar": "مثال لصفحة خدمة ومدينة محددة، لها رسالة وسياق واضحان داخل بنية الموقع.",
+      "en": "A specific service-and-city page with a defined message and purpose within the site."
+    }
+  },
+  "sorouh-gsc": {
+    "id": "sorouh-gsc",
+    "source": "src/assets/evidence/sorouh/03-gsc-performance.png",
+    "publicPath": "/media/evidence/sorouh/03-gsc-performance.png",
+    "width": 1680,
+    "height": 650,
+    "alt": {
+      "ar": "Search Console لصروح بين 14 أغسطس و4 سبتمبر 2026: 26 ظهورًا و7 نقرات عضوية.",
+      "en": "Sorouh Search Console results for August 14–September 4, 2026: 26 impressions and 7 organic clicks."
+    },
+    "caption": {
+      "ar": "بداية نشاط البحث بعد الإطلاق خلال الفترة المعروضة: 26 ظهورًا و7 نقرات.",
+      "en": "Initial search activity after launch: 26 impressions and 7 clicks in the reporting window shown."
+    }
+  },
+  "sorouh-ahrefs": {
+    "id": "sorouh-ahrefs",
+    "source": "src/assets/evidence/sorouh/05-ahrefs-site-audit.png",
+    "publicPath": "/media/evidence/sorouh/05-ahrefs-site-audit.png",
+    "width": 1340,
+    "height": 555,
+    "alt": {
+      "ar": "تدقيق Ahrefs بتاريخ 30 أغسطس يعرض Health Score بقيمة 100 وصفر أخطاء.",
+      "en": "August 30 Ahrefs Site Audit showing a Health Score of 100 and zero errors."
+    },
+    "caption": {
+      "ar": "نتيجة الفحص المعروض في Ahrefs: 100 Health Score و0 Errors.",
+      "en": "The audit shown reports a 100 Health Score and zero errors."
+    }
+  },
+  "sorouh-seo-pr": {
+    "id": "sorouh-seo-pr",
+    "source": "src/assets/evidence/sorouh/06-github-seo-pr7.png",
+    "publicPath": "/media/evidence/sorouh/06-github-seo-pr7.png",
+    "width": 760,
+    "height": 840,
+    "alt": {
+      "ar": "ملخص تغيير SEO في مشروع صروح، يشمل المحتوى المحلي والتحقق من الكلمات والروابط والقياس وفحوص الجودة.",
+      "en": "Sorouh SEO change summary covering local content, keyword validation, links, contact attribution and quality checks."
+    },
+    "caption": {
+      "ar": "توثيق تنفيذ يجمع تطوير المحتوى المحلي مع فحوص الجودة التقنية ونسبة إجراء التواصل إلى الصفحة.",
+      "en": "Delivery documentation connecting local content development with technical checks and page-level contact attribution."
+    }
+  },
+  "ai-localai-11608": {
+    "id": "ai-localai-11608",
+    "source": "src/assets/evidence/ai-operations/01-localai-11608.png",
+    "publicPath": "/media/evidence/ai-operations/01-localai-11608.png",
+    "width": 760,
+    "height": 1240,
+    "alt": {
+      "ar": "مساهمة عبد الله منصور في LocalAI رقم 11608، مدموجة لمعالجة توافق Codex.",
+      "en": "Abdullah Mansour’s merged LocalAI contribution #11608 addressing Codex compatibility."
+    },
+    "caption": {
+      "ar": "إصلاح توافق قُبل في LocalAI. يمكن فتح المساهمة العامة للاطلاع على نطاق العمل والمراجعة.",
+      "en": "A compatibility fix accepted into LocalAI, with a public record of the change and review."
+    }
+  },
+  "ai-localai-11700": {
+    "id": "ai-localai-11700",
+    "source": "src/assets/evidence/ai-operations/02-localai-11700.png",
+    "publicPath": "/media/evidence/ai-operations/02-localai-11700.png",
+    "width": 1440,
+    "height": 1310,
+    "alt": {
+      "ar": "مساهمة LocalAI رقم 11700، مدموجة لتصحيح توثيق الرؤية وتسريع التوليد مع أدلة تشغيل.",
+      "en": "Merged LocalAI contribution #11700 correcting vision and generation-acceleration documentation with runtime evidence."
+    },
+    "caption": {
+      "ar": "تصحيح للتوثيق استند إلى اختبار فعلي، وقُبل في المشروع الأصلي.",
+      "en": "A documentation correction supported by practical testing and accepted upstream."
+    }
+  }
+}

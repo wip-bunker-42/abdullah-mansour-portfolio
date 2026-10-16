@@ -108,8 +108,8 @@ Narrative files use frontmatter for `key`, `locale`, metadata, `heading`, `lead`
 
 **Interfaces:** Produce `loadSiteContent(rootDir?: string): Promise<SiteContent>`, `validateSiteContent(input: unknown): SiteContent`, `resolveReferences(text: string, locale: Locale, content: SiteContent): string`, `createNarrativeLoader(): Loader`, `getDocument(key: ContentKey, locale: Locale): Promise<RenderedDocument>`, `getRoute(key: RouteKey, locale: Locale): Route`, `getPublishedRoutes(content: SiteContent): Route[]`. `Loader` is Astro's public loader type. Only published, non-draft primary routes are returned by `getPublishedRoutes`.
 
-- [ ] **Step 1: Set up the pinned runtime and test runner.** Verify current stable package engines against Node 24.21.0, pin compatible Astro/TypeScript/build dependencies and pnpm 12.8.1, enable strict checking, and preserve/extend the existing untracked ignore file deliberately. This setup belongs to the content deliverable; install no UI framework or SSR adapter.
-- [ ] **Step 2: Write the failing content/route contracts.** Add fixture-driven tests before production readers, including `test('published bilingual content resolves shared facts and rejects broken references', ...)` with these assertions:
+- [x] **Step 1: Set up the pinned runtime and test runner.** Verify current stable package engines against Node 24.21.0, pin compatible Astro/TypeScript/build dependencies and pnpm 12.8.1, enable strict checking, and preserve/extend the existing untracked ignore file deliberately. This setup belongs to the content deliverable; install no UI framework or SSR adapter.
+- [x] **Step 2: Write the failing content/route contracts.** Add fixture-driven tests before production readers, including `test('published bilingual content resolves shared facts and rejects broken references', ...)` with these assertions:
 
 ```ts
 assert.equal(getRoute('home', 'en').path, '/');
@@ -121,10 +121,10 @@ assert.equal(resolveReferences('{{metric:zone10.contacts}}', 'en', changedMetric
 assert.ok(!('phone' in content.profile));
 ```
 
-- [ ] **Step 3: Run `pnpm exec tsx --test tests/unit/content.test.ts tests/unit/routes.test.ts`.** Confirm failure concerns absent readers/contracts, not a broken test command.
-- [ ] **Step 4: Implement schemas, readers, route map and loader.** Import supplied facts and both languages, retain the approved meaning and dates, centralize repeated facts, and deduplicate favicon IDs. Copy only chosen public assets into controlled paths; reject path traversal, broken references, duplicate IDs, invalid publication pairs and unexpected source folders. Digest resolved content and shared metric/evidence dependencies, so changing JSON invalidates rendered collection entries even if Markdown is untouched. Watch those inputs in local development. Exclude drafts before public rendering.
-- [ ] **Step 5: Run the two test files and `pnpm check`.** Pass schema/route contracts and type checks. Inspect the imported Zone10 350+ wording, education and alternate names against the approved source; do not add a re-verification editorial layer.
-- [ ] **Step 6: Commit.** `git add package.json pnpm-lock.yaml .node-version .gitignore astro.config.mjs tsconfig.json tsconfig.worker.json src tests` then `git commit -m "feat: add validated bilingual portfolio content"`.
+- [x] **Step 3: Run `pnpm exec tsx --test tests/unit/content.test.ts tests/unit/routes.test.ts`.** Confirm failure concerns absent readers/contracts, not a broken test command.
+- [x] **Step 4: Implement schemas, readers, route map and loader.** Import supplied facts and both languages, retain the approved meaning and dates, centralize repeated facts, and deduplicate favicon IDs. Copy only chosen public assets into controlled paths; reject path traversal, broken references, duplicate IDs, invalid publication pairs and unexpected source folders. Digest resolved content and shared metric/evidence dependencies, so changing JSON invalidates rendered collection entries even if Markdown is untouched. Watch those inputs in local development. Exclude drafts before public rendering.
+- [x] **Step 5: Run the two test files and `pnpm check`.** Pass schema/route contracts and type checks. Inspect the imported Zone10 350+ wording, education and alternate names against the approved source; do not add a re-verification editorial layer.
+- [x] **Step 6: Commit.** `git add package.json pnpm-lock.yaml .node-version .gitignore astro.config.mjs tsconfig.json tsconfig.worker.json src tests` then `git commit -m "feat: add validated bilingual portfolio content"`.
 
 ## Task 2: Build the Premium Home and Shared Bilingual Shell
 
@@ -295,4 +295,4 @@ assert.equal(getRoute('work', 'ar').markdownPath, '/ar/work/index.md');
 
 Self-review completed against all spec sections: coverage mapped above; steps have checkable outputs; shared names/types align; all five Review Focus cases have named owning tests/checks; no implementation bodies, speculative services or duplicate manual QA were added. Design/layout/document work uses real visual/document review; tests focus on content/routing/runtime contracts instead of reversible cosmetic edits.
 
-**Handoff status:** Written specification approved. This plan awaits the owner's review and execution-method choice; no product implementation or Cloudflare deployment is claimed by this document.
+**Handoff status:** Owner approved the plan and native execution on October 16, 2026, and explicitly chose the current checkout on abdo/portfolio-design. Task checkboxes track implementation; the ignored plan ledger preserves verification and rulings. Deployment is claimed only after live checks.

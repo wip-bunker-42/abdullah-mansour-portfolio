@@ -1,0 +1,218 @@
+{
+  "zone10.contacts": {
+    "id": "zone10.contacts",
+    "value": 350,
+    "display": {
+      "en": "350+",
+      "ar": "350+"
+    },
+    "label": {
+      "en": "People contacted the business",
+      "ar": "شخص تواصلوا مع الشركة"
+    }
+  },
+  "zone10.campaigns": {
+    "id": "zone10.campaigns",
+    "value": 4,
+    "display": {
+      "en": "4",
+      "ar": "4"
+    },
+    "label": {
+      "en": "Search campaigns",
+      "ar": "حملات بحث"
+    }
+  },
+  "zone10.pages": {
+    "id": "zone10.pages",
+    "value": 4,
+    "display": {
+      "en": "4",
+      "ar": "4"
+    },
+    "label": {
+      "en": "Purpose-built landing pages",
+      "ar": "صفحات هبوط مخصصة"
+    }
+  },
+  "zone10.spend": {
+    "id": "zone10.spend",
+    "value": 4000,
+    "display": {
+      "en": "US$4,000+",
+      "ar": "US$4,000+"
+    },
+    "label": {
+      "en": "Managed ad spend",
+      "ar": "إنفاق إعلاني مُدار"
+    }
+  },
+  "elkhabar.views": {
+    "id": "elkhabar.views",
+    "value": 3000000,
+    "display": {
+      "en": "3M+",
+      "ar": "3M+"
+    },
+    "label": {
+      "en": "Views across platforms",
+      "ar": "مشاهدة عبر المنصات"
+    }
+  },
+  "elkhabar.followers": {
+    "id": "elkhabar.followers",
+    "value": 17000,
+    "display": {
+      "en": "≈17K",
+      "ar": "≈17K"
+    },
+    "label": {
+      "en": "Facebook followers",
+      "ar": "متابع على Facebook"
+    }
+  },
+  "elkhabar.saved": {
+    "id": "elkhabar.saved",
+    "value": 4,
+    "display": {
+      "en": "4+ hrs",
+      "ar": "4+ hrs"
+    },
+    "label": {
+      "en": "Saved per active publishing day",
+      "ar": "توفير في يوم النشر الفعلي"
+    }
+  },
+  "elkhabar.platforms": {
+    "id": "elkhabar.platforms",
+    "value": 6,
+    "display": {
+      "en": "6",
+      "ar": "6"
+    },
+    "label": {
+      "en": "Distribution platforms",
+      "ar": "منصات توزيع"
+    }
+  },
+  "sorouh.pages": {
+    "id": "sorouh.pages",
+    "value": 71,
+    "display": {
+      "en": "71",
+      "ar": "71"
+    },
+    "label": {
+      "en": "Indexable pages delivered",
+      "ar": "صفحة قابلة للفهرسة"
+    }
+  },
+  "sorouh.health": {
+    "id": "sorouh.health",
+    "value": 100,
+    "display": {
+      "en": "100",
+      "ar": "100"
+    },
+    "label": {
+      "en": "Ahrefs Health Score",
+      "ar": "نتيجة Ahrefs Health Score"
+    }
+  },
+  "sorouh.possibilities": {
+    "id": "sorouh.possibilities",
+    "value": 170,
+    "display": {
+      "en": "170",
+      "ar": "170"
+    },
+    "label": {
+      "en": "Possible service–city combinations",
+      "ar": "احتمالًا لصفحات الخدمة والمدينة"
+    }
+  },
+  "sorouh.local": {
+    "id": "sorouh.local",
+    "value": 16,
+    "display": {
+      "en": "16",
+      "ar": "16"
+    },
+    "label": {
+      "en": "Local service pages selected",
+      "ar": "صفحة محلية مختارة"
+    }
+  },
+  "ai.users": {
+    "id": "ai.users",
+    "value": 4,
+    "display": {
+      "en": "4",
+      "ar": "4"
+    },
+    "label": {
+      "en": "People in the shared environment",
+      "ar": "أشخاص يستخدمون البيئة المشتركة"
+    }
+  },
+  "ai.cost": {
+    "id": "ai.cost",
+    "value": 8,
+    "display": {
+      "en": "<US$8",
+      "ar": "<US$8"
+    },
+    "label": {
+      "en": "Shared environment / working day",
+      "ar": "تشغيل البيئة المشتركة / يوم عمل"
+    }
+  },
+  "youssef.team": {
+    "id": "youssef.team",
+    "value": 5,
+    "display": {
+      "en": "5",
+      "ar": "5"
+    },
+    "label": {
+      "en": "People under my direction",
+      "ar": "أشخاص تحت قيادتي"
+    }
+  },
+  "youssef.growth": {
+    "id": "youssef.growth",
+    "value": 2,
+    "display": {
+      "en": "2×",
+      "ar": "2×"
+    },
+    "label": {
+      "en": "Average YouTube views in six weeks",
+      "ar": "متوسط مشاهدات YouTube خلال ستة أسابيع"
+    }
+  },
+  "experience.clients": {
+    "id": "experience.clients",
+    "value": 20,
+    "display": {
+      "en": "20+",
+      "ar": "20+"
+    },
+    "label": {
+      "en": "Clients personally handled at Tahliq",
+      "ar": "عميلًا توليت العمل معهم في تحليق"
+    }
+  },
+  "experience.landing-pages": {
+    "id": "experience.landing-pages",
+    "value": 200,
+    "display": {
+      "en": "200+",
+      "ar": "200+"
+    },
+    "label": {
+      "en": "Landing pages created for Tahliq",
+      "ar": "صفحة هبوط أنشأتها لتحليق"
+    }
+  }
+}
