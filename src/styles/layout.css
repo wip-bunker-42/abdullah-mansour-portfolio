@@ -1,5 +1,5 @@
 .site-header{border-block-end:1px solid var(--border)}
-.header-inner{min-block-size:96px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;position:relative}
+.header-inner{min-block-size:96px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem;position:relative}
 .wordmark{display:inline-flex;align-items:center;min-block-size:44px;flex-shrink:0;inline-size:177px;direction:ltr}
 .wordmark img{inline-size:177px;block-size:auto}.wordmark-light{display:none}
 [data-theme='light'] .wordmark-dark{display:none}[data-theme='light'] .wordmark-light{display:block}

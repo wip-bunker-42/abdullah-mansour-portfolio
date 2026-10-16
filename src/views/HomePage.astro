@@ -18,13 +18,13 @@ const approach = section('approach'); const ai = section('ai'); const experience
   <section class="hero" aria-labelledby="hero-heading">
     <div class="hero-copy">
       <p class="hero-name">{content.profile.name[locale]}</p>
-      <p class="hero-role"><bdi>{locale === 'ar' ? 'Digital Marketing & Growth Specialist' : content.profile.professionalTitle.en}</bdi></p>
+      <p class="hero-role"><bdi lang="en">{content.profile.professionalTitle.en}</bdi></p>
       <h1 id="hero-heading">{document.heading}</h1>
       <p class="hero-lead">{document.lead}</p>
       <div class="actions"><a href={getRoute('work', locale).path} class="button button--primary">{m.work}</a><CvLink locale={locale}/></div>
     </div>
     <figure class="portrait">
-      <div class="portrait-image"><Image src={portrait} alt={content.profile.name[locale]} widths={[360, 520, 880]} sizes="(max-width:760px) 90vw, 440px" width={880} format="webp" quality={85} loading="eager" fetchpriority="high"/></div>
+      <div class="portrait-image"><Image src={portrait} alt={content.profile.name[locale]} widths={[360, 520, 740, 880]} sizes="(max-width:760px) 90vw, 440px" width={880} format="webp" quality={85} loading="eager" fetchpriority="high"/></div>
       <figcaption><span>{m.location}</span><span>{locale === 'ar' ? 'بحث. تنفيذ. تحسين.' : 'Research. Delivery. Improvement.'}</span></figcaption>
     </figure>
   </section>

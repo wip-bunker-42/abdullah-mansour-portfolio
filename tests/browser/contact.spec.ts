@@ -31,6 +31,7 @@ test('Arabic delivery failure retains input, focuses recovery and prevents concu
   await page.route('**/api/contact', route => route.fulfill({status:200,contentType:'application/json',body:'{"ok":true}'}));
   await send.click();
   await expect(page.getByRole('status').filter({hasText:'سأرد عليك خلال ساعات.'})).toBeVisible();
+  await expect(send).toBeFocused();
 });
 
 test('form submits a valid native request without JavaScript', async ({ browser }) => {

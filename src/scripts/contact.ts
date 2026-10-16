@@ -28,6 +28,7 @@ export function initializeContact(): void {
     const values: ContactValues = {name:text('name'),email:text('email'),company:text('company'),topic:text('topic') as ContactValues['topic'],message:text('message'),locale,website:text('website')};
     const errors = validateContact(values); status.textContent='';
     if (Object.keys(errors).length) {showErrors(errors);return;}
+    const restoreSubmitFocus=document.activeElement===submit;
     pending=true;submit.disabled=true;submit.textContent=copy.sending;summary.innerHTML='';
     try {
       const response=await fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(values)});
@@ -35,9 +36,9 @@ export function initializeContact(): void {
       if (!response.ok || !result.ok) {
         if (!result.ok) showErrors({...result.fieldErrors,form:copy.codes[result.code]??copy.codes.internal});
         else showErrors({form:copy.codes.internal});
-      } else {form.reset();showErrors({});status.textContent=copy.sent;status.tabIndex=-1;status.focus();}
+      } else {form.reset();showErrors({});status.textContent=copy.sent;}
     } catch {showErrors({form:copy.codes.delivery});}
-    finally {pending=false;submit.disabled=false;submit.textContent=copy.send;}
+    finally {pending=false;submit.disabled=false;submit.textContent=copy.send;if(restoreSubmitFocus&&document.activeElement===document.body)submit.focus();}
   });
   const copyButton=document.querySelector<HTMLButtonElement>('[data-copy-email]');
   const copyStatus=document.querySelector<HTMLElement>('[data-copy-status]');
