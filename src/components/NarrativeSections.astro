@@ -1,0 +1,6 @@
+---
+import type { RenderedDocument } from '../content/contracts.ts';
+interface Props { sections: RenderedDocument['sections'] }
+const { sections } = Astro.props;
+---
+<div class="document-narrative">{sections.map(section => <section aria-labelledby={section.heading ? section.id : undefined}>{section.heading && <h2 id={section.id}>{section.heading}</h2>}<div class="prose" set:html={section.html}/></section>)}</div>

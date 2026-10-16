@@ -8,7 +8,7 @@ import '../styles/tokens.css';
 import '../styles/global.css';
 import '../styles/layout.css';
 interface Props { route: Route; title: string; description: string; noindex?: boolean }
-const { route, title, description, noindex = false } = Astro.props;
+const { route, title, description, noindex = !route.indexable } = Astro.props;
 ---
 <!doctype html>
 <html lang={route.locale} dir={route.locale === 'ar' ? 'rtl' : 'ltr'} data-theme="dark">

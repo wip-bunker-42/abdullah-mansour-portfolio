@@ -1,0 +1,10 @@
+---
+import type { Locale } from '../content/contracts.ts';
+import { getRoute } from '../i18n/routes.ts';
+import { t } from '../i18n/messages.ts';
+import '../styles/documents.css';
+interface Props { locale: Locale; kind: 'not-found' | 'unexpected' }
+const { locale, kind } = Astro.props;
+const m = t(locale); const copy = kind === 'not-found' ? m.utility.notFound : m.utility.error;
+---
+<div class="container recovery-page"><p class="mono recovery-code">{kind === 'not-found' ? '404' : '500'}</p><h1>{copy.title}</h1><p>{copy.description}</p><div class="actions"><a class="button button--primary" href={getRoute('work',locale).path}>{m.work}</a><a class="button" href={getRoute('contact',locale).path}>{m.nav.contact}</a></div></div>

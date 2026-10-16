@@ -1,0 +1,8 @@
+---
+import type { SiteContent, RenderedDocument, Locale } from '../content/contracts.ts';
+import NarrativeSections from '../components/NarrativeSections.astro';
+import '../styles/documents.css';
+interface Props { content: SiteContent; document: RenderedDocument; locale: Locale }
+const { document } = Astro.props;
+---
+<article class="container information-page"><header class="document-heading"><h1>{document.heading}</h1><p class="document-lead">{document.lead}</p></header><NarrativeSections sections={document.sections}/></article>

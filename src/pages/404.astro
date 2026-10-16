@@ -1,0 +1,8 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ErrorPage from '../views/ErrorPage.astro';
+import { getRoute } from '../i18n/routes.ts';
+import { t } from '../i18n/messages.ts';
+const route = { ...getRoute('error','en'), path: '/404.html' };
+---
+<SiteLayout route={route} title={t('en').utility.notFound.title} description={t('en').utility.notFound.description}><ErrorPage locale="en" kind="not-found"/></SiteLayout>

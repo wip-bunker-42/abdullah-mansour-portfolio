@@ -13,6 +13,12 @@ const messages = {
     rights: 'All rights reserved.', privacy: 'Privacy', accessibility: 'Accessibility', location: 'Based in Cairo, Egypt',
     acquisition: 'Acquisition', content: 'Content', seo: 'Search', ai: 'Practical AI',
     created: 'Purposeful content, connected delivery.',
+    resumePage: { experience: 'Professional experience', capabilities: 'What I bring to a team', credentials: 'Selected credentials' },
+    utility: {
+      notFound: { title: 'This page has moved out of the picture.', description: 'The address may have changed. My work and contact details are a good place to continue.' },
+      error: { title: 'Something interrupted this page.', description: 'Try the page again, or continue to my work. You can also reach me directly through Contact.' },
+      thanks: { title: 'Your message is with me.', description: 'Thank you for the context. You can explore the work while I review your message.' },
+    },
   },
   ar: {
     nav: { work: 'الأعمال', about: 'عني', resume: 'الخبرات', contact: 'التواصل' },
@@ -26,6 +32,12 @@ const messages = {
     rights: 'جميع الحقوق محفوظة.', privacy: 'الخصوصية', accessibility: 'إمكانية الوصول', location: 'من القاهرة، مصر',
     acquisition: 'اكتساب العملاء', content: 'المحتوى', seo: 'البحث', ai: 'AI عملي',
     created: 'محتوى له غرض، وتنفيذ مترابط.',
+    resumePage: { experience: 'الخبرة المهنية', capabilities: 'ما أضيفه إلى الفريق', credentials: 'شهادات مختارة' },
+    utility: {
+      notFound: { title: 'هذه الصفحة لم تعد هنا.', description: 'ربما تغيّر العنوان. يمكنك متابعة الرحلة من الأعمال أو الوصول إليّ مباشرة.' },
+      error: { title: 'تعذّر عرض الصفحة الآن.', description: 'أعد المحاولة، أو تابع إلى الأعمال. ويمكنك الوصول إليّ من صفحة التواصل.' },
+      thanks: { title: 'وصلتني رسالتك.', description: 'شكرًا لتوضيح ما تحتاجه. يمكنك استكشاف الأعمال إلى أن أراجع رسالتك.' },
+    },
   },
 } as const;
 

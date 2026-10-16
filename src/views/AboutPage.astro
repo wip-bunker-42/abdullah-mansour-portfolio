@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets';
+import type { SiteContent, RenderedDocument, Locale } from '../content/contracts.ts';
+import portrait from '../assets/portrait/abdullah-mansour-transparent.png';
+import NarrativeSections from '../components/NarrativeSections.astro';
+import '../styles/documents.css';
+interface Props { content: SiteContent; document: RenderedDocument; locale: Locale }
+const { content, document, locale } = Astro.props;
+---
+<article class="container about-page">
+  <header class="document-heading"><p class="muted">{content.profile.name[locale]}</p><h1>{document.heading}</h1></header>
+  <div class="about-layout">
+    <figure class="about-portrait"><div><Image src={portrait} alt={content.profile.name[locale]} widths={[360,640]} sizes="(max-width:760px) 70vw, 320px" width={640} format="webp" quality={85}/></div><figcaption>{content.profile.professionalTitle[locale]}<br/>{locale === 'ar' ? 'القاهرة، مصر' : 'Cairo, Egypt'}</figcaption></figure>
+    <div><p class="document-lead">{document.lead}</p><NarrativeSections sections={document.sections}/></div>
+  </div>
+</article>
