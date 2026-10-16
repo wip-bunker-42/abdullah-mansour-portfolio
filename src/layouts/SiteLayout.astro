@@ -4,6 +4,7 @@ import { t } from '../i18n/messages.ts';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { themeBootstrap } from '../scripts/theme.ts';
+import SeoHead from '../components/SeoHead.astro';
 import '../styles/tokens.css';
 import '../styles/global.css';
 import '../styles/layout.css';
@@ -15,7 +16,7 @@ const { route, title, description, noindex = !route.indexable } = Astro.props;
   <head>
     <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script is:inline set:html={themeBootstrap}/>
-    <title>{title}</title><meta name="description" content={description}/>
+    <SeoHead route={route} title={title} description={description}/>
     <meta name="theme-color" content="#0B0D10"/>
     {noindex && <meta name="robots" content="noindex"/>}
     <link rel="icon" type="image/svg+xml" href="/brand/favicon.svg"/>
@@ -32,5 +33,6 @@ const { route, title, description, noindex = !route.indexable } = Astro.props;
       import { initializeNavigation } from '../scripts/navigation.ts';
       initializeTheme(); initializeNavigation();
     </script>
+    <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"5f4bf3596cf84c49b93fc148a8177015"}'></script>
   </body>
 </html>

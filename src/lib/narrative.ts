@@ -4,6 +4,16 @@ import type { Evidence, Locale } from '../content/contracts.ts';
 export type NarrativeBlock = { kind: 'html'; html: string } | { kind: 'evidence'; evidence: Evidence };
 type Element = DefaultTreeAdapterMap['element'];
 function element(node: DefaultTreeAdapterMap['childNode']): node is Element { return 'tagName' in node; }
+function tableAlignment(node: Element): void {
+  const style=node.attrs.find(a=>a.name==='style');
+  if(style) {
+    const alignment=style.value.match(/^text-align:\s*(left|right|center);?$/)?.[1];
+    if(!alignment)throw Error('Unsupported inline table styling; use the shared stylesheet');
+    node.attrs=node.attrs.filter(a=>a.name!=='style');const existing=node.attrs.find(a=>a.name==='class');
+    if(existing)existing.value+=` align-${alignment}`;else node.attrs.push({name:'class',value:`align-${alignment}`});
+  }
+  for(const child of node.childNodes)if(element(child))tableAlignment(child);
+}
 
 export function splitNarrative(html: string, evidence: Record<string, Evidence>, locale: Locale = 'en'): NarrativeBlock[] {
   const children = parseFragment(html).childNodes.filter(n => n.nodeName !== '#text' || 'value' in n && n.value.trim());
@@ -21,6 +31,7 @@ export function splitNarrative(html: string, evidence: Record<string, Evidence>,
       const caption = children[i + 1];
       if (caption && element(caption) && caption.tagName === 'p' && caption.childNodes.length === 1 && element(caption.childNodes[0]!) && (caption.childNodes[0] as Element).tagName === 'em') i++;
     } else if (element(node) && node.tagName === 'table') {
+      tableAlignment(node);
       pending += `<div class="table-scroll" role="region" tabindex="0" aria-label="${locale === 'ar' ? 'جدول بيانات، يمكن تمريره أفقيًا عند الحاجة' : 'Data table, scroll horizontally if needed'}">${serializeOuter(node)}</div>`;
     } else pending += serializeOuter(node);
   }

@@ -1,9 +1,9 @@
 import type { ImageMetadata } from 'astro';
 import type { Evidence } from '../content/contracts.ts';
+import { evidenceImages } from '../../.generated/evidence-imports.ts';
 
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/evidence/**/*.{png,jpg,jpeg,webp}', { eager: true });
 export function getEvidenceImage(evidence: Evidence): ImageMetadata {
-  const image = images[`/${evidence.source}`]?.default;
+  const image = evidenceImages[evidence.source];
   if (!image) throw new Error(`Missing image import: ${evidence.id}`);
   return image;
 }

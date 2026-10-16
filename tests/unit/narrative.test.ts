@@ -13,3 +13,8 @@ test('narrative evidence keeps its place without duplicating its caption', async
   assert.ok(!blocks.some(b => b.kind === 'html' && b.html.includes('Existing image caption')));
   assert.throws(() => splitNarrative('<p><img src="/private.png"></p>', content.evidence), /Unknown evidence/);
 });
+test('Markdown table alignment survives without CSP-blocked inline styles',()=>{
+  const blocks=splitNarrative('<table><thead><tr><th style="text-align: right">Value</th></tr></thead></table>',{},'en');
+  const html=blocks.filter(b=>b.kind==='html').map(b=>b.html).join('');
+  assert.ok(!html.includes('style='));assert.match(html,/class="align-right"/);
+});

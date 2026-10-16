@@ -1,0 +1,11 @@
+---
+import type { Route } from '../content/contracts.ts';
+import { loadSiteContent } from '../content/read.ts';
+import { buildSeo, serializeJsonLd } from '../lib/seo.ts';
+interface Props { route:Route;title:string;description:string }
+const {route,title,description}=Astro.props;
+const content=await loadSiteContent();const document=content.documents.find(d=>d.key===route.key&&d.locale===route.locale);
+const seo=document&&route.indexable?buildSeo(content,route,document):null;
+---
+<title>{title}</title><meta name="description" content={description}/>
+{seo&&<><link rel="canonical" href={seo.canonical}/>{Object.entries(seo.alternates).map(([language,href])=><link rel="alternate" hreflang={language} href={href}/>)}<link rel="alternate" type="text/markdown" href={new URL(route.markdownPath!,content.profile.url).href} title={route.locale==='ar'?'نسخة Markdown':'Markdown version'}/><meta property="og:type" content={route.key.startsWith('case:')?'article':'website'}/><meta property="og:site_name" content="AIMansour."/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={seo.canonical}/><meta property="og:locale" content={seo.og.locale}/><meta property="og:image" content={seo.og.image}/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content={seo.og.alt}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={seo.og.image}/><meta name="twitter:image:alt" content={seo.og.alt}/><script is:inline type="application/ld+json" set:html={serializeJsonLd(seo.jsonLd)}/></>}
