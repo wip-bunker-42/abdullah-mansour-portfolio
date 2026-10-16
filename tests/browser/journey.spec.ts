@@ -1,4 +1,6 @@
 import { test, expect } from '@playwright/test';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 
 test('recruiter journey and localized recovery lead to useful destinations', async ({ page }) => {
   await page.goto('/');
@@ -20,5 +22,14 @@ test('recruiter journey and localized recovery lead to useful destinations', asy
     const prefix = path.startsWith('/ar/') ? '/ar' : '';
     await expect(page.locator(`main a[href="${prefix}/work/"]`)).toBeVisible();
     await expect(page.locator(`main a[href="${prefix}/contact/"]`)).toBeVisible();
+  }
+});
+test('both languages download the same replaceable English CV',async({page})=>{
+  const expected=createHash('sha256').update(await readFile('public/files/abdullah-mansour-cv.pdf')).digest('hex');
+  for(const path of ['/resume/','/ar/resume/']) {
+    await page.goto(path);const wait=page.waitForEvent('download');
+    await page.locator('main a[href="/files/abdullah-mansour-cv.pdf"]').click();const download=await wait;
+    expect(download.suggestedFilename()).toBe('Abdullah-Mansour-CV.pdf');
+    expect(createHash('sha256').update(await readFile((await download.path())!)).digest('hex')).toBe(expected);
   }
 });

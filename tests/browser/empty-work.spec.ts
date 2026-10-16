@@ -4,6 +4,7 @@ import { resolve, join, sep } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { createServer, type Server } from 'node:http';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { walkFiles } from '../../scripts/files.ts';
 
 let fixture: string;
@@ -56,6 +57,8 @@ test('unpublished projects leave useful Work actions and no empty Home gallery',
   // A second real build edits only shared facts, keeping narrative source intact.
   const narrativePath=join(fixture,'src/content/cases/en/zone10.md');
   const narrative=await readFile(narrativePath,'utf8');
+  const cvPath=join(fixture,'dist/files/abdullah-mansour-cv.pdf');
+  const cvHash=createHash('sha256').update(await readFile(cvPath)).digest('hex');
   const projectPath=join(fixture,'src/data/projects.json');const projects=JSON.parse(await readFile(projectPath,'utf8'));
   projects.find((p:{id:string})=>p.id==='zone10').published=true;await writeFile(projectPath,JSON.stringify(projects));
   const metricPath=join(fixture,'src/data/metrics.json');const metrics=JSON.parse(await readFile(metricPath,'utf8'));
@@ -66,4 +69,5 @@ test('unpublished projects leave useful Work actions and no empty Home gallery',
   expect(await readFile(narrativePath,'utf8')).toBe(narrative);
   expect(await readFile(join(fixture,'dist/work/zone10/index.html'),'utf8')).toContain('351+');
   expect(await readFile(join(fixture,'dist/work/zone10.md'),'utf8')).toContain('351+');
+  expect(createHash('sha256').update(await readFile(cvPath)).digest('hex')).toBe(cvHash);
 });

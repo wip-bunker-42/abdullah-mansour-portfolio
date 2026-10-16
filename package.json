@@ -14,6 +14,8 @@
     "types:worker": "wrangler types .generated/worker-configuration.d.ts",
     "check:worker": "pnpm types:worker && tsc --project tsconfig.worker.json",
     "check:site": "tsx scripts/check-site.ts",
+    "verify:pdf": "tsx scripts/verify-pdf.ts",
+    "check:privacy": "tsx scripts/check-privacy.ts",
     "preview:worker": "wrangler dev --local --ip 127.0.0.1 --port 8787",
     "test": "tsx --test tests/unit/*.test.ts",
     "test:unit": "tsx --test tests/unit/*.test.ts"
@@ -32,6 +34,7 @@
     "@playwright/test": "1.64.1",
     "@types/node": "^24.19.2",
     "parse5": "8.0.1",
+    "pdfjs-dist": "6.4.299",
     "sharp": "0.35.5",
     "tsx": "4.23.15",
     "typescript": "6.0.3",
