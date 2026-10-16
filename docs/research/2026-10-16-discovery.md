@@ -57,6 +57,8 @@ The strongest story is an integrated marketing practitioner who connects demand,
 
 The supplied copy, numbers, reporting labels and project descriptions are accepted as the publication source. The earlier audit's reservations and downgrade recommendations are withdrawn. Do not add confidence labels, verification demands or author-reported disclaimers. Use the existing explanations and dates as written, and edit for reading rhythm and layout while preserving the owner's message.
 
+The owner clarified the intended scope: remove the agent's added skepticism, such as recasting Zone10's 350+ people who contacted the business as mere tracking events or clicks. Publish the supplied result as stated. Preserve report labels, dates and explanations that already belong to the owner's original text.
+
 Education retains its general wording: Al-Azhar University, Faculty of Islamic Da‘wah, without adding a degree, completion status or graduation date. Do not request those details again. Employment history and experience totals follow the supplied text.
 
 ## Research findings
