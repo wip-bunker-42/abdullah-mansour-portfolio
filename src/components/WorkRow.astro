@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import type { Project, SiteContent, Locale } from '../content/contracts.ts';
+import { getRoute } from '../i18n/routes.ts';
+import { t } from '../i18n/messages.ts';
+import { getEvidenceImage } from '../lib/assets.ts';
+import Icon from './Icon.astro';
+interface Props { project: Project; content: SiteContent; locale: Locale; reverse?: boolean; headingLevel?: 'h2' | 'h3' }
+const { project, content, locale, reverse = false, headingLevel: Heading = 'h3' } = Astro.props;
+const evidence = project.coverEvidenceId ? content.evidence[project.coverEvidenceId] : undefined;
+const url = getRoute(`case:${project.id}`, locale).path;
+---
+<article class:list={['work-row', { 'work-row--reverse': reverse }]}>
+  <div class="work-row-text">
+    <p class="work-row-name">{project.name[locale]}</p><p class="work-row-discipline">{project.discipline[locale]}</p>
+    <Heading>{project.headline[locale]}</Heading>
+    <p class="work-row-summary">{project.summary[locale]}</p>
+    <div class="work-row-metrics">{project.metricIds.slice(0, 2).map(id => { const metric = content.metrics[id]!; return <div><bdi class="mono">{metric.display[locale]}</bdi><small>{metric.label[locale]}</small></div>; })}</div>
+    <a class="text-link" href={url}>{t(locale).case}<Icon name="external" size={19}/></a>
+  </div>
+  <a class="work-row-media" href={url} aria-label={`${t(locale).case}: ${project.name[locale]}`} tabindex="-1" aria-hidden="true">
+    {evidence ? <Image src={getEvidenceImage(evidence)} alt="" widths={[400, 700, 1000]} sizes="(max-width:760px) 90vw, 55vw" width={1000} format="webp" quality={82} loading="lazy"/> : <div class="work-row-diagram"><span>{locale === 'ar' ? 'استراتيجية المحتوى' : 'Content strategy'}</span><Icon name="arrow"/><span>{locale === 'ar' ? 'الفريق والتنفيذ' : 'Team & delivery'}</span><Icon name="arrow"/><span>{locale === 'ar' ? 'المراجعة والنمو' : 'Review & growth'}</span></div>}
+  </a>
+</article>

@@ -4,6 +4,7 @@ export default defineConfig({
   site: 'https://aimansour.com',
   output: 'static',
   trailingSlash: 'always',
+  devToolbar: { enabled: false },
   build: { inlineStylesheets: 'never' },
   vite: { build: { sourcemap: false } },
 });

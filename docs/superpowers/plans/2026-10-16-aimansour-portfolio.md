@@ -132,7 +132,7 @@ assert.ok(!('phone' in content.profile));
 
 **Interfaces:** Consume Task 1's readers and routes. Produce `SiteLayout.astro` props `{route: Route; title: string; description: string; noindex?: boolean}`, `HomePage.astro` props `{content: SiteContent; document: RenderedDocument; locale: Locale}`, and `CvLink.astro` props `{locale: Locale; class?: string}`. Route generation uses known routes only; do not emit placeholders for not-yet-implemented views. `CvLink` always targets the fixed PDF path.
 
-- [ ] **Step 1: Write failing browser behavior tests.** In `test('language navigation and themes survive denied storage', ...)`, assert equivalent-language navigation, the default Dark state, a persisted Light choice, keyboard-operated mobile navigation, and a context where storage APIs throw:
+- [x] **Step 1: Write failing browser behavior tests.** In `test('language navigation and themes survive denied storage', ...)`, assert equivalent-language navigation, the default Dark state, a persisted Light choice, keyboard-operated mobile navigation, and a context where storage APIs throw:
 
 ```ts
 await expect(page.locator('html')).toHaveAttribute('lang', 'ar');
@@ -143,11 +143,11 @@ await storageDenied.getByRole('button', { name: /light mode/i }).click();
 await expect(storageDenied.locator('html')).toHaveAttribute('data-theme', 'light');
 ```
 
-- [ ] **Step 2: Run `pnpm exec playwright test tests/browser/shell.spec.ts`.** Confirm missing UI behavior is the failure. Configure the test server as part of this task, not a separate test-infrastructure project.
-- [ ] **Step 3: Implement the shell and actual Home composition.** Use the approved 7/5-column portrait arrangement, natural portrait at roughly 400–440px desktop, 72–84px English desktop heading and 38–44px mobile heading with independent Arabic tuning. Establish tokens, generous spacing, readable line lengths, licensed locale-specific font loading, SVG outline icons and logical CSS. Compose results, selected work, approach, experience and closing from real content; no placeholder copy, random embellishments or floating statistic cards. Provide semantic navigation, skip link, explicit active page, theme control with safe storage, details-based no-JS mobile navigation and focused enhancement scripts. Keep the wordmark LTR and mixed-direction content isolated.
-- [ ] **Step 4: Review Home EN/Dark at 1440px and AR/Light at 390px with agent-browser.** Use the installed frontend-design skill's critique: identity, type hierarchy, spacing, portrait crop, wrapping, action prominence and calm rhythm. Revise weak composition before extending it. These are the first two visual checkpoints, retained for Task 8 rather than captured again without a change.
-- [ ] **Step 5: Run `pnpm check`, `pnpm build` and the shell browser tests.** Inspect the no-JS Home and mobile navigation once. Appearance is judged visually; do not add CSS snapshots or tests asserting arbitrary pixel values.
-- [ ] **Step 6: Commit.** Stage this task's paths explicitly, then `git commit -m "feat: compose premium bilingual home and design system"`.
+- [x] **Step 2: Run `pnpm exec playwright test tests/browser/shell.spec.ts`.** Confirm missing UI behavior is the failure. Configure the test server as part of this task, not a separate test-infrastructure project.
+- [x] **Step 3: Implement the shell and actual Home composition.** Use the approved 7/5-column portrait arrangement, natural portrait at roughly 400–440px desktop, 72–84px English desktop heading and 38–44px mobile heading with independent Arabic tuning. Establish tokens, generous spacing, readable line lengths, licensed locale-specific font loading, SVG outline icons and logical CSS. Compose results, selected work, approach, experience and closing from real content; no placeholder copy, random embellishments or floating statistic cards. Provide semantic navigation, skip link, explicit active page, theme control with safe storage, details-based no-JS mobile navigation and focused enhancement scripts. Keep the wordmark LTR and mixed-direction content isolated.
+- [x] **Step 4: Review Home EN/Dark at 1440px and AR/Light at 390px with agent-browser.** Use the installed frontend-design skill's critique: identity, type hierarchy, spacing, portrait crop, wrapping, action prominence and calm rhythm. Revise weak composition before extending it. These are the first two visual checkpoints, retained for Task 8 rather than captured again without a change.
+- [x] **Step 5: Run `pnpm check`, `pnpm build` and the shell browser tests.** Inspect the no-JS Home and mobile navigation once. Appearance is judged visually; do not add CSS snapshots or tests asserting arbitrary pixel values.
+- [x] **Step 6: Commit.** Stage this task's paths explicitly, then `git commit -m "feat: compose premium bilingual home and design system"`.
 
 ## Task 3: Publish Five Distinct Case Studies and the Work Journey
 

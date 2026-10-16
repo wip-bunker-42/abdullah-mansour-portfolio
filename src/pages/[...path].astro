@@ -1,0 +1,19 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HomePage from '../views/HomePage.astro';
+import { loadSiteContent } from '../content/read.ts';
+import { getDocument } from '../content/documents.ts';
+import { getRoute } from '../i18n/routes.ts';
+import type { Route } from '../content/contracts.ts';
+export async function getStaticPaths() {
+  return (['en','ar'] as const).map(locale => {
+    const route = getRoute('home', locale);
+    return { params: { path: route.path === '/' ? undefined : route.path.slice(1,-1) }, props: { route } };
+  });
+}
+interface Props { route: Route }
+const { route } = Astro.props;
+const content = await loadSiteContent();
+const document = await getDocument('home', route.locale);
+---
+<SiteLayout route={route} title={document.title} description={document.description}><HomePage content={content} document={document} locale={route.locale}/></SiteLayout>

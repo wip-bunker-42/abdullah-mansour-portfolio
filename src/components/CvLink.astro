@@ -1,0 +1,8 @@
+---
+import type { Locale } from '../content/contracts.ts';
+import { t } from '../i18n/messages.ts';
+import Icon from './Icon.astro';
+interface Props { locale: Locale; class?: string }
+const { locale, class: className = 'button button--secondary' } = Astro.props;
+---
+<a class={className} href="/files/abdullah-mansour-cv.pdf" download="Abdullah-Mansour-CV.pdf" type="application/pdf" hreflang="en">{t(locale).cv}<Icon name="download" size={18}/></a>

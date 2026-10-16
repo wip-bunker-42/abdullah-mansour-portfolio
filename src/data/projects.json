@@ -14,8 +14,8 @@
       "ar": "Zone10: تأسيس طريق من بحث Google إلى التواصل مع الشركة."
     },
     "summary": {
-      "en": "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than 350 people contacted the company through that acquisition setup over the project.",
-      "ar": "بنيت منظومة اكتساب لشركة تصميم وتنفيذ ديكور في الرياض، من فهم الطلب والكلمات المفتاحية إلى الحملات وصفحات الهبوط والقياس. وخلال فترة المشروع، تواصل مع الشركة أكثر من 350 شخصًا عبر هذه المنظومة."
+      "en": "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that acquisition setup over the project.",
+      "ar": "بنيت منظومة اكتساب لشركة تصميم وتنفيذ ديكور في الرياض، من فهم الطلب والكلمات المفتاحية إلى الحملات وصفحات الهبوط والقياس. وخلال فترة المشروع، تواصل مع الشركة أكثر من {{metric:zone10.contacts.value}} شخصًا عبر هذه المنظومة."
     },
     "published": true,
     "featured": true,
@@ -365,8 +365,8 @@
       "ar": "البحث، وبنية المحتوى، وتنفيذ الموقع بمساعدة وكلاء AI، وTechnical SEO، والتتبع، ومراجعات الجودة"
     },
     "delivery": {
-      "en": "71 published, indexable pages",
-      "ar": "71 صفحة منشورة قابلة للفهرسة"
+      "en": "{{metric:sorouh.pages}} published, indexable pages",
+      "ar": "{{metric:sorouh.pages}} صفحة منشورة قابلة للفهرسة"
     },
     "facts": {
       "en": [
@@ -388,7 +388,7 @@
         },
         {
           "label": "Site scope",
-          "value": "71 published, indexable pages"
+          "value": "{{metric:sorouh.pages}} published, indexable pages"
         }
       ],
       "ar": [
@@ -410,7 +410,7 @@
         },
         {
           "label": "نطاق الموقع",
-          "value": "71 صفحة منشورة قابلة للفهرسة"
+          "value": "{{metric:sorouh.pages}} صفحة منشورة قابلة للفهرسة"
         }
       ]
     },

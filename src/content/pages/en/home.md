@@ -85,5 +85,3 @@ That range helps me shape the approach and carry delivery through with the team.
 ## Tell me what the role needs to achieve {#next}
 
 I’m interested in digital marketing and growth roles where commercial judgment and practical AI expertise can move the work forward and strengthen how the team delivers.
-
-[Get in touch](/contact/) · [Review my experience](/resume/)

@@ -1,0 +1,8 @@
+---
+import type { Route } from '../content/contracts.ts';
+import { getRoute } from '../i18n/routes.ts';
+interface Props { route: Route }
+const { route } = Astro.props;
+const other = route.locale === 'en' ? 'ar' : 'en';
+---
+<a class="language-link" href={getRoute(route.key, other).path} lang={other} hreflang={other} dir={other === 'ar' ? 'rtl' : 'ltr'}>{other === 'ar' ? 'العربية' : 'English'}</a>
