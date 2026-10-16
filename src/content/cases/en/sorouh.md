@@ -23,6 +23,15 @@ Seventeen services across ten cities could produce 170 service-and-city pages. I
 
 The wider site contained **seventy-one indexable pages**:
 
+| Page type | Count | Purpose |
+|---|---:|---|
+| Core services | 17 | Explain the offer and address relevant commercial searches |
+| Locations | 10 | Establish local coverage and service availability |
+| Service and city | 16 | Answer specific local demand that warranted its own page |
+| Projects | 11 | Show the company’s delivery experience |
+| Articles | 10 | Answer questions during research and consideration |
+| Supporting and index pages | 7 | Organize discovery and navigation |
+
 
 Each keyword group with a shared intent had a designated page. I created a keyword ownership registry to make that relationship explicit and help prevent pages competing for the same searches.
 

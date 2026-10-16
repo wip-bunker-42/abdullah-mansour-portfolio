@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets';
+import type { Evidence, Locale } from '../content/contracts.ts';
+import { getEvidenceImage } from '../lib/assets.ts';
+import Icon from './Icon.astro';
+interface Props { evidence: Evidence; locale: Locale; priority?: boolean }
+const { evidence, locale, priority = false } = Astro.props;
+const widths = [...new Set([400,800,1200,evidence.width].filter(w => w <= evidence.width && w <= 1400))];
+const view = locale === 'ar' ? 'افتح الصورة بالحجم الكامل' : 'View full image';
+---
+<figure class="evidence-figure">
+  <a href={evidence.publicPath} data-evidence-trigger data-evidence-alt={evidence.alt[locale]} data-evidence-caption={evidence.caption[locale]} data-evidence-width={evidence.width} data-evidence-height={evidence.height} aria-label={`${view}: ${evidence.alt[locale]}`}>
+    <Image src={getEvidenceImage(evidence)} alt={evidence.alt[locale]} widths={widths} sizes="(max-width:760px) 90vw, 1000px" width={Math.min(evidence.width,1200)} format="webp" quality={88} loading={priority ? 'eager' : 'lazy'} fetchpriority={priority ? 'high' : 'auto'}/>
+    <span class="evidence-action">{view}<Icon name="external" size={17}/></span>
+  </a>
+  <figcaption>{evidence.caption[locale]}</figcaption>
+</figure>

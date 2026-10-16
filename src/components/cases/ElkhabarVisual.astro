@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets';
+import type { SiteContent, Locale } from '../../content/contracts.ts';
+import { getEvidenceImage } from '../../lib/assets.ts';
+import Metric from '../Metric.astro';
+interface Props { content: SiteContent; locale: Locale }
+const { content, locale } = Astro.props; const proof=content.evidence['news-facebook-overview']!;
+---
+<section class="case-visual news-visual" aria-label={locale === 'ar' ? 'جمهور بُني بالمحتوى والتوزيع' : 'An audience built through content and distribution'}>
+  <div class="news-lead"><p class="mono news-total" dir="ltr">{content.metrics['elkhabar.views']!.display[locale]}</p><p class="news-total-label">{content.metrics['elkhabar.views']!.label[locale]}</p><p class="muted">{locale === 'ar' ? 'خلال نحو أربعة أشهر من النشر الفعلي.' : 'Across roughly four months of active publishing.'}</p></div>
+  <div class="news-proof"><p>{locale === 'ar' ? 'الوصول إلى أشخاص خارج دائرة المتابعين' : 'Reaching beyond the people already following'}</p><Image src={getEvidenceImage(proof)} alt={proof.alt[locale]} width={1100} widths={[500,900,1100]} sizes="(max-width:760px) 90vw, 720px" format="webp" loading="eager" quality={90}/></div>
+  <dl class="case-metrics">{['elkhabar.followers','elkhabar.saved','elkhabar.platforms'].map(id => <Metric metric={content.metrics[id]!} locale={locale}/>)}</dl>
+</section>

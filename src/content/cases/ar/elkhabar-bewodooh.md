@@ -29,6 +29,12 @@ draft: false
 
 بدأت Facebook بحملة صغيرة لتكوين أول قاعدة من الجمهور. خلال **24–27 أكتوبر 2025** سجلت:
 
+| المؤشر | النتيجة |
+|---|---:|
+| الإنفاق | 877.19 جنيه مصري |
+| متابعات أو إعجابات | 2,605 |
+| تكلفة النتيجة | 0.34 جنيه مصري |
+
 
 ![{{evidence:news-meta-ads.alt}}](/media/evidence/elkhabar-bewodooh/09-meta-ads-campaign-performance.png)
 
@@ -57,6 +63,13 @@ draft: false
 ## وصل المحتوى إلى ما وراء الجمهور الأول {#audience}
 
 خلال فترة **1 مارس–31 مايو 2026**، سجلت صفحة Facebook:
+
+| المؤشر | النتيجة |
+|---|---:|
+| المشاهدات | 1,339,533 |
+| مشاهدات لمدة دقيقة | 198,956 |
+| وقت المشاهدة التراكمي | 369 يومًا |
+| حصة المشاهدات من غير المتابعين | 94.9% |
 
 
 ![{{evidence:news-facebook-overview.alt}}](/media/evidence/elkhabar-bewodooh/01-facebook-overview.png)

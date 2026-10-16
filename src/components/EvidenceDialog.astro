@@ -1,0 +1,13 @@
+---
+import type { Locale } from '../content/contracts.ts';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+<dialog id="evidence-dialog" class="evidence-dialog" aria-labelledby="evidence-title" aria-describedby="evidence-caption">
+  <div class="evidence-toolbar"><h2 id="evidence-title">{locale === 'ar' ? 'دليل من المشروع' : 'Project evidence'}</h2><button type="button" class="button button--secondary" data-evidence-close autofocus>{locale === 'ar' ? 'إغلاق الصورة' : 'Close image'}</button></div>
+  <div class="evidence-dialog-body"><img data-evidence-full alt=""/><p id="evidence-caption"></p><a class="text-link" data-evidence-original>{locale === 'ar' ? 'فتح الملف الأصلي' : 'Open the original file'}</a></div>
+</dialog>
+<script>
+  import { initializeEvidence } from '../scripts/evidence.ts';
+  initializeEvidence();
+</script>

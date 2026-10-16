@@ -31,6 +31,12 @@ AI also supported news collection, analysis, topic selection and writing. I rema
 
 The initial Facebook campaign ran from **October 24–27, 2025**:
 
+| Metric | Result |
+|---|---:|
+| Spend | EGP 877.19 |
+| Follows or likes | 2,605 |
+| Cost per result | EGP 0.34 |
+
 
 ![{{evidence:news-meta-ads.alt}}](/media/evidence/elkhabar-bewodooh/09-meta-ads-campaign-performance.png)
 
@@ -59,6 +65,13 @@ One **2:19 YouTube video** recorded:
 ## The audience extended beyond existing followers {#audience}
 
 For **March 1–May 31, 2026**, Facebook recorded:
+
+| Metric | Result |
+|---|---:|
+| Views | 1,339,533 |
+| One-minute views | 198,956 |
+| Cumulative watch time | 369 days |
+| Views from non-followers | 94.9% |
 
 
 ![{{evidence:news-facebook-overview.alt}}](/media/evidence/elkhabar-bewodooh/01-facebook-overview.png)

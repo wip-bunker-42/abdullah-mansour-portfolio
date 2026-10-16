@@ -1,19 +1,24 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import HomePage from '../views/HomePage.astro';
+import WorkPage from '../views/WorkPage.astro';
+import CasePage from '../views/CasePage.astro';
 import { loadSiteContent } from '../content/read.ts';
 import { getDocument } from '../content/documents.ts';
-import { getRoute } from '../i18n/routes.ts';
+import { getPublishedRoutes } from '../i18n/routes.ts';
 import type { Route } from '../content/contracts.ts';
 export async function getStaticPaths() {
-  return (['en','ar'] as const).map(locale => {
-    const route = getRoute('home', locale);
+  const content = await loadSiteContent();
+  return getPublishedRoutes(content).filter(route => route.key === 'home' || route.key === 'work' || route.key.startsWith('case:')).map(route => {
     return { params: { path: route.path === '/' ? undefined : route.path.slice(1,-1) }, props: { route } };
   });
 }
 interface Props { route: Route }
 const { route } = Astro.props;
 const content = await loadSiteContent();
-const document = await getDocument('home', route.locale);
+const document = await getDocument(route.key as import('../content/contracts.ts').ContentKey, route.locale);
+const project = content.projects.find(p => `case:${p.id}` === route.key);
 ---
-<SiteLayout route={route} title={document.title} description={document.description}><HomePage content={content} document={document} locale={route.locale}/></SiteLayout>
+<SiteLayout route={route} title={document.title} description={document.description}>
+  {route.key === 'home' ? <HomePage content={content} document={document} locale={route.locale}/> : route.key === 'work' ? <WorkPage content={content} document={document} locale={route.locale}/> : project && <CasePage content={content} document={document} locale={route.locale} project={project}/>}
+</SiteLayout>

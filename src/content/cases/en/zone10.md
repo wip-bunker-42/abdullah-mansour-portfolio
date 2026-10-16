@@ -47,6 +47,13 @@ I set up Google Tag Manager, GA4 and Microsoft Clarity, and used ValueTrack para
 
 For the campaign shown, **February 1–18, 2026** produced:
 
+| Metric | Result |
+|---|---:|
+| Clicks | 131 |
+| Recorded conversion actions | 33 |
+| Conversion rate | 25.19% |
+| Cost per conversion action | US$12.42 |
+
 
 Conversions in this report track interactions with the contact buttons. Costs for this reporting window are presented as USD equivalents using **US$1 = EGP 47.01** on **February 18, 2026**, rounded to two decimal places. This reference rate is the midpoint of that day’s published buying and selling rates, rounded to two decimals. The original Google Ads screenshots retain the Egyptian billing currency; the business and target market were in Saudi Arabia. [Exchange-rate reference](https://en.firstbankeg.com/12408).
 

@@ -1,0 +1,10 @@
+---
+import type { SiteContent, Locale } from '../../content/contracts.ts';
+interface Props { content: SiteContent; locale: Locale }
+const {content,locale}=Astro.props;
+---
+<section class="case-visual operations-visual" aria-label={locale === 'ar' ? 'توزيع العمل في بيئة AI المشتركة' : 'How work moves through the shared AI environment'}>
+  <div class="operations-direction"><p>{content.profile.name[locale]}</p><h2>{locale === 'ar' ? 'اختيار المهمة. توجيه التنفيذ. مراجعة النتيجة.' : 'Select the task. Direct the work. Review the result.'}</h2></div>
+  <div class="operations-routes"><div><h3>{locale === 'ar' ? 'التخطيط والقرارات الأصعب' : 'Planning & harder decisions'}</h3><p>{locale === 'ar' ? 'نماذج أعلى قدرة، مع توجيه ومراجعة مستمرين.' : 'Higher-capability models, with continued direction and review.'}</p></div><div><h3>{locale === 'ar' ? 'تنفيذ المهام المناسبة' : 'Suitable execution tasks'}</h3><p><bdi>Codex / Claude Code</bdi></p><p><bdi>LocalAI + llama.cpp</bdi></p></div></div>
+  <div class="operations-foundation"><p>{locale === 'ar' ? 'سياق وأدوات وتكاملات MCP ومهارات مخصصة' : 'Context, tools, MCP integrations and custom skills'}</p><div><bdi class="mono">{content.metrics['ai.users']!.display[locale]}</bdi><span>{content.metrics['ai.users']!.label[locale]}</span></div><div><bdi class="mono">{content.metrics['ai.cost']!.display[locale]}</bdi><span>{content.metrics['ai.cost']!.label[locale]}</span></div></div>
+</section>
