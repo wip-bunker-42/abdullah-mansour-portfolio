@@ -7,6 +7,8 @@ test('recruiter journey and localized recovery lead to useful destinations', asy
   await expect(page).toHaveURL('/resume/');
   await expect(page.locator('main').getByRole('link', { name: /download english cv/i })).toHaveAttribute('href', '/files/abdullah-mansour-cv.pdf');
   await expect(page.locator('main a[href="/contact/"]').first()).toBeVisible();
+  await page.locator('main a[href="/contact/"]').first().click();
+  await expect(page.locator('[data-contact-form]')).toBeVisible();
   await page.goto('/ar/resume/');
   await expect(page.locator('main').getByRole('link', { name: 'تنزيل السيرة بالإنجليزية — PDF' })).toHaveAttribute('href', '/files/abdullah-mansour-cv.pdf');
   // Astro reserves the root 404.html; the Arabic source route is materialized

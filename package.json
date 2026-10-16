@@ -9,8 +9,11 @@
   },
   "scripts": {
     "dev": "tsx scripts/publish-assets.ts --dev && astro dev --host 127.0.0.1",
-    "build": "astro build && tsx scripts/publish-assets.ts",
+    "build": "astro build && tsx scripts/publish-assets.ts && tsx scripts/build-contact-shells.ts",
     "check": "astro sync && astro check",
+    "types:worker": "wrangler types .generated/worker-configuration.d.ts",
+    "check:worker": "pnpm types:worker && tsc --project tsconfig.worker.json",
+    "preview:worker": "wrangler dev --local --ip 127.0.0.1 --port 8787",
     "test": "tsx --test tests/unit/*.test.ts",
     "test:unit": "tsx --test tests/unit/*.test.ts"
   },

@@ -1,0 +1,15 @@
+---
+import type { SiteContent, RenderedDocument, Locale } from '../content/contracts.ts';
+import { renderContactForm } from '../contact/view.ts';
+import { emptyValues } from '../contact/contract.ts';
+import { contactCopy } from '../contact/messages.ts';
+import { t } from '../i18n/messages.ts';
+import '../styles/contact.css';
+interface Props { content: SiteContent; document: RenderedDocument; locale: Locale }
+const { content, document, locale } = Astro.props; const copy = contactCopy(locale);
+---
+<div class="container contact-page"><header class="contact-heading"><h1>{document.heading}</h1></header>
+  <div class="contact-layout"><section class="contact-context" aria-label={locale==='ar'?'لنتواصل':'Let’s connect'}><p class="contact-lead">{document.lead}</p><p class="reply-promise"><span aria-hidden="true"></span>{content.profile.contact.responseTime[locale]}</p><div class="contact-email"><p class="muted">{locale==='ar'?'راسلني مباشرة':'Write to me directly'}</p><a href={`mailto:${content.profile.contact.email}`}><bdi class="email-address" dir="ltr">{content.profile.contact.email}</bdi></a><button class="text-link copy-email js-only" type="button" data-copy-email={content.profile.contact.email}>{copy.copy}</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div><div class="contact-location"><p>{t(locale).location}</p><a class="text-link" href={content.profile.profiles.find(p=>p.name==='LinkedIn')!.url}>LinkedIn</a></div></section>
+  <section class="contact-form-panel" aria-labelledby="form-title"><h2 id="form-title">{copy.title}</h2><p class="muted">{copy.optional}</p><!-- contact-form:start --><Fragment set:html={renderContactForm(locale,emptyValues(locale),{})}/><!-- contact-form:end --></section></div>
+</div>
+<script>import { initializeContact } from '../scripts/contact.ts';initializeContact();</script>
