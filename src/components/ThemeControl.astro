@@ -1,0 +1,10 @@
+---
+import type { Locale } from '../content/contracts.ts';
+import { t } from '../i18n/messages.ts';
+import Icon from './Icon.astro';
+interface Props { locale: Locale }
+const m = t(Astro.props.locale);
+---
+<button type="button" class="theme-button js-only" data-theme-control data-light-label={m.light} data-dark-label={m.dark} aria-label={m.light}>
+  <Icon name="sun" class="theme-dark-icon"/><Icon name="moon" class="theme-light-icon"/>
+</button>

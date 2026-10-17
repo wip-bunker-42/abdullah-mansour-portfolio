@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import type { SiteContent, Locale } from '../../content/contracts.ts';
+import { getEvidenceImage } from '../../lib/assets.ts';
+interface Props { content: SiteContent; locale: Locale }
+const { content, locale }=Astro.props; const home=content.evidence['sorouh-home']!;
+---
+<section class="case-visual architecture-visual" aria-label={locale === 'ar' ? 'اختيار الصفحات وبنية موقع صروح' : 'Sorouh page selection and site architecture'}>
+  <div class="architecture-decision"><p>{locale === 'ar' ? 'الخدمات × المدن، ثم الاختيار وفق غرض كل صفحة' : 'Services × cities. Then a decision about each page.'}</p><div class="architecture-numbers"><div><bdi class="mono">{content.metrics['sorouh.possibilities']!.display[locale]}</bdi><span>{content.metrics['sorouh.possibilities']!.label[locale]}</span></div><span class="architecture-connector" aria-hidden="true">›</span><div><bdi class="mono">{content.metrics['sorouh.local']!.display[locale]}</bdi><span>{content.metrics['sorouh.local']!.label[locale]}</span></div></div><div class="architecture-total"><bdi class="mono">{content.metrics['sorouh.pages']!.display[locale]}</bdi><p>{locale === 'ar' ? 'صفحة قابلة للفهرسة في الموقع الكامل، وتشمل الصفحات المحلية المختارة.' : 'Indexable pages across the complete site, including the selected local pages.'}</p></div></div>
+  <div class="architecture-preview"><Image src={getEvidenceImage(home)} alt={home.alt[locale]} width={1100} widths={[500,900,1100]} sizes="(max-width:760px) 90vw, 680px" format="webp" loading="eager" fetchpriority="high" quality={85}/></div>
+</section>

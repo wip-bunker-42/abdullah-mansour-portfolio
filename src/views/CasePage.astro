@@ -1,0 +1,28 @@
+---
+import type { SiteContent, RenderedDocument, Locale, Project } from '../content/contracts.ts';
+import { getRoute } from '../i18n/routes.ts';
+import { splitNarrative } from '../lib/narrative.ts';
+import EvidenceFigure from '../components/EvidenceFigure.astro';
+import EvidenceDialog from '../components/EvidenceDialog.astro';
+import Zone10Visual from '../components/cases/Zone10Visual.astro';
+import ElkhabarVisual from '../components/cases/ElkhabarVisual.astro';
+import SorouhVisual from '../components/cases/SorouhVisual.astro';
+import AiOperationsVisual from '../components/cases/AiOperationsVisual.astro';
+import YoussefVisual from '../components/cases/YoussefVisual.astro';
+import { t } from '../i18n/messages.ts';
+import '../styles/work.css';
+interface Props { content: SiteContent; document: RenderedDocument; locale: Locale; project: Project }
+const {content,document,locale,project}=Astro.props;const m=t(locale);
+const Visual = {zone10:Zone10Visual,'elkhabar-bewodooh':ElkhabarVisual,sorouh:SorouhVisual,'ai-operations':AiOperationsVisual,'youssef-el-sherif':YoussefVisual}[project.id];
+const related=project.relatedIds.map(id=>content.projects.find(p=>p.id===id && p.published)).filter((p):p is Project=>Boolean(p));
+---
+<article class="container case-page">
+  <nav class="breadcrumbs" aria-label={locale==='ar'?'مسار الصفحة':'Breadcrumb'}><a href={getRoute('work',locale).path}>{m.nav.work}</a><span aria-hidden="true">/</span><span>{project.name[locale]}</span></nav>
+  <header class="case-header"><p class="case-discipline">{project.discipline[locale]}</p><h1>{document.heading}</h1><p class="case-lead">{document.lead}</p></header>
+  <Visual content={content} locale={locale}/>
+  <section class="case-glance" aria-labelledby="case-glance-title"><h2 id="case-glance-title">{locale==='ar'?'المشروع في لمحة':'At a glance'}</h2><dl>{project.facts[locale].map(f=><div><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl></section>
+  <nav class="case-contents" aria-label={locale==='ar'?'داخل هذه الدراسة':'In this case study'}><span>{locale==='ar'?'داخل الدراسة':'In this case study'}</span><ul>{document.sections.filter(s=>s.heading).map(s=><li><a href={`#${s.id}`}>{s.heading}</a></li>)}</ul></nav>
+  <div class="case-story">{document.sections.map(section=><section class="case-section" aria-labelledby={section.heading?section.id:undefined}>{section.heading&&<h2 id={section.id}>{section.heading}</h2>}{splitNarrative(section.html,content.evidence,locale).map(block=>block.kind==='html'?<div class="prose narrative-copy" set:html={block.html}/>:<EvidenceFigure evidence={block.evidence} locale={locale}/>)}</section>)}</div>
+  <aside class="case-next"><div><p class="muted">{locale==='ar'?'مسؤولية أخرى، وسياق مختلف':'Another responsibility, a different context'}</p>{related.map(p=><a class="case-related" href={getRoute(`case:${p.id}`,locale).path}>{p.name[locale]}</a>)}</div><a class="button button--primary" href={getRoute('contact',locale).path}>{m.contact}</a></aside>
+</article>
+<EvidenceDialog locale={locale}/>

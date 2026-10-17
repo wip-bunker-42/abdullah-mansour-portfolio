@@ -1,0 +1,6 @@
+---
+import type { Metric, Locale } from '../content/contracts.ts';
+interface Props { metric: Metric; locale: Locale }
+const { metric, locale } = Astro.props;
+---
+<div class="case-metric"><dt>{metric.label[locale]}</dt><dd class="mono" dir="ltr">{metric.display[locale]}</dd></div>

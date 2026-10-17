@@ -1,0 +1,20 @@
+---
+import type { SiteContent, RenderedDocument, Locale } from '../content/contracts.ts';
+import NarrativeSections from '../components/NarrativeSections.astro';
+import CvLink from '../components/CvLink.astro';
+import { getRoute } from '../i18n/routes.ts';
+import { t } from '../i18n/messages.ts';
+import '../styles/documents.css';
+interface Props { content: SiteContent; document: RenderedDocument; locale: Locale }
+const { content, document, locale } = Astro.props;
+const copy = t(locale).resumePage;
+---
+<article class="container resume-page">
+  <header class="resume-heading"><div><h1>{document.heading}</h1><p>{content.profile.professionalTitle[locale]}</p><p class="muted">{t(locale).location}</p></div><div class="actions"><CvLink locale={locale}/><a class="text-link" href={getRoute('contact',locale).path}>{t(locale).contact}</a></div></header>
+  <div class="prose resume-summary" set:html={document.sections.find(s => s.id === 'intro')?.html}/>
+  <section class="resume-section" aria-labelledby="experience"><h2 id="experience">{copy.experience}</h2><div class="experience-list">{content.experience.positions.map(position => <section class="experience-entry"><div><h3>{position.organization[locale]}</h3><p class="experience-role">{position.title[locale]}</p><p class="muted">{position.period[locale]}</p><p class="muted">{position.type[locale]}{position.location[locale] && ` · ${position.location[locale]}`}</p></div><ul>{position.details[locale].map(detail => <li>{detail}</li>)}</ul></section>)}</div></section>
+  <section class="resume-section" aria-labelledby="capabilities"><h2 id="capabilities">{copy.capabilities}</h2><dl class="capability-list">{content.experience.capabilities.map(capability => <div><dt>{capability.name[locale]}</dt><dd>{capability.scope[locale]}</dd></div>)}</dl></section>
+  <NarrativeSections sections={document.sections.filter(s => s.id !== 'intro' && s.id !== 'education' && s.id !== 'next')}/>
+  <section class="resume-section" aria-labelledby="selected-credentials"><h2 id="selected-credentials">{copy.credentials}</h2><ul class="credential-list">{content.experience.credentials.map(credential => <li><span>{credential.name[locale]}</span><span class="muted">{credential.issuer}{credential.date && ` · ${credential.date}`}</span></li>)}</ul></section>
+  <NarrativeSections sections={document.sections.filter(s => s.id === 'education' || s.id === 'next')}/>
+</article>

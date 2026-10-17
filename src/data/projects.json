@@ -1,0 +1,642 @@
+[
+  {
+    "id": "zone10",
+    "name": {
+      "en": "Zone10",
+      "ar": "Zone10"
+    },
+    "discipline": {
+      "en": "Paid search & acquisition",
+      "ar": "البحث المدفوع واكتساب العملاء"
+    },
+    "headline": {
+      "en": "Giving Zone10 a measurable way to reach people already searching.",
+      "ar": "Zone10: تأسيس طريق من بحث Google إلى التواصل مع الشركة."
+    },
+    "summary": {
+      "en": "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that acquisition setup over the project.",
+      "ar": "بنيت منظومة اكتساب لشركة تصميم وتنفيذ ديكور في الرياض، من فهم الطلب والكلمات المفتاحية إلى الحملات وصفحات الهبوط والقياس. وخلال فترة المشروع، تواصل مع الشركة أكثر من {{metric:zone10.contacts.value}} شخصًا عبر هذه المنظومة."
+    },
+    "published": true,
+    "featured": true,
+    "order": 0,
+    "period": {
+      "en": "December 2025–April 2026",
+      "ar": "ديسمبر 2025–أبريل 2026"
+    },
+    "market": {
+      "en": "Riyadh, Saudi Arabia",
+      "ar": "الرياض، السعودية"
+    },
+    "responsibility": {
+      "en": "Research, strategy, messaging, page creation, Google Ads setup, tracking, management and optimization",
+      "ar": "البحث، والاستراتيجية، والرسائل، وبناء الصفحات، وإعداد Google Ads والتتبع، والإدارة والتحسين"
+    },
+    "delivery": {
+      "en": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · More than US${{metric:zone10.spend.number}} in total ad spend",
+      "ar": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · أكثر من {{metric:zone10.spend.number}} دولار أمريكي إنفاق إعلاني إجمالي"
+    },
+    "facts": {
+      "en": [
+        {
+          "label": "Market",
+          "value": "Riyadh, Saudi Arabia"
+        },
+        {
+          "label": "Sector",
+          "value": "Interior design, fit-out and finishing"
+        },
+        {
+          "label": "Period",
+          "value": "December 2025–April 2026"
+        },
+        {
+          "label": "My responsibility",
+          "value": "Research, strategy, messaging, page creation, Google Ads setup, tracking, management and optimization"
+        },
+        {
+          "label": "Delivery",
+          "value": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · More than US${{metric:zone10.spend.number}} in total ad spend"
+        },
+        {
+          "label": "Metric",
+          "value": "Result"
+        },
+        {
+          "label": "Clicks",
+          "value": "131"
+        },
+        {
+          "label": "Recorded conversion actions",
+          "value": "33"
+        },
+        {
+          "label": "Conversion rate",
+          "value": "25.19%"
+        },
+        {
+          "label": "Cost per conversion action",
+          "value": "US$12.42"
+        }
+      ],
+      "ar": [
+        {
+          "label": "السوق",
+          "value": "الرياض، السعودية"
+        },
+        {
+          "label": "القطاع",
+          "value": "التصميم الداخلي والتنفيذ والتشطيبات"
+        },
+        {
+          "label": "الفترة",
+          "value": "ديسمبر 2025–أبريل 2026"
+        },
+        {
+          "label": "مسؤوليتي",
+          "value": "البحث، والاستراتيجية، والرسائل، وبناء الصفحات، وإعداد Google Ads والتتبع، والإدارة والتحسين"
+        },
+        {
+          "label": "نطاق التنفيذ",
+          "value": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · أكثر من {{metric:zone10.spend.number}} دولار أمريكي إنفاق إعلاني إجمالي"
+        },
+        {
+          "label": "المؤشر",
+          "value": "النتيجة"
+        },
+        {
+          "label": "النقرات",
+          "value": "131"
+        },
+        {
+          "label": "إجراءات التحويل المسجلة",
+          "value": "33"
+        },
+        {
+          "label": "معدل التحويل",
+          "value": "25.19%"
+        },
+        {
+          "label": "تكلفة إجراء التحويل",
+          "value": "12.42 دولار أمريكي"
+        }
+      ]
+    },
+    "metricIds": [
+      "zone10.contacts",
+      "zone10.campaigns",
+      "zone10.spend"
+    ],
+    "evidenceIds": [
+      "zone-overview",
+      "zone-location",
+      "zone-keywords",
+      "zone-landing-report",
+      "zone-desktop",
+      "zone-residential",
+      "zone-mobile"
+    ],
+    "relatedIds": [
+      "elkhabar-bewodooh"
+    ],
+    "og": {
+      "en": "/social/social-zone10-en.png",
+      "ar": "/social/social-zone10-ar.png"
+    },
+    "coverEvidenceId": "zone-desktop"
+  },
+  {
+    "id": "elkhabar-bewodooh",
+    "name": {
+      "en": "Elkhabar Bewodooh",
+      "ar": "الخبر بوضوح"
+    },
+    "discipline": {
+      "en": "Content strategy & growth",
+      "ar": "استراتيجية المحتوى والنمو"
+    },
+    "headline": {
+      "en": "A media project built around the moment people wanted an explanation.",
+      "ar": "الخبر بوضوح: الوصول إلى الجمهور في الفجوة بين الخبر وتفسيره."
+    },
+    "summary": {
+      "en": "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed {{metric:elkhabar.views.number}} views across roughly four months of active publishing.",
+      "ar": "رصدت فرصة في سرعة تقديم التحليل، وبنيت حولها مشروعًا إعلاميًا من الصفر. توليت الاستراتيجية والمحتوى والتوزيع، واستخدمت AI في البحث وبناء أدوات التصوير والنشر. وصل المشروع إلى أكثر من {{metric:elkhabar.views.number}} مشاهدة خلال نحو أربعة أشهر من النشر الفعلي."
+    },
+    "published": true,
+    "featured": true,
+    "order": 1,
+    "period": {
+      "en": "October 2025–May 2026, with roughly four months of active publishing",
+      "ar": "أكتوبر 2025–مايو 2026؛ نحو أربعة أشهر من النشر الفعلي"
+    },
+    "market": {
+      "en": "Facebook, TikTok and YouTube",
+      "ar": "Facebook وTikTok وYouTube"
+    },
+    "responsibility": {
+      "en": "Opportunity research, strategy, scripts, filming, publishing, community, analysis and automation",
+      "ar": "اكتشاف الفرصة، والاستراتيجية، والبحث، والكتابة، والتصوير، والتوزيع، والمجتمع، والتحليل، والأتمتة"
+    },
+    "delivery": {
+      "en": "{{metric:elkhabar.platforms.value}} platforms, adding Instagram, X and Threads",
+      "ar": "النشر عبر {{metric:elkhabar.platforms.value}} منصات، بإضافة Instagram وX وThreads"
+    },
+    "facts": {
+      "en": [
+        {
+          "label": "Project",
+          "value": "An independent media venture I founded and ran"
+        },
+        {
+          "label": "Period",
+          "value": "October 2025–May 2026, with roughly four months of active publishing"
+        },
+        {
+          "label": "Starting point",
+          "value": "A new audience, supported by an initial paid campaign"
+        },
+        {
+          "label": "Core platforms",
+          "value": "Facebook, TikTok and YouTube"
+        },
+        {
+          "label": "Distribution expansion",
+          "value": "{{metric:elkhabar.platforms.value}} platforms, adding Instagram, X and Threads"
+        },
+        {
+          "label": "My responsibility",
+          "value": "Opportunity research, strategy, scripts, filming, publishing, community, analysis and automation"
+        },
+        {
+          "label": "Metric",
+          "value": "Result"
+        },
+        {
+          "label": "Spend",
+          "value": "EGP 877.19"
+        },
+        {
+          "label": "Follows or likes",
+          "value": "2,605"
+        },
+        {
+          "label": "Cost per result",
+          "value": "EGP 0.34"
+        },
+        {
+          "label": "Metric",
+          "value": "Result"
+        },
+        {
+          "label": "Views",
+          "value": "1,339,533"
+        },
+        {
+          "label": "One-minute views",
+          "value": "198,956"
+        },
+        {
+          "label": "Cumulative watch time",
+          "value": "369 days"
+        },
+        {
+          "label": "Views from non-followers",
+          "value": "94.9%"
+        }
+      ],
+      "ar": [
+        {
+          "label": "طبيعته",
+          "value": "مشروع إعلامي مستقل أسسته وأدرته"
+        },
+        {
+          "label": "الفترة",
+          "value": "أكتوبر 2025–مايو 2026؛ نحو أربعة أشهر من النشر الفعلي"
+        },
+        {
+          "label": "البداية",
+          "value": "من الصفر، مع حملة أولية لبناء قاعدة جمهور"
+        },
+        {
+          "label": "المنصات الأساسية",
+          "value": "Facebook وTikTok وYouTube"
+        },
+        {
+          "label": "التوسع التشغيلي",
+          "value": "النشر عبر {{metric:elkhabar.platforms.value}} منصات، بإضافة Instagram وX وThreads"
+        },
+        {
+          "label": "مسؤوليتي",
+          "value": "اكتشاف الفرصة، والاستراتيجية، والبحث، والكتابة، والتصوير، والتوزيع، والمجتمع، والتحليل، والأتمتة"
+        },
+        {
+          "label": "المؤشر",
+          "value": "النتيجة"
+        },
+        {
+          "label": "الإنفاق",
+          "value": "877.19 جنيه مصري"
+        },
+        {
+          "label": "متابعات أو إعجابات",
+          "value": "2,605"
+        },
+        {
+          "label": "تكلفة النتيجة",
+          "value": "0.34 جنيه مصري"
+        },
+        {
+          "label": "المؤشر",
+          "value": "النتيجة"
+        },
+        {
+          "label": "المشاهدات",
+          "value": "1,339,533"
+        },
+        {
+          "label": "مشاهدات لمدة دقيقة",
+          "value": "198,956"
+        },
+        {
+          "label": "وقت المشاهدة التراكمي",
+          "value": "369 يومًا"
+        },
+        {
+          "label": "حصة المشاهدات من غير المتابعين",
+          "value": "94.9%"
+        }
+      ]
+    },
+    "metricIds": [
+      "elkhabar.views",
+      "elkhabar.followers",
+      "elkhabar.saved"
+    ],
+    "evidenceIds": [
+      "news-facebook-overview",
+      "news-facebook-engagement",
+      "news-facebook-audience",
+      "news-youtube-growth",
+      "news-youtube-retention",
+      "news-tiktok",
+      "news-meta-ads"
+    ],
+    "relatedIds": [
+      "sorouh"
+    ],
+    "og": {
+      "en": "/social/social-elkhabar-bewodooh-en.png",
+      "ar": "/social/social-elkhabar-bewodooh-ar.png"
+    },
+    "coverEvidenceId": "news-facebook-overview"
+  },
+  {
+    "id": "sorouh",
+    "name": {
+      "en": "Sorouh Eastern Contracting",
+      "ar": "صروح الشرقية للمقاولات"
+    },
+    "discipline": {
+      "en": "Local SEO & site architecture",
+      "ar": "Local SEO وبنية الموقع"
+    },
+    "headline": {
+      "en": "Seventeen services. Ten cities. A reason for every page.",
+      "ar": "صروح الشرقية: بناء الموقع حول الخدمات التي يبحث عنها السوق."
+    },
+    "summary": {
+      "en": "Sorouh Eastern Contracting needed a digital presence in Saudi Arabia’s Eastern Province. I researched local demand, defined the content structure and directed AI agents to build the website, technical SEO and measurement, creating an asset the company could develop for organic acquisition.",
+      "ar": "بدأت شركة المقاولات في الدمام من دون موقع أو تتبع أو حضور رقمي منظم. توليت بحث السوق والكلمات وبنية المحتوى، وأدرت وكلاء AI لتنفيذ الموقع وSEO والقياس، لتأسيس أصل تستطيع الشركة تطويره لجذب فرص التواصل من البحث العضوي."
+    },
+    "published": true,
+    "featured": true,
+    "order": 2,
+    "period": {
+      "en": "August–September 2026",
+      "ar": "أغسطس–سبتمبر 2026"
+    },
+    "market": {
+      "en": "Dammam and Saudi Arabia’s Eastern Province",
+      "ar": "الدمام والمنطقة الشرقية، السعودية"
+    },
+    "responsibility": {
+      "en": "Research, content architecture, AI-assisted site delivery, technical SEO, tracking and quality checks",
+      "ar": "البحث، وبنية المحتوى، وتنفيذ الموقع بمساعدة وكلاء AI، وTechnical SEO، والتتبع، ومراجعات الجودة"
+    },
+    "delivery": {
+      "en": "{{metric:sorouh.pages}} published, indexable pages",
+      "ar": "{{metric:sorouh.pages}} صفحة منشورة قابلة للفهرسة"
+    },
+    "facts": {
+      "en": [
+        {
+          "label": "Client",
+          "value": "Sorouh Eastern Contracting"
+        },
+        {
+          "label": "Market",
+          "value": "Dammam and Saudi Arabia’s Eastern Province"
+        },
+        {
+          "label": "Period",
+          "value": "August–September 2026"
+        },
+        {
+          "label": "My responsibility",
+          "value": "Research, content architecture, AI-assisted site delivery, technical SEO, tracking and quality checks"
+        },
+        {
+          "label": "Site scope",
+          "value": "{{metric:sorouh.pages}} published, indexable pages"
+        }
+      ],
+      "ar": [
+        {
+          "label": "العميل",
+          "value": "صروح الشرقية للمقاولات — Sorouh Eastern Contracting"
+        },
+        {
+          "label": "السوق",
+          "value": "الدمام والمنطقة الشرقية، السعودية"
+        },
+        {
+          "label": "الفترة",
+          "value": "أغسطس–سبتمبر 2026"
+        },
+        {
+          "label": "مسؤوليتي",
+          "value": "البحث، وبنية المحتوى، وتنفيذ الموقع بمساعدة وكلاء AI، وTechnical SEO، والتتبع، ومراجعات الجودة"
+        },
+        {
+          "label": "نطاق الموقع",
+          "value": "{{metric:sorouh.pages}} صفحة منشورة قابلة للفهرسة"
+        }
+      ]
+    },
+    "metricIds": [
+      "sorouh.pages",
+      "sorouh.health",
+      "sorouh.local"
+    ],
+    "evidenceIds": [
+      "sorouh-home",
+      "sorouh-local",
+      "sorouh-gsc",
+      "sorouh-ahrefs",
+      "sorouh-seo-pr"
+    ],
+    "relatedIds": [
+      "ai-operations"
+    ],
+    "og": {
+      "en": "/social/social-sorouh-en.png",
+      "ar": "/social/social-sorouh-ar.png"
+    },
+    "coverEvidenceId": "sorouh-home"
+  },
+  {
+    "id": "ai-operations",
+    "name": {
+      "en": "Shared AI operations",
+      "ar": "تشغيل AI مشترك"
+    },
+    "discipline": {
+      "en": "AI operations & automation",
+      "ar": "تشغيل AI والأتمتة"
+    },
+    "headline": {
+      "en": "Models, agents and integration: building a shared AI environment.",
+      "ar": "بناء بيئة AI للفريق، من اختيار النموذج إلى تشغيل الوكلاء."
+    },
+    "summary": {
+      "en": "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. {{metric:ai.users.value}} people gained an execution path for suitable tasks, with the environment running below US${{metric:ai.cost.value}} during the working day and stronger models retained where needed.",
+      "ar": "داخل تحليق، توليت تقييم النماذج وبناء بيئة تشغيل مشتركة وربطها بأدوات الوكلاء، ومعالجة مشكلات ظهرت في الاستخدام الفعلي. أصبح لفريق من {{metric:ai.users.value}} أشخاص مسار لتنفيذ المهام المناسبة بأقل من {{metric:ai.cost.value}} دولارات لتشغيل البيئة خلال يوم العمل، مع توزيع العمل بين نماذج مستضافة وأخرى أعلى قدرة."
+    },
+    "published": true,
+    "featured": false,
+    "order": 3,
+    "period": {
+      "en": "Internal operations at Tahliq Digital Agency",
+      "ar": "تطوير التشغيل داخل Tahliq Digital Agency"
+    },
+    "market": {
+      "en": "Internal operations at Tahliq Digital Agency",
+      "ar": "تطوير التشغيل داخل Tahliq Digital Agency"
+    },
+    "responsibility": {
+      "en": "Model evaluation, task allocation, environment setup, configuration, agent-tool integration and compatibility fixes",
+      "ar": "تقييم النماذج، وتوزيع المهام، وبناء البيئة وضبطها، وربطها بأدوات الوكلاء، ومعالجة التوافق"
+    },
+    "delivery": {
+      "en": "A shared model environment operating at less than US${{metric:ai.cost.value}} during the working day",
+      "ar": "بيئة مشتركة بتكلفة تشغيل أقل من {{metric:ai.cost.value}} دولارات خلال يوم العمل"
+    },
+    "facts": {
+      "en": [
+        {
+          "label": "Setting",
+          "value": "Internal operations at Tahliq Digital Agency"
+        },
+        {
+          "label": "Users",
+          "value": "4 people using AI for marketing, development and delivery"
+        },
+        {
+          "label": "Problem",
+          "value": "Intensive usage costs reaching around $100, alongside subscription limits that interrupted work"
+        },
+        {
+          "label": "My responsibility",
+          "value": "Model evaluation, task allocation, environment setup, configuration, agent-tool integration and compatibility fixes"
+        },
+        {
+          "label": "Delivery",
+          "value": "A shared model environment operating at less than US${{metric:ai.cost.value}} during the working day"
+        }
+      ],
+      "ar": [
+        {
+          "label": "السياق",
+          "value": "تطوير التشغيل داخل Tahliq Digital Agency"
+        },
+        {
+          "label": "المستفيدون",
+          "value": "فريق من 4 أشخاص يستخدم AI في التسويق والبرمجة وتنفيذ الأعمال"
+        },
+        {
+          "label": "المشكلة",
+          "value": "تكلفة استخدام مكثف تصل إلى قرابة 100 دولار، وحدود اشتراكات تعطل استمرارية العمل"
+        },
+        {
+          "label": "مسؤوليتي",
+          "value": "تقييم النماذج، وتوزيع المهام، وبناء البيئة وضبطها، وربطها بأدوات الوكلاء، ومعالجة التوافق"
+        },
+        {
+          "label": "المخرج",
+          "value": "بيئة مشتركة بتكلفة تشغيل أقل من {{metric:ai.cost.value}} دولارات خلال يوم العمل"
+        }
+      ]
+    },
+    "metricIds": [
+      "ai.users",
+      "ai.cost"
+    ],
+    "evidenceIds": [
+      "ai-localai-11608",
+      "ai-localai-11700"
+    ],
+    "relatedIds": [
+      "youssef-el-sherif"
+    ],
+    "og": {
+      "en": "/social/social-private-ai-infrastructure-en.png",
+      "ar": "/social/social-private-ai-infrastructure-ar.png"
+    },
+    "coverEvidenceId": "ai-localai-11608"
+  },
+  {
+    "id": "youssef-el-sherif",
+    "name": {
+      "en": "Youssef El Sherif",
+      "ar": "يوسف الشريف"
+    },
+    "discipline": {
+      "en": "Content & team leadership",
+      "ar": "المحتوى وقيادة الفريق"
+    },
+    "headline": {
+      "en": "A content strategy carried into delivery by a {{metric:youssef.team.value}}-person team.",
+      "ar": "يوسف الشريف: تنسيق المحتوى والتوزيع خلف حضور رقمي أقوى."
+    },
+    "summary": {
+      "en": "At Digital Brandria, I led the digital presence project for media presenter Youssef El Sherif, coordinating {{metric:youssef.team.value}} people across content and distribution. Average YouTube video views reached {{metric:youssef.growth}} their previous level within the first six weeks of the project.",
+      "ar": "ضمن عملي في Digital Brandria، توليت استراتيجية وتنفيذ مشروع الحضور الرقمي للإعلامي يوسف الشريف، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص. خلال أول ستة أسابيع من العمل، وصل متوسط مشاهدات فيديوهاته على YouTube إلى {{metric:youssef.growth}} المستوى السابق."
+    },
+    "published": true,
+    "featured": false,
+    "order": 4,
+    "period": {
+      "en": "The first 6 weeks of the project",
+      "ar": "أول 6 أسابيع من العمل على المشروع"
+    },
+    "market": {
+      "en": "Delivered through Digital Brandria",
+      "ar": "مشروع أُدير عبر Digital Brandria"
+    },
+    "responsibility": {
+      "en": "Strategy, advisory work, task allocation, team coordination and performance review",
+      "ar": "الاستراتيجية، والاستشارات، وتوزيع المهام، ومتابعة الفريق والتنفيذ والأداء"
+    },
+    "delivery": {
+      "en": "YouTube, Meta, X and newly established social accounts",
+      "ar": "YouTube وMeta وX ومنصات الحضور الجديدة"
+    },
+    "facts": {
+      "en": [
+        {
+          "label": "Project owner",
+          "value": "Youssef El Sherif, a presenter at Sky News Arabia"
+        },
+        {
+          "label": "Engagement",
+          "value": "Delivered through Digital Brandria"
+        },
+        {
+          "label": "My responsibility",
+          "value": "Strategy, advisory work, task allocation, team coordination and performance review"
+        },
+        {
+          "label": "Project team",
+          "value": "5 people under my direction"
+        },
+        {
+          "label": "Platforms",
+          "value": "YouTube, Meta, X and newly established social accounts"
+        },
+        {
+          "label": "Outcome window",
+          "value": "The first 6 weeks of the project"
+        }
+      ],
+      "ar": [
+        {
+          "label": "صاحب المشروع",
+          "value": "يوسف الشريف، إعلامي في Sky News Arabia"
+        },
+        {
+          "label": "سياق العمل",
+          "value": "مشروع أُدير عبر Digital Brandria"
+        },
+        {
+          "label": "دوري",
+          "value": "الاستراتيجية، والاستشارات، وتوزيع المهام، ومتابعة الفريق والتنفيذ والأداء"
+        },
+        {
+          "label": "الفريق",
+          "value": "5 أشخاص تحت قيادتي في المشروع"
+        },
+        {
+          "label": "المنصات",
+          "value": "YouTube وMeta وX ومنصات الحضور الجديدة"
+        },
+        {
+          "label": "فترة النتيجة",
+          "value": "أول 6 أسابيع من العمل على المشروع"
+        }
+      ]
+    },
+    "metricIds": [
+      "youssef.team",
+      "youssef.growth"
+    ],
+    "evidenceIds": [],
+    "relatedIds": [
+      "zone10"
+    ],
+    "og": {
+      "en": "/social/social-en.png",
+      "ar": "/social/social-ar.png"
+    }
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "name": {
+    "en": "Abdullah Mansour",
+    "ar": "عبد الله منصور"
+  },
+  "professionalTitle": {
+    "en": "Digital Marketing & Growth Specialist",
+    "ar": "متخصص في التسويق الرقمي والنمو"
+  },
+  "summary": {
+    "en": "I connect paid search, content, SEO, landing pages and measurement, taking responsibility from the first commercial question through delivery and improvement.",
+    "ar": "أربط البحث المدفوع والمحتوى وSEO وصفحات الهبوط والقياس، وأتولى المسؤولية من السؤال التجاري الأول إلى التنفيذ والتحسين."
+  },
+  "alternateNames": [
+    "Abdullah Mansour",
+    "Abdallah Mansour",
+    "عبد الله منصور",
+    "عبدالله منصور",
+    "AIMansour"
+  ],
+  "url": "https://aimansour.com",
+  "location": {
+    "city": {
+      "en": "Cairo",
+      "ar": "القاهرة"
+    },
+    "country": {
+      "en": "Egypt",
+      "ar": "مصر"
+    },
+    "countryCode": "EG",
+    "timezone": "Africa/Cairo"
+  },
+  "contact": {
+    "email": "abdullahmansour.marketing@gmail.com",
+    "responseTime": {
+      "en": "I’ll reply within hours.",
+      "ar": "سأرد عليك خلال ساعات."
+    }
+  },
+  "profiles": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/aimansour/",
+      "visible": true
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/aimansour",
+      "visible": true
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/aimansourai",
+      "visible": false
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/aimansour",
+      "visible": false
+    },
+    {
+      "name": "Bugcrowd",
+      "url": "https://bugcrowd.com/h/aimansour",
+      "visible": false
+    },
+    {
+      "name": "Apify",
+      "url": "https://apify.com/aimansour",
+      "visible": false
+    },
+    {
+      "name": "X",
+      "url": "https://x.com/aimansourai",
+      "visible": false
+    },
+    {
+      "name": "Reddit",
+      "url": "https://www.reddit.com/user/aimansour/",
+      "visible": false
+    }
+  ],
+  "resume": {
+    "url": "/files/abdullah-mansour-cv.pdf",
+    "language": "en",
+    "updatedAt": "2026-10-16"
+  },
+  "updatedAt": "2026-10-16"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "aimansour-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.14.0",
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "scripts": {
+    "dev": "tsx scripts/prepare-assets.ts && tsx scripts/publish-assets.ts --dev && astro dev --host 127.0.0.1",
+    "build": "tsx scripts/prepare-assets.ts && astro build && tsx scripts/finalize-build.ts",
+    "check": "tsx scripts/prepare-assets.ts && astro sync && astro check",
+    "types:worker": "wrangler types .generated/worker-configuration.d.ts",
+    "check:worker": "pnpm types:worker && tsc --project tsconfig.worker.json",
+    "check:site": "tsx scripts/check-site.ts",
+    "verify:pdf": "tsx scripts/verify-pdf.ts",
+    "check:privacy": "tsx scripts/check-privacy.ts",
+    "check:budgets": "tsx scripts/check-budgets.ts",
+    "test:browser": "playwright test",
+    "preview:worker": "wrangler dev --local --ip 127.0.0.1 --port 8787",
+    "test": "tsx --test tests/unit/*.test.ts",
+    "test:unit": "tsx --test tests/unit/*.test.ts"
+  },
+  "dependencies": {
+    "astro": "7.4.0",
+    "mdast-util-from-markdown": "2.1.0",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@axe-core/playwright": "4.14.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/ibm-plex-sans": "5.3.0",
+    "@fontsource/ibm-plex-sans-arabic": "5.3.0",
+    "@playwright/test": "1.64.1",
+    "@types/mdast": "4.0.4",
+    "@types/node": "^24.19.2",
+    "lighthouse": "13.5.0",
+    "parse5": "8.0.1",
+    "pdfjs-dist": "6.4.299",
+    "sharp": "0.35.5",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "wrangler": "4.151.1"
+  }
+}

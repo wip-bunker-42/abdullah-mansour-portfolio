@@ -1,0 +1,14 @@
+import { copyFile, writeFile, mkdir, rm, readdir } from 'node:fs/promises';
+import { resolve, join } from 'node:path';
+import { loadSiteContent } from '../src/content/read.ts';
+import { publishAssets } from './publish-assets.ts';
+import { publishExports } from './build-exports.ts';
+import { writeHeaders } from './write-headers.ts';
+import { buildContactShells } from './build-contact-shells.ts';
+const root=resolve('dist');
+await copyFile(join(root,'ar/404/index.html'),join(root,'ar/404.html'));
+const nested404=resolve(root,'ar/404');if(nested404.startsWith(root))await rm(nested404,{recursive:true,force:true});
+const content=await loadSiteContent();await publishAssets(content,root);await publishExports(content,root);await writeHeaders(root);
+const publicSocial=new Set(['/social/social-en.png','/social/social-ar.png',...content.projects.filter(p=>p.published).flatMap(p=>Object.values(p.og))]);
+for(const name of await readdir(join(root,'social')))if(!publicSocial.has(`/social/${name}`))await rm(join(root,'social',name));
+await mkdir('.generated',{recursive:true});await writeFile('.generated/contact-shells.json',JSON.stringify(await buildContactShells(root))+'\n');

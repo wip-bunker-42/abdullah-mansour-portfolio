@@ -1,0 +1,35 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import HomePage from '../views/HomePage.astro';
+import WorkPage from '../views/WorkPage.astro';
+import CasePage from '../views/CasePage.astro';
+import AboutPage from '../views/AboutPage.astro';
+import ResumePage from '../views/ResumePage.astro';
+import InformationPage from '../views/InformationPage.astro';
+import ErrorPage from '../views/ErrorPage.astro';
+import ThanksPage from '../views/ThanksPage.astro';
+import ContactPage from '../views/ContactPage.astro';
+import { loadSiteContent } from '../content/read.ts';
+import { getDocument } from '../content/documents.ts';
+import { getPublishedRoutes, getRoute } from '../i18n/routes.ts';
+import { t } from '../i18n/messages.ts';
+import type { Route } from '../content/contracts.ts';
+export async function getStaticPaths() {
+  const content = await loadSiteContent();
+  const utilities = (['en','ar'] as const).flatMap(locale => [getRoute('error',locale), getRoute('contact-thanks',locale)]);
+  return [...getPublishedRoutes(content), ...utilities].map(route => {
+    return { params: { path: route.path === '/' ? undefined : route.path.slice(1,-1) }, props: { route } };
+  });
+}
+interface Props { route: Route }
+const { route } = Astro.props;
+const content = await loadSiteContent();
+const document = route.indexable ? await getDocument(route.key as import('../content/contracts.ts').ContentKey, route.locale) : null;
+const project = content.projects.find(p => `case:${p.id}` === route.key);
+const utility = route.key === 'contact-thanks' ? t(route.locale).utility.thanks : t(route.locale).utility.error;
+---
+<SiteLayout route={route} title={document?.title ?? utility.title} description={document?.description ?? utility.description}>
+  {document && (route.key === 'home' ? <HomePage content={content} document={document} locale={route.locale}/> : route.key === 'work' ? <WorkPage content={content} document={document} locale={route.locale}/> : route.key === 'about' ? <AboutPage content={content} document={document} locale={route.locale}/> : route.key === 'resume' ? <ResumePage content={content} document={document} locale={route.locale}/> : route.key === 'contact' ? <ContactPage content={content} document={document} locale={route.locale}/> : project ? <CasePage content={content} document={document} locale={route.locale} project={project}/> : <InformationPage content={content} document={document} locale={route.locale}/>)}
+  {route.key === 'error' && <ErrorPage locale={route.locale} kind="unexpected"/>}
+  {route.key === 'contact-thanks' && <ThanksPage content={content} locale={route.locale}/>}
+</SiteLayout>

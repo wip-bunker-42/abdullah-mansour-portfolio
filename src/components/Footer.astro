@@ -1,0 +1,20 @@
+---
+import type { Locale } from '../content/contracts.ts';
+import { t } from '../i18n/messages.ts';
+import { getRoute } from '../i18n/routes.ts';
+import profile from '../data/profile.json';
+interface Props { locale: Locale }
+const { locale } = Astro.props; const m = t(locale);
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-identity"><span class="hero-name">{profile.name[locale]}</span><p>{m.footerLine}</p><a class="text-link" href={`mailto:${profile.contact.email}`}><bdi>{profile.contact.email}</bdi></a></div>
+      <div class="footer-links">
+        <div><a href={getRoute('work', locale).path}>{m.nav.work}</a><a href={getRoute('about', locale).path}>{m.nav.about}</a><a href={getRoute('resume', locale).path}>{m.nav.resume}</a><a href={getRoute('contact', locale).path}>{m.nav.contact}</a></div>
+        <div>{profile.profiles.filter(p => p.visible).map(p => <a href={p.url}>{p.name}</a>)}<a href={getRoute('privacy', locale).path}>{m.privacy}</a><a href={getRoute('accessibility', locale).path}>{m.accessibility}</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© {new Date().getFullYear()} {profile.name[locale]}. {m.rights}</p><span>{m.location}</span></div>
+  </div>
+</footer>

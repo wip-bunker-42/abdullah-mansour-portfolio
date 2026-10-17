@@ -1,0 +1,10 @@
+---
+import type { SiteContent, Locale } from '../content/contracts.ts';
+import { getRoute } from '../i18n/routes.ts';
+import { t } from '../i18n/messages.ts';
+import Icon from '../components/Icon.astro';
+import '../styles/documents.css';
+interface Props { content: SiteContent; locale: Locale }
+const { content, locale } = Astro.props; const m = t(locale);
+---
+<div class="container recovery-page"><span class="thanks-mark" aria-hidden="true"><Icon name="check" size={32}/></span><h1>{m.utility.thanks.title}</h1><p>{content.profile.contact.responseTime[locale]}</p><p class="muted">{m.utility.thanks.description}</p><div class="actions"><a class="button button--primary" href={getRoute('work',locale).path}>{m.work}</a><a class="button" href={getRoute('contact',locale).path}>{m.nav.contact}</a></div></div>

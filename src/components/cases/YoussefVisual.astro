@@ -1,0 +1,12 @@
+---
+import type { SiteContent, Locale } from '../../content/contracts.ts';
+interface Props { content: SiteContent; locale: Locale }
+const {content,locale}=Astro.props;
+const teamSize=Number(content.metrics['youssef.team']!.value);
+const steps=locale==='ar'?['الاستراتيجية','الإنتاج','التوزيع','مراجعة الأداء']:['Strategy','Production','Distribution','Performance review'];
+---
+<section class="case-visual team-visual" aria-label={locale === 'ar' ? 'فريق واحد ومسار عمل مترابط' : 'One team and a connected delivery process'}>
+  <div class="team-context"><p>{locale==='ar'?'قيادة مشروع عبر Digital Brandria':'A project led through Digital Brandria'}</p><div class="team-people" aria-hidden="true">{Array.from({length:Math.max(0,Math.min(12,teamSize))},()=> <svg width="46" height="55" viewBox="0 0 46 55" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="23" cy="15" r="9"/><path d="M7 48v-6a16 16 0 0 1 32 0v6Z"/></svg>)}</div><h2>{locale==='ar'?`${content.metrics['youssef.team']!.display[locale]} أشخاص، وتنفيذ أحمله مع الفريق.`:`${content.metrics['youssef.team']!.display[locale]} people. A delivery process I carried with the team.`}</h2></div>
+  <div class="team-outcome"><bdi class="mono">{content.metrics['youssef.growth']!.display[locale]}</bdi><p>{locale==='ar'?'متوسط مشاهدات الفيديو على YouTube خلال أول ستة أسابيع من المشروع.':'Average YouTube video views within the project’s first six weeks.'}</p></div>
+  <ol class="team-process">{steps.map(step=><li>{step}</li>)}</ol>
+</section>

@@ -1,0 +1,30 @@
+---
+import type { PageId, Route } from '../content/contracts.ts';
+import { getRoute } from '../i18n/routes.ts';
+import { t } from '../i18n/messages.ts';
+import ThemeControl from './ThemeControl.astro';
+import LanguageLink from './LanguageLink.astro';
+import Icon from './Icon.astro';
+interface Props { route: Route }
+const { route } = Astro.props;
+const m = t(route.locale);
+const links = Object.entries(m.nav) as [PageId, string][];
+---
+<header class="site-header">
+  <div class="container header-inner">
+    <a href={getRoute('home', route.locale).path} class="wordmark" aria-label={route.locale === 'ar' ? 'عبد الله منصور — الرئيسية' : 'Abdullah Mansour — Home'}>
+      <img class="wordmark-dark" src="/brand/wordmark.svg" width="259" height="62" alt="AIMansour."/>
+      <img class="wordmark-light" src="/brand/wordmark-light.svg" width="259" height="62" alt="AIMansour."/>
+    </a>
+    <nav class="desktop-nav" aria-label={m.navigation}>
+      {links.map(([key, label]) => <a href={getRoute(key, route.locale).path} aria-current={route.key === key || key === 'work' && route.key.startsWith('case:') ? 'page' : undefined}>{label}</a>)}
+    </nav>
+    <div class="header-actions"><LanguageLink route={route}/><ThemeControl locale={route.locale}/></div>
+    <details class="mobile-menu" data-mobile-menu>
+      <summary>{m.menu}<Icon name="menu" size={18}/></summary>
+      <nav class="mobile-nav" aria-label={m.navigation}>
+        {links.map(([key, label]) => <a href={getRoute(key, route.locale).path} aria-current={route.key === key ? 'page' : undefined}>{label}</a>)}
+      </nav>
+    </details>
+  </div>
+</header>
