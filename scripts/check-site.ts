@@ -13,7 +13,7 @@ function elements(node:DefaultTreeAdapterMap['node']):Element[] {return [('tagNa
 const attr=(node:Element,key:string)=>node.attrs.find(a=>a.name===key)?.value;
 const expect=(condition:unknown,message:string)=>{if(!condition)throw Error(message);};
 export async function checkSite(distDir:string,{allowMissingCv=false}:{allowMissingCv?:boolean}={}):Promise<void> {
-  const root=resolve(distDir);const content=await loadSiteContent();const routes=getPublishedRoutes(content);const files=await walkFiles(root);const titleSet=new Set<string>();const descriptionSet=new Set<string>();
+  const root=resolve(distDir);const content=await loadSiteContent();const routes=getPublishedRoutes(content);const files=await walkFiles(root);const titleSet=new Set<string>();const descriptionSet=new Set<string>();const inlineStyles=new Set<string>();
   const headers=await readFile(join(root,'_headers'),'utf8');expect(!headers.includes('unsafe-eval')&&!headers.includes('unsafe-inline'),'CSP contains unsafe script/style authorization');
   const robots=await readFile(join(root,'robots.txt'),'utf8');expect(robots.includes('User-agent: *\nAllow: /'),'Robots does not allow all crawlers');expect(!/^Disallow:\s*\//m.test(robots),'Robots includes a crawl block');
   const sitemap=await readFile(join(root,'sitemap.xml'),'utf8');
@@ -34,6 +34,7 @@ export async function checkSite(distDir:string,{allowMissingCv=false}:{allowMiss
     const graph=JSON.parse(ld!.childNodes.map(n=>'value'in n?n.value:'').join(''))['@graph'] as Array<Record<string,unknown>>;
     expect(graph.some(n=>n['@type']==='Person'&&n['@id']==='https://aimansour.com/#person'),`${route.path}: unstable person identity`);
     for(const script of find('script').filter(n=>!attr(n,'src'))) {const source=script.childNodes.map(n=>'value'in n?n.value:'').join('');expect(headers.includes(createHash('sha256').update(source).digest('base64')),`${route.path}: inline script missing CSP hash`);}
+    for(const style of find('style')) {const source=style.childNodes.map(n=>'value'in n?n.value:'').join('');inlineStyles.add(source);expect(headers.includes(createHash('sha256').update(source).digest('base64')),`${route.path}: inline stylesheet missing CSP hash`);}
     const forbidden=content.profile.profiles.filter(p=>!p.visible).map(p=>p.url);
     for(const link of find('a')) {const href=attr(link,'href')??'';expect(!forbidden.includes(href),`${route.path}: hidden profile action is visible`);expect(!/^(tel:|https?:\/\/(wa\.me|api\.whatsapp\.com))/.test(href),`${route.path}: disallowed contact action`);}
     const urls=[...find('a').map(n=>attr(n,'href')),...find('img').map(n=>attr(n,'src')),...find('script').map(n=>attr(n,'src')),...find('link').filter(n=>['stylesheet','icon','preload'].includes(attr(n,'rel')??'')).map(n=>attr(n,'href')),...find('meta').filter(n=>attr(n,'property')==='og:image').map(n=>attr(n,'content'))].filter((url):url is string=>Boolean(url));
@@ -55,6 +56,7 @@ export async function checkSite(distDir:string,{allowMissingCv=false}:{allowMiss
   if(!allowMissingCv)await access(join(root,content.profile.resume.url));
   const css=files.filter(p=>p.endsWith('.css'));const js=files.filter(p=>p.endsWith('.js'));let cssBytes=0,jsBytes=0;
   for(const path of css)cssBytes+=gzipSync(await readFile(path)).length;for(const path of js)jsBytes+=gzipSync(await readFile(path)).length;
+  for(const source of inlineStyles)cssBytes+=gzipSync(source).length;
   expect(cssBytes<=30*1024,`Own CSS budget exceeded: ${cssBytes} gzip bytes`);expect(jsBytes<=20*1024,`Own JS budget exceeded: ${jsBytes} gzip bytes`);
   console.log(`Artifact contracts pass: ${routes.length} primary pages; CSS ${cssBytes} / JS ${jsBytes} gzip bytes${allowMissingCv?' (CV existence deferred until authoring)':''}.`);
 }

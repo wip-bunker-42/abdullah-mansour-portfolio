@@ -5,7 +5,7 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   devToolbar: { enabled: false },
-  build: { inlineStylesheets: 'never' },
+  build: { inlineStylesheets: 'always' },
   vite: {
     build: { sourcemap: false },
     server: { watch: { ignored: ['**/.local/**', '**/.superpowers/**', '**/test-results/**', '**/playwright-report/**'] } },

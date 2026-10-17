@@ -23,7 +23,7 @@
 .hero .actions{margin-block-start:2rem}
 .portrait{inline-size:100%;max-inline-size:440px;justify-self:end}
 .portrait-image{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;aspect-ratio:.78;display:flex;align-items:end}
-.portrait-image img{inline-size:100%;block-size:100%;object-fit:cover;object-position:center bottom}
+.portrait-image picture{display:block;inline-size:100%;block-size:100%}.portrait-image picture img{object-position:center top}.portrait-image img{inline-size:100%;block-size:100%;object-fit:cover;object-position:center bottom}
 .portrait figcaption{display:flex;justify-content:space-between;gap:1rem;font-size:.8rem;color:var(--secondary);margin-block-start:1rem}
 .results{border-block:1px solid var(--border);padding-block:2.2rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem}
 .result{display:flex;flex-direction:column}.result dt{font-size:.92rem;color:var(--secondary);max-inline-size:21ch;margin-block-start:.65rem}.result dd{order:-1;font-size:clamp(2rem,3vw,2.7rem);line-height:1.15;margin:0}

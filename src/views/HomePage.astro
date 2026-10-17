@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import type { SiteContent, RenderedDocument, Locale } from '../content/contracts.ts';
 import portrait from '../assets/portrait/abdullah-mansour-transparent.png';
 import { getRoute } from '../i18n/routes.ts';
@@ -24,7 +24,7 @@ const approach = section('approach'); const ai = section('ai'); const experience
       <div class="actions"><a href={getRoute('work', locale).path} class="button button--primary">{m.work}</a><CvLink locale={locale}/></div>
     </div>
     <figure class="portrait">
-      <div class="portrait-image"><Image src={portrait} alt={content.profile.name[locale]} widths={[360, 520, 740, 880]} sizes="(max-width:760px) 90vw, 440px" width={880} format="webp" quality={85} loading="eager" fetchpriority="high"/></div>
+      <div class="portrait-image"><Picture src={portrait} alt={content.profile.name[locale]} widths={[360, 520, 740, 880]} sizes="(max-width:760px) 90vw, 440px" width={880} formats={['avif']} fallbackFormat="webp" quality={65} loading="eager"/></div>
       <figcaption><span>{m.location}</span><span>{locale === 'ar' ? 'بحث. تنفيذ. تحسين.' : 'Research. Delivery. Improvement.'}</span></figcaption>
     </figure>
   </section>

@@ -18,3 +18,11 @@ test('page budgets include imported enhancement chunks',async()=>{
     await assert.rejects(checkBudgets(root),/JavaScript.*exceeds budget/);
   } finally {if(basename(root).startsWith('aimansour-budget-'))await rm(root,{recursive:true,force:true});}
 });
+
+test('page budgets include critical CSS embedded in the document',async()=>{
+  const root=await mkdtemp(join(tmpdir(),'aimansour-budget-'));
+  try {
+    for(const route of getPublishedRoutes(await loadSiteContent())){const dir=join(root,route.path);await mkdir(dir,{recursive:true});await writeFile(join(dir,'index.html'),`<style>body{--oversized:"${randomBytes(40000).toString('base64')}"}</style>`);}
+    await assert.rejects(checkBudgets(root),/CSS.*exceeds budget/);
+  } finally {if(basename(root).startsWith('aimansour-budget-'))await rm(root,{recursive:true,force:true});}
+});
