@@ -6,7 +6,7 @@ The dedicated Worker is `aimansour-portfolio`, serving the canonical HTTPS apex 
 
 `CONTACT_EMAIL` is restricted to the owner's verified Gmail destination. The sender is fixed under `aimansour.com`; the visitor is Reply-To. Sending to a verified destination is free with Email Routing; arbitrary visitor auto-replies are outside this setup. `CONTACT_RATE_LIMITER` allows three accepted attempts per IP per 60 seconds at a Cloudflare location. There is no message database or logging of form fields.
 
-The existing Cloudflare Web Analytics beacon is included once. The beacon token is public configuration. Its account record is reused. Crawler Hints, enabled by the owner, is the only automatic IndexNow mechanism; its cache-miss signals are not a per-commit webhook. Keep robots permissive, useful sitemap updates and correct 301/404 behavior.
+The existing Cloudflare Web Analytics configuration injects the beacon at the edge. Do not add a manual snippet to the source layout: it would load the same script again for browsers. Local artifacts contain zero beacons; production HTML requested as a browser contains exactly one versioned edge snippet. The live gate sends `Accept: text/html` and counts both base/versioned URLs, and browser acceptance checks real ingestion. The existing account record is reused. Crawler Hints, enabled by the owner, is the only automatic IndexNow mechanism; its cache-miss signals are not a per-commit webhook. Keep robots permissive, useful sitemap updates and correct 301/404 behavior.
 
 ## Credentials and deployment
 

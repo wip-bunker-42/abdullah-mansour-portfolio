@@ -8,6 +8,7 @@ import { loadSiteContent } from '../src/content/read.ts';
 import { getPublishedRoutes, getRoute } from '../src/i18n/routes.ts';
 import { PublicProfileSchema } from '../src/lib/public-profile.ts';
 import { walkFiles } from './files.ts';
+import { verifyAnalyticsInstallation } from './analytics.ts';
 type Element=DefaultTreeAdapterMap['element'];
 function elements(node:DefaultTreeAdapterMap['node']):Element[] {return [('tagName'in node?[node]:[]),...('childNodes'in node?node.childNodes.map(elements):[])].flat();}
 const attr=(node:Element,key:string)=>node.attrs.find(a=>a.name===key)?.value;
@@ -29,7 +30,7 @@ export async function checkSite(distDir:string,{allowMissingCv=false}:{allowMiss
     expect(title&&!titleSet.has(title),`${route.path}: missing/duplicate title`);titleSet.add(title!);const desc=description&&attr(description,'content');expect(desc&&!descriptionSet.has(desc),`${route.path}: missing/duplicate description`);descriptionSet.add(desc!);
     expect(sitemap.includes(`<loc>${new URL(route.path,content.profile.url).href}</loc>`),`${route.path}: absent from sitemap`);
     expect(find('link').some(n=>attr(n,'type')==='text/markdown'&&attr(n,'href')===new URL(route.markdownPath!,content.profile.url).href),`${route.path}: missing Markdown alternate`);
-    expect(find('script').filter(n=>attr(n,'src')?.includes('static.cloudflareinsights.com')).length===1,`${route.path}: Analytics must occur once`);
+    verifyAnalyticsInstallation(html,'artifact');
     const ld=find('script').find(n=>attr(n,'type')==='application/ld+json');expect(ld,`${route.path}: missing JSON-LD`);
     const graph=JSON.parse(ld!.childNodes.map(n=>'value'in n?n.value:'').join(''))['@graph'] as Array<Record<string,unknown>>;
     expect(graph.some(n=>n['@type']==='Person'&&n['@id']==='https://aimansour.com/#person'),`${route.path}: unstable person identity`);
