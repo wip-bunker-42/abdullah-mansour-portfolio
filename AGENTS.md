@@ -12,4 +12,5 @@ This repository is the management interface for Abdullah Mansour's portfolio. Re
 - Use `pnpm build` before Worker checks on a clean checkout; `.generated/` is private build output. Local Wrangler (`pnpm preview:worker`) is the authority for headers, API and 404 behavior.
 - Never commit `env`, `.env*`, `.dev.vars*`, `التفاصيل/`, `.local/`, private shells, credentials or reports. Never print secrets or extracted CV text/contact details.
 - Cloudflare Crawler Hints is the single automatic IndexNow mechanism. Do not add a second sender, key, endpoint or notification workflow without a new justified decision.
+- Cloudflare injects the existing Analytics beacon at the edge. Keep manual snippets out of the layout. Verify one base/versioned snippet in browser HTML and real ingestion, not only a base-URL match. Static artifacts intentionally contain zero beacons.
 - Work on a branch and use a reviewable PR. Passing `main` publishes through the verified GitHub workflow. Keep changes to this site's apex/www; unrelated subdomains and email DNS are out of scope.

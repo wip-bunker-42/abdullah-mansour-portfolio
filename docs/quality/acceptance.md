@@ -68,6 +68,18 @@ Chrome DevTools MCP is unavailable in this session, so the official Lighthouse C
 - One clearly labelled launch contact message (`AIM-LAUNCH-20261017`) was accepted by the live endpoint with HTTP 200 after awaiting the native email service. No recurring mail check is configured. Provider acceptance is confirmed; the owner was asked to confirm inbox arrival.
 - The first production Home Lighthouse sample scored 91 performance (LCP 3.2 seconds), with 100 accessibility, SEO and Best Practices. Its trace showed blocking CSS requests and competing portrait delivery before the heading rendered. The follow-up embeds the small stylesheets under exact CSP hashes and serves the original portrait through responsive AVIF with a WebP fallback, allowing the browser to schedule it after critical text resources. Original photography is retained. The follow-up release measurement is recorded with its PR/deployment evidence, separately from the historical local baseline above.
 
+## Accepted implementation release
+
+PR #3 merged as `134289d2999e310af7355f91793e5d508cad2b0c`; its Quality and production deployment passed. Worker version `5f8eac62-873a-461f-8076-11d37d05a13d` serves the accepted implementation. Documentation-only follow-ups preserve this runtime behavior; the latest source revision/version remains visible in the deployment log.
+
+The existing Analytics record was reconciled to automatic installation after its legacy false flag left the first-party collector returning 404. Following propagation, a new HAR recorded two browser-generated `/cdn-cgi/rum` POSTs accepted with 204 over two page visits. The DOM contained one versioned script and no page errors. The same record/token is reused.
+
+Three predefined consecutive mobile Lighthouse samples on this implementation scored **95, 95, 95** for performance. Median LCP was **2.66 s**, median FCP **1.74 s**, median TBT **0 ms**, and median CLS **0.04**. Accessibility and SEO were **100** throughout. Best Practices was 96 while the collector configuration propagated; those failed requests are retained in the historical reports rather than discarded.
+
+The final acceptance sample, after successful ingestion, scored **96 performance / 100 accessibility / 100 Best Practices / 100 SEO**, with **1.7 s FCP, 2.6 s LCP, 0 ms TBT and 0 CLS**. Same Lighthouse 13.5 / Chrome 155 default mobile simulation settings as the baseline. Reports are retained in ignored `.local/lighthouse-release-{1,2,3}.json` and `.local/lighthouse-accepted-release.json`. These laboratory results do not establish real-user p75 CWV or field INP; the live Analytics record supplies that evidence once traffic exists.
+
+All 24 public page/interface checks pass with browser HTML headers and the strengthened Analytics count. The intentionally authored English PDF remains byte-identical with SHA-256 `416afa0f6da63ef6850fd64f7216ba322bfebc88a9a6e2374a39c1acdf969c3b`. No additional launch email was sent during the follow-ups.
+
 ## Owner acceptance
 
 - The short real screen-reader journey is carried into live acceptance with the owner. NVDA is already active in the desktop session; this harness has no native accessibility-control surface, and the owner's assistive session was not restarted or instrumented. Axe, semantic markup, language/direction, keyboard and reflow were verified independently.
