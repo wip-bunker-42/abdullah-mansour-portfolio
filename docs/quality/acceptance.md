@@ -32,14 +32,14 @@ An additional desktop capture checked the distinct Work-row composition. Existin
 
 ## Automated release checks
 
-- 25 unit tests cover content contracts, publication state, structured exports, data-only frontmatter, request validation/delivery boundaries, native form recovery, private shell generation and imported JavaScript budgets.
+- 29 unit tests cover content contracts, publication state, structured exports, data-only frontmatter, request validation/delivery boundaries, native form recovery, private shell generation, imported JavaScript and inline CSS budgets, exact separate script/style CSP hashes and bounded first-deployment DNS recovery.
 - 27 browser checks pass against local Wrangler. They cover the recruiting journey, theme/language persistence, no-JavaScript navigation and forms, evidence modal/Escape/focus restoration, concurrent-submit prevention, copy denial, errors, downloads, real HTTP semantics and hidden-work rebuilds. Controlled builds also run the actual Work/recruiting journeys with every case hidden and the unit gate with edited facts and an empty public selection.
 - Four representative axe audits (Home EN/dark, About AR/light, Zone10 EN/light and Contact AR/dark) report no WCAG A/AA violations. Keyboard, skip link, mobile menu, form error recovery and reduced-motion section navigation pass.
 - Representative templates reflow at 320, 768 and 1440 CSS pixels. Contact also passes 200% text resizing. The discovered header overflow was repaired with wrapping; the repaired composition was inspected in `.local/contact-text-zoom-repair.png`.
 - Success is announced through the form's live region; focus returns to the submitting control only when disabling that control displaced it. A deliberate move elsewhere is preserved. Failure focuses the error summary.
 - All 24 primary routes pass static contracts for one H1, self-canonical, reciprocal language links, stable Person identity, valid internal links/fragments/assets, one Analytics beacon, Markdown alternates and sitemap membership.
 - Both locale 404s return real HTTP 404. Known `/en/` aliases return 301; unknown aliases remain 404. JSON/Markdown GET and HEAD agree, CORS/MIME are correct and conditional requests return 304.
-- Per-page own-code budget: maximum 3,549 compressed JavaScript bytes and 8,136 initial CSS bytes, below 20/30 KiB. Imported enhancement chunks are included; the provider beacon is excluded.
+- Per-page own-code budget: maximum 3,549 compressed JavaScript bytes and 7,415 initial CSS bytes, below 20/30 KiB. Imported enhancement chunks and embedded styles are included; the provider beacon is excluded.
 
 ## Independent final review
 
@@ -60,7 +60,15 @@ The first Home measurement identified an oversized responsive portrait candidate
 
 Chrome DevTools MCP is unavailable in this session, so the official Lighthouse CLI provided the lab measurements. These are lab results, not real-user p75 Core Web Vitals. Field INP and p75 LCP/CLS require real traffic after launch.
 
-## Remaining live acceptance
+## Live publication — October 17, 2026
+
+- PR #1 passed the complete quality job on a clean GitHub Linux runner and merged as `641ad0cdd97046c96b3e59c8acbb22c26121031c`. The main quality job passed. The initial deployment created the dedicated Worker/custom domain; its immediate DNS read failed before propagation. The failed-job rerun completed successfully, including all live read checks. Launch version: `f9b69cf7-6360-419b-92b0-a92ee682cc11`.
+- The production read-only smoke script passed all 24 primary pages, localized Markdown, profile/schema/OpenAPI resources, GET/HEAD/304, MIME/CORS/cache/CSP, permissive crawlers, English aliases, real localized 404s, CV download headers and path/query-preserving HTTPS/www redirects.
+- A fresh production browser visit visually matched the approved Home composition and reported no page errors. Its HAR recorded two Analytics POSTs, both accepted with HTTP 204. The existing account record is enabled and reused; the HTML includes its beacon once.
+- One clearly labelled launch contact message (`AIM-LAUNCH-20261017`) was accepted by the live endpoint with HTTP 200 after awaiting the native email service. No recurring mail check is configured. Provider acceptance is confirmed; the owner was asked to confirm inbox arrival.
+- The first production Home Lighthouse sample scored 91 performance (LCP 3.2 seconds), with 100 accessibility, SEO and Best Practices. Its trace showed blocking CSS requests and competing portrait delivery before the heading rendered. The follow-up embeds the small stylesheets under exact CSP hashes and serves the original portrait through responsive AVIF with a WebP fallback, allowing the browser to schedule it after critical text resources. Original photography is retained. The follow-up release measurement is recorded with its PR/deployment evidence, separately from the historical local baseline above.
+
+## Owner acceptance
 
 - The short real screen-reader journey is carried into live acceptance with the owner. NVDA is already active in the desktop session; this harness has no native accessibility-control surface, and the owner's assistive session was not restarted or instrumented. Axe, semantic markup, language/direction, keyboard and reflow were verified independently.
-- Live domain, HTTPS/www redirects, beacon provider acceptance and one clearly labelled mail delivery are verified during deployment. Inbox arrival requires confirmation from the owner when no inbox connector is available.
+- Inbox arrival remains pending the owner's answer to the launch-message confirmation. No inbox connector is available in this session.

@@ -29,7 +29,7 @@ No scheduled job sends test mail. Launch verification sends one clearly labelled
 
 ## Headers and caching
 
-Generated `_headers` covers static responses. Exact inline-script hashes authorize theme initialization and JSON-LD; no unsafe inline/eval permissions are used. Worker form errors receive equivalent security/noindex/no-store headers. Hashed Astro assets are immutable. HTML, profile exports and the CV revalidate. JSON/Markdown have explicit MIME and public read CORS; GET and HEAD share ETags. The CV is served as an attachment with a useful filename.
+Generated `_headers` covers static responses. Exact hashes authorize theme initialization, JSON-LD and the critical styles embedded in HTML; no unsafe inline/eval permissions are used. Embedding the small stylesheets removes render-blocking CSS requests on a first visit. Both inline and external CSS count toward the compressed budget. Worker form errors receive equivalent security/noindex/no-store headers. Hashed Astro assets are immutable. HTML, profile exports and the CV revalidate. JSON/Markdown have explicit MIME and public read CORS; GET and HEAD share ETags. The CV is served as an attachment with a useful filename.
 
 Private contact shells and generated Worker/security types live under `.generated/`, outside `dist`. Never copy them into public assets. Do not add a service worker or User-Agent-dependent content variants.
 
@@ -42,3 +42,13 @@ Only apex HTTPS and `www` canonicalization are managed for this project. Preserv
 Before replacing a deployed Worker, record its current version using `pnpm exec wrangler versions list`. Roll back a bad release with `pnpm exec wrangler rollback <version-id>` and rerun the read-only smoke check. Then revert/fix the corresponding source revision through a PR so the next passing `main` does not restore the faulty version. Reverting a PDF uses the same path and revalidation; it does not require content generation.
 
 The first portfolio deployment has no prior portfolio Worker version. Subsequent release IDs and launch evidence are recorded in `docs/quality/acceptance.md`. Do not roll back or modify the unrelated services already using other subdomains.
+
+## Launch baseline — October 17, 2026
+
+PR #1 merged as `641ad0cdd97046c96b3e59c8acbb22c26121031c`. Its verified release is available at `https://aimansour.com`; the successful deployment rerun produced version `f9b69cf7-6360-419b-92b0-a92ee682cc11`. The first upload was `2b0e3ebb-3e34-468d-ba6e-ce1e84291017`. These record the launch baseline; use the current CI deployment log and `wrangler versions list` for later release IDs.
+
+The apex custom domain belongs to `aimansour-portfolio`. The proxied `www` CNAME points to the apex. Zone redirect ruleset `7eec0168d24f466788a422e9505490a9` contains the single scoped rule `783d50cf395e4bd19e2574598601d474` (`portfolio_https_apex`). Its condition is `(http.host eq "www.aimansour.com") or ((http.host eq "aimansour.com") and (not ssl))`; the target is `concat("https://aimansour.com", http.request.uri.path)`, status 301, preserving the query string. Existing mail records and other services were preserved.
+
+The initial post-deploy read happened before the brand-new apex record had reached the runner's DNS resolver. The failed-job rerun passed after propagation. The smoke entry point now waits only for transient `ENOTFOUND`/`EAI_AGAIN` results, up to 31 attempts spaced ten seconds apart. HTTP and certificate errors fail immediately; assertions are never retried or weakened. Tests cover successful recovery, exhaustion and permanent failures.
+
+`main` requires the `Quality checks` context and an up-to-date PR, blocks force pushes/deletion and requires resolved conversations. Approval count stays zero so an individual owner and their agents can maintain the site through passing PRs. Administrators retain their recovery capability. Native vulnerability alerts and automated security fixes are enabled; ordinary compatible updates remain grouped, reviewed PRs.

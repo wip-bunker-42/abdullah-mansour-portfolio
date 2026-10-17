@@ -19,6 +19,7 @@ export async function checkBudgets(distDir:string):Promise<void> {
     }
     for(const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g))if(!/\bsrc=|application\/ld\+json/.test(match[1]!))js+=gzipSync(match[2]!).length;
     for(const source of styles)css+=gzipSync(await readFile(join(distDir,source))).length;
+    for(const match of html.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/g))css+=gzipSync(match[1]!).length;
     if(js>20*1024||css>30*1024)throw Error(`${route.path}: own JavaScript ${js} / CSS ${css} gzip bytes exceeds budget.`);
     maxJs=Math.max(maxJs,js);maxCss=Math.max(maxCss,css);
   }
