@@ -21,9 +21,9 @@ I’m Abdullah Mansour, a Digital Marketing & Growth Specialist working across a
 
 I studied at Al-Azhar University’s Faculty of Islamic Da‘wah. I built my professional path into marketing through self-directed learning, using Coursera, Udemy and YouTube, earning credentials from Google, Meta and Almentor, and applying that learning in real projects. [View my credentials](/resume/#selected-credentials).
 
-At Tahliq Digital Agency, that developed into responsibility for more than twenty clients: campaigns, landing pages, websites, SEO foundations and tracking. My work also included reviewing team output, contributing to strategy and proposals, joining sales meetings and advising clients.
+At Tahliq Digital Agency, that developed into responsibility for more than {{metric:experience.clients.value}} clients: campaigns, landing pages, websites, SEO foundations and tracking. My work also included reviewing team output, contributing to strategy and proposals, joining sales meetings and advising clients.
 
-At Digital Brandria, I worked directly with the CEO on market and competitor research, strategies, proposals and feasibility studies. I also led a five-person team on the digital presence project for media presenter Youssef El Sherif.
+At Digital Brandria, I worked directly with the CEO on market and competitor research, strategies, proposals and feasibility studies. I also led a {{metric:youssef.team.value}}-person team on the digital presence project for media presenter Youssef El Sherif.
 
 Alongside agency work, I have served clients directly and through Upwork and Mostaql, across the Gulf and international markets. Each context has required a different judgment about the audience, the constraints and what deserves attention first.
 
@@ -37,7 +37,7 @@ The name reflects that additional capacity within my marketing practice. I asses
 
 For Zone10, the opportunity was people already searching for interiors services in Riyadh. I connected the keywords and ads to dedicated landing pages, call and WhatsApp actions, and measurement. I could then work on the part of that journey the performance pointed to.
 
-For Sorouh, seventeen services across ten cities offered 170 possible page combinations. I selected sixteen service-and-city pages with a reason to exist: relevant demand, a distinct intent and useful content.
+For Sorouh, seventeen services across ten cities offered {{metric:sorouh.possibilities.value}} possible page combinations. I selected {{metric:sorouh.local.value}} service-and-city pages with a reason to exist: relevant demand, a distinct intent and useful content.
 
 For Elkhabar Bewodooh, I tried asking viewers to follow immediately after a video’s opening. Retention showed that the interruption was losing people. I moved the request later, after the explanation had delivered value.
 
@@ -47,9 +47,9 @@ These are the conversations I enjoy having about my work: the evidence behind a 
 
 I started Elkhabar Bewodooh after noticing a gap between the speed of news reporting and the availability of timely analysis.
 
-I handled the positioning, research, scripts, filming, publishing, community and performance analysis. The project passed three million views across platforms during roughly four months of active publishing, with the Facebook audience growing to around seventeen thousand followers.
+I handled the positioning, research, scripts, filming, publishing, community and performance analysis. The project passed {{metric:elkhabar.views.number}} views across platforms during roughly four months of active publishing, with the Facebook audience growing to around {{metric:elkhabar.followers.number}} followers.
 
-Running it alongside client work made the production process a practical concern. I used AI to build filming tools and automated distribution across six platforms, saving more than four hours on active publishing days and helping content reach the audience sooner.
+Running it alongside client work made the production process a practical concern. I used AI to build filming tools and automated distribution across {{metric:elkhabar.platforms.value}} platforms, saving more than {{metric:elkhabar.saved.value}} hours on active publishing days and helping content reach the audience sooner.
 
 [Explore the media project](/work/elkhabar-bewodooh/)
 
@@ -57,7 +57,7 @@ Running it alongside client work made the production process a practical concern
 
 At Tahliq, I designed and hosted AI agents, configured Codex and Claude Code, developed custom skills and connected tools through MCP. I trained the team to use that setup for research, execution and automation.
 
-When intensive usage became expensive, I built a shared environment for an open-source model serving four people. When compatibility problems got in the way, I traced them and used AI agents to develop fixes accepted into LocalAI itself.
+When intensive usage became expensive, I built a shared environment for an open-source model serving {{metric:ai.users.value}} people. When compatibility problems got in the way, I traced them and used AI agents to develop fixes accepted into LocalAI itself.
 
 Putting AI into the operation means deciding what to delegate, preparing the environment, connecting the tools, training the people using them and assessing the effect on time, cost and delivery.
 

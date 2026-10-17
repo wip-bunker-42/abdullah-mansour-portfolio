@@ -23,8 +23,8 @@ October 2025–May 2026 · Run alongside client engagements
 
 - Identified an opportunity for timely news analysis and built the content and audience acquisition strategy around it.
 - Owned research, scripts, filming, publishing, community management and performance analysis.
-- Generated more than three million views across roughly four months of active publishing, with the Facebook audience reaching around seventeen thousand followers.
-- Developed filming tools and automated publishing across six platforms, saving more than four hours on active publishing days.
+- Generated more than {{metric:elkhabar.views.number}} views across roughly four months of active publishing, with the Facebook audience reaching around {{metric:elkhabar.followers.number}} followers.
+- Developed filming tools and automated publishing across {{metric:elkhabar.platforms.value}} platforms, saving more than {{metric:elkhabar.saved.value}} hours on active publishing days.
 
 [Read the project case](/work/elkhabar-bewodooh/)
 

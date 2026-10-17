@@ -2,9 +2,9 @@
 key: "case:ai-operations"
 locale: "en"
 title: "AI Agents & Model Operations | Abdullah Mansour"
-description: "Model selection, hosting and agent integration for four people, with a shared environment below $8 per working day and merged LocalAI contributions."
+description: "Model selection, hosting and agent integration for {{metric:ai.users.value}} people, with a shared environment below US${{metric:ai.cost.value}} per working day and merged LocalAI contributions."
 heading: "Models, agents and integration: building a shared AI environment."
-lead: "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. Four people gained an execution path for suitable tasks, with the environment running below $8 during the working day and stronger models retained where needed."
+lead: "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. {{metric:ai.users.value}} people gained an execution path for suitable tasks, with the environment running below US${{metric:ai.cost.value}} during the working day and stronger models retained where needed."
 updatedAt: "2026-10-16"
 draft: false
 ---
@@ -49,7 +49,7 @@ I also tested documentation claims about combining image processing and faster g
 
 ## What changed for the team {#outcome}
 
-Four people gained a shared execution path for suitable tasks, with the hosted environment running at less than $8 during the working day. Stronger models remained in use for planning, supervision and harder tasks.
+{{metric:ai.users.value}} people gained a shared execution path for suitable tasks, with the hosted environment running at less than US${{metric:ai.cost.value}} during the working day. Stronger models remained in use for planning, supervision and harder tasks.
 
 The project brings together several levels of my AI expertise: model selection and hosting, agent integration, task direction, output review and following a problem into the original tool when the solution requires it.
 

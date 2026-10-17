@@ -32,14 +32,18 @@ An additional desktop capture checked the distinct Work-row composition. Existin
 
 ## Automated release checks
 
-- 20 unit tests cover content contracts, publication state, structured exports, request validation/delivery boundaries, native form recovery, private shell generation and imported JavaScript budgets.
-- 25 browser checks pass against local Wrangler. They cover the recruiting journey, theme/language persistence, no-JavaScript navigation and forms, evidence modal/Escape/focus restoration, concurrent-submit prevention, copy denial, errors, downloads, real HTTP semantics and hidden-work rebuilds.
+- 25 unit tests cover content contracts, publication state, structured exports, data-only frontmatter, request validation/delivery boundaries, native form recovery, private shell generation and imported JavaScript budgets.
+- 27 browser checks pass against local Wrangler. They cover the recruiting journey, theme/language persistence, no-JavaScript navigation and forms, evidence modal/Escape/focus restoration, concurrent-submit prevention, copy denial, errors, downloads, real HTTP semantics and hidden-work rebuilds. Controlled builds also run the actual Work/recruiting journeys with every case hidden and the unit gate with edited facts and an empty public selection.
 - Four representative axe audits (Home EN/dark, About AR/light, Zone10 EN/light and Contact AR/dark) report no WCAG A/AA violations. Keyboard, skip link, mobile menu, form error recovery and reduced-motion section navigation pass.
 - Representative templates reflow at 320, 768 and 1440 CSS pixels. Contact also passes 200% text resizing. The discovered header overflow was repaired with wrapping; the repaired composition was inspected in `.local/contact-text-zoom-repair.png`.
 - Success is announced through the form's live region; focus returns to the submitting control only when disabling that control displaced it. A deliberate move elsewhere is preserved. Failure focuses the error summary.
 - All 24 primary routes pass static contracts for one H1, self-canonical, reciprocal language links, stable Person identity, valid internal links/fragments/assets, one Analytics beacon, Markdown alternates and sitemap membership.
 - Both locale 404s return real HTTP 404. Known `/en/` aliases return 301; unknown aliases remain 404. JSON/Markdown GET and HEAD agree, CORS/MIME are correct and conditional requests return 304.
-- Per-page own-code budget: maximum 3,549 compressed JavaScript bytes and 8,134 initial CSS bytes, below 20/30 KiB. Imported enhancement chunks are included; the provider beacon is excluded.
+- Per-page own-code budget: maximum 3,549 compressed JavaScript bytes and 8,136 initial CSS bytes, below 20/30 KiB. Imported enhancement chunks are included; the provider beacon is excluded.
+
+## Independent final review
+
+One fresh whole-branch reviewer found five Important issues, resolved in one regression-driven pass: clean-checkout fixture setup, executable frontmatter, repeated mutable facts, links to withdrawn cases, and tests tied to the current publication counts. Tests first reproduced the failures, then passed. YAML is data-only; shared metrics feed prose, metadata and the team visual; hidden links become readable historical mentions. Real rebuilds verify both languages and Markdown and keep the independently authored PDF byte-identical. Original report amounts remain independent from unrelated shared operating costs.
 - Worker types/TypeScript and Astro diagnostics pass. Source/public privacy scan passes. No drafts, original private source, credentials, private form shells or source maps are shipped.
 
 ## Mobile lab performance

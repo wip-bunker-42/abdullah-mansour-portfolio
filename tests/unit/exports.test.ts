@@ -19,6 +19,7 @@ test('public exports share identity, locale routing and publication state', asyn
     assert.equal(profile.resume.language,'en');assert.equal(profile.resume.url,'https://aimansour.com/files/abdullah-mansour-cv.pdf');
     assert.ok(!('phone' in profile.contact));assert.equal(profile.id,'https://aimansour.com/#person');
     const changed=structuredClone(content);changed.metrics['zone10.contacts']!.display.en='351+';
+    changed.projects.find(p=>p.id==='zone10')!.published=true;
     assert.match(renderPublicMarkdown(changed,getRoute('case:zone10','en')),/351\+/);
     const hidden=structuredClone(content);hidden.projects.forEach(p=>{p.published=false; p.summary.en='DRAFT_ONLY_SENTINEL';});
     hidden.documents.filter(d=>d.key.startsWith('case:')).forEach(d=>{d.draft=true;d.markdown='DRAFT_ONLY_SENTINEL';});

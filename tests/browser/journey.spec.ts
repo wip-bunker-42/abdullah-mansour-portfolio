@@ -4,7 +4,8 @@ import {createHash} from 'node:crypto';
 
 test('recruiter journey and localized recovery lead to useful destinations', async ({ page }) => {
   await page.goto('/');
-  await page.locator('[data-selected-work] article').first().getByRole('link', { name: /inside the project/i }).click();
+  const selected=page.locator('[data-selected-work] article');
+  if(await selected.count())await selected.first().getByRole('link', { name: /inside the project/i }).click();
   await page.locator('.desktop-nav').getByRole('link', { name: 'Experience' }).click();
   await expect(page).toHaveURL('/resume/');
   await expect(page.locator('main').getByRole('link', { name: /download english cv/i })).toHaveAttribute('href', '/files/abdullah-mansour-cv.pdf');

@@ -78,7 +78,7 @@ The detail helped explain the response:
 
 *Keyword-level performance: the phrase-match term “التصميم الداخلي” recorded 9 conversions from 28 clicks.*
 
-That evidence supported developing more specific campaigns, messages and pages for different audience segments. The project expanded to four campaigns and four landing pages.
+That evidence supported developing more specific campaigns, messages and pages for different audience segments. The project expanded to {{metric:zone10.campaigns.value}} campaigns and {{metric:zone10.pages.value}} landing pages.
 
 ## Search terms kept the work connected to actual demand {#optimization}
 
@@ -90,7 +90,7 @@ Broad, phrase and exact match each had a place where appropriate. Their use foll
 
 Zone10 had a working Google Search acquisition channel, supported by dedicated messaging, pages and a measurement setup for further improvement.
 
-Across December 2025–April 2026, I managed more than US$4,000 in ad spend across four campaigns. More than {{metric:zone10.contacts.value}} people contacted the business through the project.
+Across December 2025–April 2026, I managed more than US${{metric:zone10.spend.number}} in ad spend across {{metric:zone10.campaigns.value}} campaigns. More than {{metric:zone10.contacts.value}} people contacted the business through the project.
 
 My responsibility covered the connected journey. When performance pointed to an issue, I could work on the keyword, ad, page or measurement, then follow the decision through the same acquisition setup.
 

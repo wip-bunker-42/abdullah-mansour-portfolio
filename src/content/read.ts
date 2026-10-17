@@ -1,6 +1,6 @@
 import { readFile, readdir, access } from 'node:fs/promises';
 import { resolve, join, relative } from 'node:path';
-import matter from 'gray-matter';
+import { parseDocument as parseYaml } from 'yaml';
 import { SiteContentSchema, DocumentMetaSchema, pageIds, locales, type SiteContent, type LocalizedDocument, type NarrativeSection } from './contracts.ts';
 import { resolveReferences } from './references.ts';
 
@@ -30,8 +30,12 @@ export function validateSiteContent(input: unknown): SiteContent {
   return content;
 }
 
-function parseDocument(source: string): LocalizedDocument {
-  const parsed = matter(source);
+export function parseDocument(source: string): LocalizedDocument {
+  const match = source.match(/^\uFEFF?---[ \t]*\r?\n([\s\S]*?)\r?\n---[ \t]*(?:\r?\n|$)([\s\S]*)$/);
+  if (!match) throw new Error('Documents require data-only YAML frontmatter delimited by ---');
+  const yaml = parseYaml(match[1]!, { schema: 'core', uniqueKeys: true });
+  if (yaml.errors.length || yaml.warnings.length) throw new Error('Invalid data-only YAML frontmatter');
+  const parsed = { data: yaml.toJS({ maxAliasCount: 0 }), content: match[2]! };
   const metadata = DocumentMetaSchema.parse(parsed.data);
   const sections: NarrativeSection[] = [];
   let current: NarrativeSection = { id: 'intro', heading: '', markdown: '' };

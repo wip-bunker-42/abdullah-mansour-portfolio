@@ -4,7 +4,7 @@ locale: "en"
 title: "Elkhabar Bewodooh: Content Growth | Abdullah Mansour"
 description: "A media venture reaching {{metric:elkhabar.views}} views across roughly four active publishing months, with content experiments and AI-assisted production tools."
 heading: "A media project built around the moment people wanted an explanation."
-lead: "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed three million views across roughly four months of active publishing."
+lead: "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed {{metric:elkhabar.views.number}} views across roughly four months of active publishing."
 updatedAt: "2026-10-16"
 draft: false
 ---
@@ -21,9 +21,9 @@ The topic and angle mattered. So did how quickly a considered explanation could 
 
 I chose a filming format that required less editing and developed an AI-assisted tool to control the phone from my computer, pause and resume recording, and transfer the footage.
 
-I then built a publishing tool for distribution across six platforms. Time saved in filming would have had less value if the upload and publishing process remained a bottleneck.
+I then built a publishing tool for distribution across {{metric:elkhabar.platforms.value}} platforms. Time saved in filming would have had less value if the upload and publishing process remained a bottleneck.
 
-On active publishing days, I averaged six videos. Publishing automation saved more than four hours of daily work, helping me run the project alongside client engagements.
+On active publishing days, I averaged six videos. Publishing automation saved more than {{metric:elkhabar.saved.value}} hours of daily work, helping me run the project alongside client engagements.
 
 AI also supported news collection, analysis, topic selection and writing. I remained responsible for editorial choices, the angle and what was published.
 
@@ -78,7 +78,7 @@ For **March 1–May 31, 2026**, Facebook recorded:
 
 *Facebook views for March 1–May 31, 2026. The non-follower share helps assess distribution beyond the existing audience.*
 
-The non-follower share helped assess whether the content was reaching new people. The Facebook audience eventually grew to around **17,000 followers**, and the page was accepted into Meta’s monetization program.
+The non-follower share helped assess whether the content was reaching new people. The Facebook audience eventually grew to around **{{metric:elkhabar.followers.number}} followers**, and the page was accepted into Meta’s monetization program.
 
 Other platforms showed audience response within their respective reporting windows:
 
@@ -93,7 +93,7 @@ Other platforms showed audience response within their respective reporting windo
 
 *A separate Shorts reporting window: 48.1K views, 30.2K engaged views and 277 new subscribers.*
 
-Across the project’s publishing activity, the combined total exceeded **three million views across platforms**.
+Across the project’s publishing activity, the combined total exceeded **{{metric:elkhabar.views.number}} views across platforms**.
 
 ## What this project demonstrates {#outcome}
 
@@ -103,6 +103,6 @@ It also made the relationship between content and operations tangible. A faster 
 
 ## From running the work myself to leading a team {#related}
 
-On Youssef El Sherif’s project, I applied content strategy through a five-person team, coordinating the content, accounts and distribution.
+On Youssef El Sherif’s project, I applied content strategy through a {{metric:youssef.team.value}}-person team, coordinating the content, accounts and distribution.
 
 [Read the team delivery case](/work/youssef-el-sherif/) · [Discuss your team’s needs](/contact/)

@@ -6,6 +6,7 @@ import { projectIds } from '../src/content/contracts.ts';
 import { getPublishedRoutes, getRoute } from '../src/i18n/routes.ts';
 import { buildPublicProfile, PublicProfileSchema } from '../src/lib/public-profile.ts';
 import { resolveReferences } from '../src/content/references.ts';
+import { publicationAwareMarkdown } from '../src/content/publication.ts';
 const origin='https://aimansour.com';
 const absolute=(path:string)=>new URL(path,origin).href;
 function absoluteMarkdown(markdown:string,canonical:string):string {return markdown.replace(/(!?\[[^\]]*\]\()([^\s)]+)([^)]*\))/g,(_all,prefix:string,url:string,suffix:string)=>`${prefix}${url.startsWith('/')||url.startsWith('#')?new URL(url,canonical).href:url}${suffix}`);}
@@ -20,7 +21,7 @@ export function renderPublicMarkdown(content:SiteContent,route:Route):string {
   if(project) body+=heading(ar?'المشروع في لمحة':'At a glance')+project.facts[locale].map(f=>`- **${f.label}:** ${f.value}`).join('\n')+heading(ar?'النتائج':'Results')+project.metricIds.map(id=>{const metric=content.metrics[id]!;return `- **${metric.display[locale]}:** ${metric.label[locale]}${metric.period?` (${metric.period[locale]})`:''}`;}).join('\n');
   if(route.key==='contact') body+=heading(ar?'التواصل':'Contact')+`${content.profile.contact.email}\n\n${content.profile.contact.responseTime[locale]}\n\n[LinkedIn](https://www.linkedin.com/in/aimansour/)\n`;
   if(['home','about','resume'].includes(route.key)) body+=`\n\n[${ar?'تنزيل السيرة بالإنجليزية — PDF':'Download English CV — PDF'}](${absolute(content.profile.resume.url)})\n`;
-  return `${ar?'> اللغة: العربية':'> Language: English'}\n> Canonical: ${absolute(route.path)}\n> Updated: ${doc.updatedAt}\n\n${absoluteMarkdown(resolveReferences(body,locale,content),absolute(route.path))}\n`;
+  return `${ar?'> اللغة: العربية':'> Language: English'}\n> Canonical: ${absolute(route.path)}\n> Updated: ${doc.updatedAt}\n\n${absoluteMarkdown(publicationAwareMarkdown(resolveReferences(body,locale,content),content),absolute(route.path))}\n`;
 }
 const xml=(text:string)=>text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 export async function publishExports(content:SiteContent,distDir:string):Promise<void> {

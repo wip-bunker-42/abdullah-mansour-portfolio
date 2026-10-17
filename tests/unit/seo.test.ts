@@ -18,5 +18,5 @@ test('all primary pages have reciprocal locale metadata and stable person identi
     assert.match(seo.og.image,/^https:\/\/aimansour.com\/social\/.+\.png$/);
     titles.add(seo.title);descriptions.add(seo.description);
   }
-  assert.equal(titles.size,24);assert.equal(descriptions.size,24);
+  assert.equal(titles.size,getPublishedRoutes(content).length);assert.equal(descriptions.size,getPublishedRoutes(content).length);
 });

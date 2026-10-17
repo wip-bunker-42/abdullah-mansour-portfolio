@@ -33,8 +33,8 @@
       "ar": "البحث، والاستراتيجية، والرسائل، وبناء الصفحات، وإعداد Google Ads والتتبع، والإدارة والتحسين"
     },
     "delivery": {
-      "en": "4 campaigns · 4 landing pages · More than US$4,000 in total ad spend",
-      "ar": "4 حملات Google Ads · 4 صفحات هبوط · أكثر من 4,000 دولار أمريكي إنفاق إعلاني إجمالي"
+      "en": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · More than US${{metric:zone10.spend.number}} in total ad spend",
+      "ar": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · أكثر من {{metric:zone10.spend.number}} دولار أمريكي إنفاق إعلاني إجمالي"
     },
     "facts": {
       "en": [
@@ -56,7 +56,7 @@
         },
         {
           "label": "Delivery",
-          "value": "4 campaigns · 4 landing pages · More than US$4,000 in total ad spend"
+          "value": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · More than US${{metric:zone10.spend.number}} in total ad spend"
         },
         {
           "label": "Metric",
@@ -98,7 +98,7 @@
         },
         {
           "label": "نطاق التنفيذ",
-          "value": "4 حملات Google Ads · 4 صفحات هبوط · أكثر من 4,000 دولار أمريكي إنفاق إعلاني إجمالي"
+          "value": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · أكثر من {{metric:zone10.spend.number}} دولار أمريكي إنفاق إعلاني إجمالي"
         },
         {
           "label": "المؤشر",
@@ -160,8 +160,8 @@
       "ar": "الخبر بوضوح: الوصول إلى الجمهور في الفجوة بين الخبر وتفسيره."
     },
     "summary": {
-      "en": "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed three million views across roughly four months of active publishing.",
-      "ar": "رصدت فرصة في سرعة تقديم التحليل، وبنيت حولها مشروعًا إعلاميًا من الصفر. توليت الاستراتيجية والمحتوى والتوزيع، واستخدمت AI في البحث وبناء أدوات التصوير والنشر. وصل المشروع إلى أكثر من ثلاثة ملايين مشاهدة خلال نحو أربعة أشهر من النشر الفعلي."
+      "en": "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed {{metric:elkhabar.views.number}} views across roughly four months of active publishing.",
+      "ar": "رصدت فرصة في سرعة تقديم التحليل، وبنيت حولها مشروعًا إعلاميًا من الصفر. توليت الاستراتيجية والمحتوى والتوزيع، واستخدمت AI في البحث وبناء أدوات التصوير والنشر. وصل المشروع إلى أكثر من {{metric:elkhabar.views.number}} مشاهدة خلال نحو أربعة أشهر من النشر الفعلي."
     },
     "published": true,
     "featured": true,
@@ -179,8 +179,8 @@
       "ar": "اكتشاف الفرصة، والاستراتيجية، والبحث، والكتابة، والتصوير، والتوزيع، والمجتمع، والتحليل، والأتمتة"
     },
     "delivery": {
-      "en": "Six platforms, adding Instagram, X and Threads",
-      "ar": "النشر عبر ست منصات، بإضافة Instagram وX وThreads"
+      "en": "{{metric:elkhabar.platforms.value}} platforms, adding Instagram, X and Threads",
+      "ar": "النشر عبر {{metric:elkhabar.platforms.value}} منصات، بإضافة Instagram وX وThreads"
     },
     "facts": {
       "en": [
@@ -202,7 +202,7 @@
         },
         {
           "label": "Distribution expansion",
-          "value": "Six platforms, adding Instagram, X and Threads"
+          "value": "{{metric:elkhabar.platforms.value}} platforms, adding Instagram, X and Threads"
         },
         {
           "label": "My responsibility",
@@ -264,7 +264,7 @@
         },
         {
           "label": "التوسع التشغيلي",
-          "value": "النشر عبر ست منصات، بإضافة Instagram وX وThreads"
+          "value": "النشر عبر {{metric:elkhabar.platforms.value}} منصات، بإضافة Instagram وX وThreads"
         },
         {
           "label": "مسؤوليتي",
@@ -450,8 +450,8 @@
       "ar": "بناء بيئة AI للفريق، من اختيار النموذج إلى تشغيل الوكلاء."
     },
     "summary": {
-      "en": "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. Four people gained an execution path for suitable tasks, with the environment running below $8 during the working day and stronger models retained where needed.",
-      "ar": "داخل تحليق، توليت تقييم النماذج وبناء بيئة تشغيل مشتركة وربطها بأدوات الوكلاء، ومعالجة مشكلات ظهرت في الاستخدام الفعلي. أصبح لفريق من أربعة أشخاص مسار لتنفيذ المهام المناسبة بأقل من 8 دولارات لتشغيل البيئة خلال يوم العمل، مع توزيع العمل بين نماذج مستضافة وأخرى أعلى قدرة."
+      "en": "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. {{metric:ai.users.value}} people gained an execution path for suitable tasks, with the environment running below US${{metric:ai.cost.value}} during the working day and stronger models retained where needed.",
+      "ar": "داخل تحليق، توليت تقييم النماذج وبناء بيئة تشغيل مشتركة وربطها بأدوات الوكلاء، ومعالجة مشكلات ظهرت في الاستخدام الفعلي. أصبح لفريق من {{metric:ai.users.value}} أشخاص مسار لتنفيذ المهام المناسبة بأقل من {{metric:ai.cost.value}} دولارات لتشغيل البيئة خلال يوم العمل، مع توزيع العمل بين نماذج مستضافة وأخرى أعلى قدرة."
     },
     "published": true,
     "featured": false,
@@ -469,8 +469,8 @@
       "ar": "تقييم النماذج، وتوزيع المهام، وبناء البيئة وضبطها، وربطها بأدوات الوكلاء، ومعالجة التوافق"
     },
     "delivery": {
-      "en": "A shared model environment operating at less than $8 during the working day",
-      "ar": "بيئة مشتركة بتكلفة تشغيل أقل من 8 دولارات خلال يوم العمل"
+      "en": "A shared model environment operating at less than US${{metric:ai.cost.value}} during the working day",
+      "ar": "بيئة مشتركة بتكلفة تشغيل أقل من {{metric:ai.cost.value}} دولارات خلال يوم العمل"
     },
     "facts": {
       "en": [
@@ -492,7 +492,7 @@
         },
         {
           "label": "Delivery",
-          "value": "A shared model environment operating at less than $8 during the working day"
+          "value": "A shared model environment operating at less than US${{metric:ai.cost.value}} during the working day"
         }
       ],
       "ar": [
@@ -514,7 +514,7 @@
         },
         {
           "label": "المخرج",
-          "value": "بيئة مشتركة بتكلفة تشغيل أقل من 8 دولارات خلال يوم العمل"
+          "value": "بيئة مشتركة بتكلفة تشغيل أقل من {{metric:ai.cost.value}} دولارات خلال يوم العمل"
         }
       ]
     },
@@ -546,12 +546,12 @@
       "ar": "المحتوى وقيادة الفريق"
     },
     "headline": {
-      "en": "A content strategy carried into delivery by a five-person team.",
+      "en": "A content strategy carried into delivery by a {{metric:youssef.team.value}}-person team.",
       "ar": "يوسف الشريف: تنسيق المحتوى والتوزيع خلف حضور رقمي أقوى."
     },
     "summary": {
-      "en": "At Digital Brandria, I led the digital presence project for media presenter Youssef El Sherif, coordinating five people across content and distribution. Average YouTube video views doubled within the first six weeks of the project.",
-      "ar": "ضمن عملي في Digital Brandria، توليت استراتيجية وتنفيذ مشروع الحضور الرقمي للإعلامي يوسف الشريف، وقدت فريقًا من خمسة أشخاص. خلال أول ستة أسابيع من العمل، تضاعف متوسط مشاهدات فيديوهاته على YouTube."
+      "en": "At Digital Brandria, I led the digital presence project for media presenter Youssef El Sherif, coordinating {{metric:youssef.team.value}} people across content and distribution. Average YouTube video views reached {{metric:youssef.growth}} their previous level within the first six weeks of the project.",
+      "ar": "ضمن عملي في Digital Brandria، توليت استراتيجية وتنفيذ مشروع الحضور الرقمي للإعلامي يوسف الشريف، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص. خلال أول ستة أسابيع من العمل، وصل متوسط مشاهدات فيديوهاته على YouTube إلى {{metric:youssef.growth}} المستوى السابق."
     },
     "published": true,
     "featured": false,

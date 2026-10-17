@@ -10,6 +10,7 @@ test('unpublished projects disappear from sorted work and public routes', async 
   hidden.projects.forEach(p => { p.published = false; });
   assert.equal(getPublishedProjects(hidden).length, 0);
   assert.ok(!getPublishedRoutes(hidden).some(r => r.key.startsWith('case:')));
-  content.projects.reverse();
-  assert.deepEqual(getPublishedProjects(content).map(p => p.id), ['zone10','elkhabar-bewodooh','sorouh','ai-operations','youssef-el-sherif']);
+  hidden.projects[0]!.published=true;hidden.projects[0]!.order=20;
+  hidden.projects[1]!.published=true;hidden.projects[1]!.order=10;
+  assert.deepEqual(getPublishedProjects(hidden).map(p => p.id), [hidden.projects[1]!.id,hidden.projects[0]!.id]);
 });

@@ -28,6 +28,7 @@ Use references rather than copying a repeated fact:
 ```text
 {{metric:zone10.contacts}}
 {{metric:zone10.contacts.value}}
+{{metric:elkhabar.views.number}}
 {{profile:name}}
 {{profile:professionalTitle}}
 {{profile:email}}
@@ -37,13 +38,13 @@ Use references rather than copying a repeated fact:
 {{evidence:zone-desktop.url}}
 ```
 
-The normal metric reference uses its local display (e.g. `350+`); `.value` supplies the raw value for a sentence. Supported reference fields are defined in `src/content/references.ts`. Unknown references fail the build. Update all relevant local display/label fields when editing a metric. The original report's dates/definitions remain attached to that report. If a supplied raster social image has a changed fact baked into its pixels, update that affected asset deliberately; rebuilding the website does not redraw images.
+The normal metric reference uses its local display (e.g. `350+`); `.value` supplies the raw value for a sentence and `.number` adds English digit grouping (e.g. `3,000,000`). Use references in frontmatter too: descriptions, headings and leads feed HTML, social metadata and structured data. Supported reference fields are defined in `src/content/references.ts`. Unknown references fail the build. Update all relevant local display/label fields when editing a metric. The original report's dates/definitions remain attached to that report. If a supplied raster social image has a changed fact baked into its pixels, update that affected asset deliberately; rebuilding the website does not redraw images.
 
 ## Cases and evidence
 
 To add a case, add its ID to `projectIds` in `src/content/contracts.ts`, its registry entry, both Markdown documents and any evidence/metrics. For a distinct executive visual, add a semantic module and register it in `CasePage.astro`; do not repeat a generic case-card template. Use a supplied suitable 1200×630 social image or deliberately author only the missing asset.
 
-To hide a case, set `published: false` in the registry. Build from source. It disappears from the Work/Home selection, routes, profile selection, Markdown discovery, sitemap and published evidence/social assets. The Work page keeps useful Contact/CV actions if all cases are hidden. Historical links correctly return 404; do not redirect every missing address to Home. Review other narrative mentions separately if the intention is to remove the subject entirely.
+To hide a case, set `published: false` in the registry. Build from source. It disappears from the Work/Home selection, routes, profile selection, Markdown discovery, sitemap and published evidence/social assets. Links to it in other narratives become readable mentions in HTML and Markdown. Direct visits to a withdrawn URL correctly return 404; do not redirect every missing address to Home. The Work page keeps useful Contact/CV actions if all cases are hidden. Review historical mentions separately if the intention is to remove the subject entirely. Tests derive current publication counts; controlled fixtures retain case interaction coverage when the live selection is empty.
 
 Put new original evidence in `src/assets/evidence/<project>/`, register correct dimensions and supply useful English/Arabic alt text and captions. Narrative evidence uses its stable `/media/evidence/...` URL. The build makes responsive thumbnails; the original remains a direct-link fallback and modal resource. Keep private information out of images before registering them.
 

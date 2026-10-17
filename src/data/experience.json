@@ -24,23 +24,23 @@
       },
       "details": {
         "en": [
-          "Personally handled work for more than 20 clients, covering Google Ads, websites, landing pages, SEO foundations and tracking.",
-          "Created more than 200 landing pages for the agency, connecting messaging, offers and page experience to conversion goals.",
+          "Personally handled work for more than {{metric:experience.clients.value}} clients, covering Google Ads, websites, landing pages, SEO foundations and tracking.",
+          "Created more than {{metric:experience.landing-pages.value}} landing pages for the agency, connecting messaging, offers and page experience to conversion goals.",
           "Contributed to offer design, channel strategy, marketing funnels, budget allocation and performance review.",
           "Reviewed team output, guided delivery and contributed to proposals, sales meetings and client advisory work.",
           "Developed tracking, analytics, CRM and automation workflows using Python, n8n and AI tools.",
           "Designed and hosted AI agents, configured Codex and Claude Code, built MCP integrations and custom skills, and trained the team to use them in daily work.",
-          "Evaluated models and operating environments, then built a shared model setup serving four people at less than $8 during the working day, with stronger models allocated to harder tasks.",
+          "Evaluated models and operating environments, then built a shared model setup serving {{metric:ai.users.value}} people at less than US${{metric:ai.cost.value}} during the working day, with stronger models allocated to harder tasks.",
           "Diagnosed AI tooling problems and used agents to develop fixes, with contributions to LocalAI, OpenClaw and n8n-skills."
         ],
         "ar": [
-          "توليت العمل على مشاريع أكثر من 20 عميلًا، شملت حملات Google Ads ومواقع وصفحات هبوط وتأسيس SEO والتتبع.",
-          "أنشأت أكثر من 200 صفحة هبوط لصالح الوكالة، وربطت الرسائل والعروض وتجربة الصفحة بهدف التحويل.",
+          "توليت العمل على مشاريع أكثر من {{metric:experience.clients.value}} عميلًا، شملت حملات Google Ads ومواقع وصفحات هبوط وتأسيس SEO والتتبع.",
+          "أنشأت أكثر من {{metric:experience.landing-pages.value}} صفحة هبوط لصالح الوكالة، وربطت الرسائل والعروض وتجربة الصفحة بهدف التحويل.",
           "شاركت في تصميم العروض التسويقية، ووضع استراتيجيات القنوات ومسارات التحويل، وتوزيع الميزانيات، ومراجعة الأداء.",
           "راجعت أعمال الفريق، ووجهت التنفيذ، وشاركت في إعداد المقترحات واجتماعات المبيعات وتقديم الاستشارات للعملاء.",
           "طورت سير عمل للتتبع والتحليل وCRM والأتمتة باستخدام Python وn8n وأدوات AI.",
           "صممت واستضفت وكلاء AI، وجهزت Codex وClaude Code وتكاملات MCP ومهارات مخصصة، ودربت الفريق على استخدامها في العمل اليومي.",
-          "قيّمت النماذج وبيئات التشغيل، وبنيت بيئة AI مشتركة لفريق من أربعة أشخاص بتكلفة تشغيل أقل من 8 دولارات خلال يوم العمل، مع تخصيص النماذج الأقوى للمهام الأصعب.",
+          "قيّمت النماذج وبيئات التشغيل، وبنيت بيئة AI مشتركة لفريق من {{metric:ai.users.value}} أشخاص بتكلفة تشغيل أقل من {{metric:ai.cost.value}} دولارات خلال يوم العمل، مع تخصيص النماذج الأقوى للمهام الأصعب.",
           "تتبعت مشكلات أدوات AI ونفذت إصلاحات بمساعدة الوكلاء، وقدمت مساهمات في LocalAI وOpenClaw وn8n-skills."
         ]
       }
@@ -71,16 +71,16 @@
         "en": [
           "Worked directly with the CEO on market and competitor research, strategy, commercial proposals, pricing proposals and feasibility studies.",
           "Audited campaigns, ad accounts, websites and SEO, identifying conversion-tracking errors and issues affecting the assessment of lead quality.",
-          "Led a five-person team on media presenter Youssef El Sherif’s digital presence project, assigning work and reviewing delivery and performance.",
+          "Led a {{metric:youssef.team.value}}-person team on media presenter Youssef El Sherif’s digital presence project, assigning work and reviewing delivery and performance.",
           "Coordinated improvements to thumbnails, video openings, clips, publishing schedules, content discoverability and comment management.",
-          "Contributed to a team effort that doubled average YouTube video views within the project’s first six weeks."
+          "Contributed to a team effort that raised average YouTube video views to {{metric:youssef.growth}} their previous level within the project’s first six weeks."
         ],
         "ar": [
           "عملت مباشرة مع الرئيس التنفيذي في بحث الأسواق والمنافسين، وإعداد الاستراتيجيات والمقترحات التجارية وعروض الأسعار ودراسات الجدوى.",
           "راجعت حملات وحسابات إعلانية ومواقع وSEO، وكشفت أخطاء في تتبع التحويلات ومشكلات تؤثر في تقييم جودة العملاء المحتملين.",
-          "قدت فريقًا من خمسة أشخاص في مشروع الحضور الرقمي للإعلامي يوسف الشريف، ووزعت المهام وتابعت التنفيذ والأداء.",
+          "قدت فريقًا من {{metric:youssef.team.value}} أشخاص في مشروع الحضور الرقمي للإعلامي يوسف الشريف، ووزعت المهام وتابعت التنفيذ والأداء.",
           "نسقت تطوير العناوين والصور المصغرة والمقاطع القصيرة وجدولة النشر وتحسين قابلية العثور على المحتوى وإدارة التعليقات.",
-          "ساهم عمل الفريق في مضاعفة متوسط مشاهدات فيديوهات YouTube خلال أول ستة أسابيع من المشروع."
+          "ساهم عمل الفريق في وصول متوسط مشاهدات فيديوهات YouTube إلى {{metric:youssef.growth}} المستوى السابق خلال أول ستة أسابيع من المشروع."
         ]
       }
     },

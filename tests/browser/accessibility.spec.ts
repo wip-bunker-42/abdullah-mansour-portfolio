@@ -1,7 +1,11 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import {loadSiteContent} from '../../src/content/read.ts';
+import {getPublishedProjects} from '../../src/content/publication.ts';
+const firstCase=getPublishedProjects(await loadSiteContent())[0];
+const sampleCase=firstCase?`/work/${firstCase.id}/`:'/work/';
 
-for(const sample of [{path:'/',theme:'dark',width:1440},{path:'/ar/about/',theme:'light',width:390},{path:'/work/zone10/',theme:'light',width:1440},{path:'/ar/contact/',theme:'dark',width:390}]) {
+for(const sample of [{path:'/',theme:'dark',width:1440},{path:'/ar/about/',theme:'light',width:390},{path:sampleCase,theme:'light',width:1440},{path:'/ar/contact/',theme:'dark',width:390}]) {
   test(`accessible representative: ${sample.path} ${sample.theme}`,async({page})=>{
     await page.setViewportSize({width:sample.width,height:1000});
     await page.addInitScript(theme=>localStorage.setItem('aimansour-theme',theme),sample.theme);
@@ -11,7 +15,7 @@ for(const sample of [{path:'/',theme:'dark',width:1440},{path:'/ar/about/',theme
   });
 }
 test('representative templates reflow at narrow, tablet and desktop widths',async({page})=>{
-  for(const path of ['/','/ar/about/','/resume/','/work/zone10/','/ar/contact/'])for(const width of [320,768,1440]) {
+  for(const path of ['/','/ar/about/','/resume/',sampleCase,'/ar/contact/'])for(const width of [320,768,1440]) {
     await page.setViewportSize({width,height:1000});await page.goto(path);await page.evaluate(()=>document.fonts.ready);
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`${path} at ${width}px`).toBe(true);
   }
@@ -27,7 +31,8 @@ test('keyboard users reach main content and Arabic form errors have linked recov
   await page.locator('#contact-errors a[href="#email"]').click();await expect(page.locator('#email')).toBeFocused();await expect(page.locator('#email')).toHaveAttribute('aria-describedby','email-error');
 });
 test('reduced-motion readers reach a case section without animated scrolling',async({page})=>{
-  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/work/zone10/');
+  test.skip(!firstCase,'The controlled published fixture retains case navigation coverage.');
+  await page.emulateMedia({reducedMotion:'reduce'});await page.goto(sampleCase);
   const link=page.locator('.case-contents a').first();const href=await link.getAttribute('href');await link.click();
   const top=await page.locator(href!).evaluate(element=>element.getBoundingClientRect().top);
   expect(top).toBeGreaterThanOrEqual(0);expect(top).toBeLessThan((await page.evaluate(()=>innerHeight))/2);

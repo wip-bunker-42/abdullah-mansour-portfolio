@@ -17,9 +17,9 @@ I studied its services and coverage, then researched hundreds of service-and-loc
 
 I assessed intent, commercial relevance, local specificity and the opportunity to create useful, distinct content. Those judgments shaped what the site would contain.
 
-## I selected sixteen local service pages from 170 possible combinations {#architecture}
+## I selected {{metric:sorouh.local.value}} local service pages from {{metric:sorouh.possibilities.value}} possible combinations {#architecture}
 
-Seventeen services across ten cities could produce 170 service-and-city pages. I built **sixteen**, where demand, intent and content justified a dedicated page.
+Seventeen services across ten cities could produce {{metric:sorouh.possibilities.value}} service-and-city pages. I built **{{metric:sorouh.local.value}}**, where demand, intent and content justified a dedicated page.
 
 The wider site contained **seventy-one indexable pages**:
 
@@ -27,7 +27,7 @@ The wider site contained **seventy-one indexable pages**:
 |---|---:|---|
 | Core services | 17 | Explain the offer and address relevant commercial searches |
 | Locations | 10 | Establish local coverage and service availability |
-| Service and city | 16 | Answer specific local demand that warranted its own page |
+| Service and city | {{metric:sorouh.local.value}} | Answer specific local demand that warranted its own page |
 | Projects | 11 | Show the company’s delivery experience |
 | Articles | 10 | Answer questions during research and consideration |
 | Supporting and index pages | 7 | Organize discovery and navigation |

@@ -2,9 +2,9 @@
 key: "case:youssef-el-sherif"
 locale: "en"
 title: "Youssef El Sherif: Content & Leadership | Abdullah Mansour"
-description: "A Digital Brandria project led by Abdullah Mansour, coordinating five people as average YouTube video views doubled within the first six weeks."
-heading: "A content strategy carried into delivery by a five-person team."
-lead: "At Digital Brandria, I led the digital presence project for media presenter Youssef El Sherif, coordinating five people across content and distribution. Average YouTube video views doubled within the first six weeks of the project."
+description: "A Digital Brandria project led by Abdullah Mansour, coordinating {{metric:youssef.team.value}} people as average YouTube video views reached {{metric:youssef.growth}} their previous level within the first six weeks."
+heading: "A content strategy carried into delivery by a {{metric:youssef.team.value}}-person team."
+lead: "At Digital Brandria, I led the digital presence project for media presenter Youssef El Sherif, coordinating {{metric:youssef.team.value}} people across content and distribution. Average YouTube video views reached {{metric:youssef.growth}} their previous level within the first six weeks of the project."
 updatedAt: "2026-10-16"
 draft: false
 ---
@@ -31,7 +31,7 @@ Together, that work supported a more coherent presence and made the content and 
 
 ## The first six weeks {#outcome}
 
-**Average views per YouTube video doubled**, alongside an increase in earnings as the project developed.
+**Average views per YouTube video reached {{metric:youssef.growth}} their previous level**, alongside an increase in earnings as the project developed.
 
 This was a team outcome. My role was to set the direction, connect the tasks to it, coordinate delivery and review performance with the team, while providing advice on the broader presence.
 

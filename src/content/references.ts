@@ -6,6 +6,10 @@ export function resolveReferences(text: string, locale: Locale, content: SiteCon
     if (kind === 'metric') {
       result = content.metrics[key]?.display[locale];
       if (result === undefined && key.endsWith('.value')) result = content.metrics[key.slice(0, -6)]?.value;
+      if (result === undefined && key.endsWith('.number')) {
+        const value = content.metrics[key.slice(0, -7)]?.value;
+        if (typeof value === 'number') result = new Intl.NumberFormat('en-US').format(value);
+      }
     } else if (kind === 'evidence') {
       const match = key.match(/^(.+)\.(alt|caption|url)$/);
       const item = match ? content.evidence[match[1]!] : undefined;

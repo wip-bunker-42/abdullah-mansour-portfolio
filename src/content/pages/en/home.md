@@ -21,8 +21,8 @@ Hiring for your team? [Let’s discuss the role](/contact/).
 
 - **{{metric:zone10.contacts}} people contacted Zone10** through the Google Ads acquisition setup I built and managed over the project.
 - **{{metric:elkhabar.views}} views across platforms** for my independent media project, across roughly four months of active publishing.
-- **More than 4 hours saved per active publishing day** by automating the media project’s distribution across six platforms.
-- **20+ clients** personally handled through my work with Tahliq Digital Agency.
+- **More than {{metric:elkhabar.saved.value}} hours saved per active publishing day** by automating the media project’s distribution across {{metric:elkhabar.platforms.value}} platforms.
+- **{{metric:experience.clients}} clients** personally handled through my work with Tahliq Digital Agency.
 
 ## I check what a conversion means before scaling it {#approach}
 
@@ -34,7 +34,7 @@ That is the kind of detail that changes the next decision. Before increasing spe
 
 ### Less repetition, more time to improve the work
 
-For Elkhabar Bewodooh, I built tools around filming and publishing across six platforms. Distribution automation saved more than four hours on active publishing days, making more time available for research, content and performance review.
+For Elkhabar Bewodooh, I built tools around filming and publishing across {{metric:elkhabar.platforms.value}} platforms. Distribution automation saved more than {{metric:elkhabar.saved.value}} hours on active publishing days, making more time available for research, content and performance review.
 
 ### Taking the plan into delivery
 
@@ -70,13 +70,13 @@ Search research, content architecture, technical implementation and measurement 
 
 ### Team delivery and better ways of working
 
-Clear tasks, output review and practical training in tools and workflows. I led five people on Youssef El Sherif’s project, helping double average YouTube video views within the first six weeks.
+Clear tasks, output review and practical training in tools and workflows. I led {{metric:youssef.team.value}} people on Youssef El Sherif’s project, helping average YouTube video views reach {{metric:youssef.growth}} their previous level within the first six weeks.
 
 [See the team delivery project](/work/youssef-el-sherif/)
 
 ## Built through practical responsibility {#experience}
 
-My path into marketing has been shaped by self-directed learning and work with agencies and clients in Egypt, the Gulf and international markets. I have delivered projects myself, reviewed team output, led a five-person project team and built a media venture of my own.
+My path into marketing has been shaped by self-directed learning and work with agencies and clients in Egypt, the Gulf and international markets. I have delivered projects myself, reviewed team output, led a {{metric:youssef.team.value}}-person project team and built a media venture of my own.
 
 That range helps me shape the approach and carry delivery through with the team. My AI expertise gives me more ways to build the solution, reduce repetitive effort and address obstacles to delivery.
 
