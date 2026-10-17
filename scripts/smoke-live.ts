@@ -4,16 +4,17 @@ import {loadSiteContent} from '../src/content/read.ts';
 import {getPublishedRoutes} from '../src/i18n/routes.ts';
 import {PublicProfileSchema} from '../src/lib/public-profile.ts';
 import {waitForPublicDns} from './wait-for-dns.ts';
+import {verifyAnalyticsInstallation} from './analytics.ts';
 const requireValue=(condition:unknown,message:string)=>{if(!condition)throw Error(message);};
 export async function smokeLive(baseUrl:string):Promise<void> {
   const base=new URL(baseUrl);const content=await loadSiteContent();const routes=getPublishedRoutes(content);
   requireValue((await waitForPublicDns(new URL('/',base).href)).status===200,'Published homepage is unavailable');
   const get=(path:string,init:RequestInit={})=>fetch(new URL(path,base),{...init,signal:AbortSignal.timeout(20_000)});
   for(const route of routes) {
-    const response=await get(route.path);requireValue(response.status===200,`${route.path}: expected 200, got ${response.status}`);
+    const response=await get(route.path,{headers:{Accept:'text/html','User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/155.0.0.0 Safari/537.36'}});requireValue(response.status===200,`${route.path}: expected 200, got ${response.status}`);
     const html=await response.text();requireValue(html.includes(`lang="${route.locale}"`),`${route.path}: incorrect language`);
     requireValue(html.includes(`rel="canonical" href="https://aimansour.com${route.path}"`),`${route.path}: incorrect canonical`);
-    requireValue((html.match(/src="https:\/\/static.cloudflareinsights.com\/beacon.min.js"/g)??[]).length===1,`${route.path}: Analytics is missing or duplicated`);
+    verifyAnalyticsInstallation(html,base.hostname==='aimansour.com'?'production':'artifact');
     requireValue(!response.headers.get('content-security-policy')?.includes('unsafe-'),`${route.path}: unsafe CSP authorization`);
     requireValue(response.headers.get('content-security-policy')?.includes("object-src 'none'"),`${route.path}: CSP missing`);
     requireValue(response.headers.get('cache-control')?.includes('must-revalidate'),`${route.path}: expected revalidation`);
