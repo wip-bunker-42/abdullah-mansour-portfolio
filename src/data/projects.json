@@ -14,8 +14,8 @@
       "ar": "Zone10: تأسيس طريق من بحث Google إلى التواصل مع الشركة."
     },
     "summary": {
-      "en": "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that setup, with {{metric:zone10.active-months}} of active advertising scheduled around the company’s capacity for new work.",
-      "ar": "بنيت منظومة اكتساب لشركة تصميم وتنفيذ ديكور في الرياض، من فهم الطلب والكلمات إلى الحملات وصفحات الهبوط والقياس. تواصل مع الشركة أكثر من {{metric:zone10.contacts.value}} شخصًا عبر هذه المنظومة. إجمالي التشغيل الإعلاني: {{metric:zone10.active-months}} على فترات، بحسب قدرتها على استقبال مشاريع جديدة."
+      "en": "I built a Google Search acquisition channel for a Riyadh interiors business: research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company, with {{metric:zone10.customer-conversion}} becoming clients. Active advertising totaled {{metric:zone10.active-months}}, scheduled around the company’s capacity for new work.",
+      "ar": "بنيت قناة اكتساب عبر Google لشركة ديكور في الرياض، من البحث والحملات إلى صفحات الهبوط والقياس. تواصل معها أكثر من {{metric:zone10.contacts.value}} شخصًا، وتحول {{metric:zone10.customer-conversion}} منهم إلى عملاء. إجمالي التشغيل الإعلاني: {{metric:zone10.active-months}} على فترات بحسب قدرتها على استقبال مشاريع جديدة."
     },
     "published": true,
     "featured": true,
@@ -49,6 +49,10 @@
         {
           "label": "Period",
           "value": "December 2025–April 2026 · {{metric:zone10.active-months}} of active advertising"
+        },
+        {
+          "label": "Contact-to-client conversion",
+          "value": "{{metric:zone10.customer-conversion}}"
         },
         {
           "label": "My responsibility",
@@ -93,6 +97,10 @@
           "value": "ديسمبر 2025–أبريل 2026 · {{metric:zone10.active-months}} من التشغيل الإعلاني الفعلي"
         },
         {
+          "label": "من التواصل إلى عميل",
+          "value": "{{metric:zone10.customer-conversion}}"
+        },
+        {
           "label": "مسؤوليتي",
           "value": "بحث الطلب ونية البحث، وقوائم الكلمات السلبية، والرسائل، وصفحات الهبوط، وإعداد Google Ads والتتبع والتحسين"
         },
@@ -124,8 +132,8 @@
     },
     "metricIds": [
       "zone10.contacts",
+      "zone10.customer-conversion",
       "zone10.active-months",
-      "zone10.campaigns",
       "zone10.spend",
       "zone10.spend-usd"
     ],

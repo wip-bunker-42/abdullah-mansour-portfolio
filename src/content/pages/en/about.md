@@ -23,6 +23,8 @@ I studied at Al-Azhar University’s Faculty of Islamic Da‘wah. I built my pro
 
 At Tahliq Digital Agency, that developed into responsibility for more than {{metric:experience.clients.value}} clients: campaigns, landing pages, websites, SEO foundations and tracking. My work also included reviewing team output, contributing to strategy and proposals, joining sales meetings and advising clients.
 
+I also worked on acquiring clients for the agency itself. A Gulf-targeted Meta Ads campaign generated {{metric:tahliq.meta.conversations.number}} WhatsApp conversation starts and brought Tahliq {{metric:tahliq.meta.customers.number}} clients. My Meta Ads work includes both campaign delivery and consulting.
+
 At Digital Brandria, I worked directly with the CEO on market and competitor research, strategies, proposals and feasibility studies. I also led a {{metric:youssef.team.value}}-person team on the digital presence project for media presenter Youssef El Sherif.
 
 Alongside agency work, I have served clients directly and through Upwork and Mostaql, across the Gulf and international markets. Each context has required a different judgment about the audience, the constraints and what deserves attention first.

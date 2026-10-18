@@ -2,9 +2,9 @@
 key: "case:zone10"
 locale: "en"
 title: "Zone10: Google Search Acquisition | Abdullah Mansour"
-description: "How Abdullah Mansour built Zone10’s search campaigns, landing pages and tracking, with {{metric:zone10.contacts}} people contacting the business across {{metric:zone10.active-months}} of active advertising."
+description: "Google Search acquisition for Zone10: {{metric:zone10.contacts}} people contacted the business, with {{metric:zone10.customer-conversion}} becoming clients and {{metric:zone10.active-months}} of active advertising."
 heading: "Giving Zone10 a measurable way to reach people already searching."
-lead: "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that setup, with {{metric:zone10.active-months}} of active advertising scheduled around the company’s capacity for new work."
+lead: "I built a Google Search acquisition channel for a Riyadh interiors business: research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company, with {{metric:zone10.customer-conversion}} becoming clients. Active advertising totaled {{metric:zone10.active-months}}, scheduled around the company’s capacity for new work."
 updatedAt: "2026-10-18"
 draft: false
 ---
@@ -106,6 +106,8 @@ Campaign timing followed a commercial decision: generate new demand when the bus
 Zone10 had a working Google Search acquisition channel, supported by dedicated messaging, pages and a measurement setup for further improvement.
 
 Across those active periods, I managed more than **SAR{{metric:zone10.spend.number}} (US${{metric:zone10.spend-usd.number}})** in ad spend across {{metric:zone10.campaigns.value}} campaigns. More than {{metric:zone10.contacts.value}} people contacted the business through this acquisition setup.
+
+Following up with the client connected campaign response to sales: **{{metric:zone10.customer-conversion}} of the people who contacted the business became clients**.
 
 My responsibility covered the connected journey. When performance pointed to an issue, I could work on the keyword, ad, page or measurement, then follow the decision through the same acquisition setup.
 

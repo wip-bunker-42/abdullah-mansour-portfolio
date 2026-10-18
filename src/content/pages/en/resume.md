@@ -9,7 +9,7 @@ updatedAt: "2026-10-18"
 draft: false
 ---
 
-Digital marketing and growth specialist with 3+ years of experience across agencies, clients and independent projects, spanning performance marketing, content strategy, SEO and measurement. Advanced practical AI expertise expands my ability to research, execute, automate and build solutions that save time and improve team delivery.
+Digital marketing and growth specialist with 3+ years of experience across agencies, clients and independent projects, spanning Meta Ads, Google Ads, content strategy, SEO and measurement. Advanced practical AI expertise expands my ability to research, execute, automate and build solutions that save time and improve team delivery.
 
 [Contact me about a role](/contact/)
 

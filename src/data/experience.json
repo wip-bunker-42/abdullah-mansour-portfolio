@@ -25,7 +25,11 @@
       "details": {
         "en": [
           "Personally handled work for more than {{metric:experience.clients.value}} clients across paid advertising, websites, landing pages, SEO foundations and tracking.",
-          "Launched advertising campaigns for agency clients on Google Ads and Meta Ads.",
+          "Launched Meta Ads campaigns to acquire clients for Tahliq itself, alongside Google Ads and Meta Ads campaigns for agency clients.",
+          "A Gulf-targeted campaign generated {{metric:tahliq.meta.conversations.number}} WhatsApp conversation starts and acquired {{metric:tahliq.meta.customers.number}} clients for the agency, a {{metric:tahliq.meta.customer-conversion}} conversation-to-client conversion rate.",
+          "The campaign promoted Google Ads services; sales included Google Ads management, SEO, websites, landing pages and consultations.",
+          "Average cost per WhatsApp conversation: {{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}}). Calculated client acquisition cost: {{metric:tahliq.meta.customer-cost-sar}} ({{metric:tahliq.meta.customer-cost-usd}}).",
+          "Provided Meta Ads consulting alongside hands-on campaign delivery.",
           "Created more than {{metric:experience.landing-pages.value}} landing pages for the agency, connecting messaging, offers and page experience to conversion goals.",
           "Contributed to offer design, channel strategy, marketing funnels, budget allocation and performance review.",
           "Reviewed team output, guided delivery and contributed to proposals, sales meetings and client advisory work.",
@@ -36,7 +40,11 @@
         ],
         "ar": [
           "توليت العمل على مشاريع أكثر من {{metric:experience.clients.value}} عميلًا، شملت الحملات الإعلانية ومواقع وصفحات هبوط وتأسيس SEO والتتبع.",
-          "أطلقت حملات إعلانية لصالح عملاء الوكالة عبر Google Ads وMeta Ads.",
+          "أطلقت حملات Meta Ads لاكتساب عملاء لوكالة تحليق نفسها، إلى جانب حملات Google Ads وMeta Ads لصالح عملاء الوكالة.",
+          "حققت حملة استهدفت جمهورًا في الخليج {{metric:tahliq.meta.conversations.number}} محادثة بدأت عبر واتساب، واكتسبت الوكالة منها {{metric:tahliq.meta.customers.number}} عميل، بنسبة تحوّل من المحادثات إلى العملاء بلغت {{metric:tahliq.meta.customer-conversion}}.",
+          "روّجت الحملة لخدمات إعلانات Google؛ وشملت المبيعات إدارة إعلانات Google وSEO والمواقع وصفحات الهبوط والاستشارات.",
+          "متوسط تكلفة محادثة واتساب: {{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}}). ومتوسط تكلفة اكتساب العميل المحسوب: {{metric:tahliq.meta.customer-cost-sar}} ({{metric:tahliq.meta.customer-cost-usd}}).",
+          "قدمت استشارات في Meta Ads بالتوازي مع عملي في إطلاق الحملات وتنفيذها.",
           "أنشأت أكثر من {{metric:experience.landing-pages.value}} صفحة هبوط لصالح الوكالة، وربطت الرسائل والعروض وتجربة الصفحة بهدف التحويل.",
           "شاركت في تصميم العروض التسويقية، ووضع استراتيجيات القنوات ومسارات التحويل، وتوزيع الميزانيات، ومراجعة الأداء.",
           "راجعت أعمال الفريق، ووجهت التنفيذ، وشاركت في إعداد المقترحات واجتماعات المبيعات وتقديم الاستشارات للعملاء.",
@@ -141,8 +149,8 @@
         "ar": "Performance Marketing"
       },
       "scope": {
-        "en": "Google Ads, keyword and search-term research, negative keywords, budget allocation and Meta Ads",
-        "ar": "Google Ads، بحث الكلمات، عبارات البحث والكلمات السلبية، توزيع الميزانية، Meta Ads"
+        "en": "Meta Ads and Google Ads campaigns, audience targeting, keyword and search-term research, negative keywords, budget allocation and performance review. Meta Ads consulting.",
+        "ar": "حملات Meta Ads وGoogle Ads، واستهداف الجمهور، وبحث الكلمات وعبارات البحث، والكلمات السلبية، وتوزيع الميزانية ومراجعة الأداء، إلى جانب استشارات Meta Ads."
       }
     },
     {

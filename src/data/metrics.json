@@ -238,5 +238,101 @@
       "en": "Active advertising",
       "ar": "التشغيل الإعلاني الفعلي"
     }
+  },
+  "tahliq.meta.conversations": {
+    "id": "tahliq.meta.conversations",
+    "value": 3500,
+    "display": {
+      "en": "3,500",
+      "ar": "3,500"
+    },
+    "label": {
+      "en": "WhatsApp conversations started",
+      "ar": "محادثات واتساب بدأت من الحملة"
+    }
+  },
+  "tahliq.meta.customers": {
+    "id": "tahliq.meta.customers",
+    "value": 100,
+    "display": {
+      "en": "100",
+      "ar": "100"
+    },
+    "label": {
+      "en": "Clients acquired for Tahliq via Meta Ads",
+      "ar": "عملاء اكتسبتهم حملة Meta لتحليق"
+    }
+  },
+  "tahliq.meta.customer-conversion": {
+    "id": "tahliq.meta.customer-conversion",
+    "value": 2.86,
+    "display": {
+      "en": "2.86%",
+      "ar": "2.86%"
+    },
+    "label": {
+      "en": "WhatsApp conversation-to-client conversion",
+      "ar": "من محادثات واتساب إلى عملاء"
+    }
+  },
+  "tahliq.meta.conversation-cost-sar": {
+    "id": "tahliq.meta.conversation-cost-sar",
+    "value": 0.72,
+    "display": {
+      "en": "SAR0.72",
+      "ar": "0.72 ريال سعودي"
+    },
+    "label": {
+      "en": "Average cost per WhatsApp conversation",
+      "ar": "متوسط تكلفة محادثة واتساب"
+    }
+  },
+  "tahliq.meta.conversation-cost-usd": {
+    "id": "tahliq.meta.conversation-cost-usd",
+    "value": 0.19,
+    "display": {
+      "en": "US$0.19",
+      "ar": "0.19 دولار أمريكي"
+    },
+    "label": {
+      "en": "Average conversation cost in USD",
+      "ar": "متوسط تكلفة المحادثة بالدولار"
+    }
+  },
+  "tahliq.meta.customer-cost-sar": {
+    "id": "tahliq.meta.customer-cost-sar",
+    "value": 25.13,
+    "display": {
+      "en": "SAR25.13",
+      "ar": "25.13 ريال سعودي"
+    },
+    "label": {
+      "en": "Calculated client acquisition cost",
+      "ar": "متوسط تكلفة اكتساب العميل المحسوب"
+    }
+  },
+  "tahliq.meta.customer-cost-usd": {
+    "id": "tahliq.meta.customer-cost-usd",
+    "value": 6.7,
+    "display": {
+      "en": "US$6.70",
+      "ar": "6.70 دولار أمريكي"
+    },
+    "label": {
+      "en": "Calculated acquisition cost in USD",
+      "ar": "تكلفة اكتساب العميل المحسوبة بالدولار"
+    }
+  },
+  "zone10.customer-conversion": {
+    "id": "zone10.customer-conversion",
+    "value": 6,
+    "display": {
+      "en": "6%",
+      "ar": "6%"
+    },
+    "label": {
+      "en": "Zone10: contacts becoming clients",
+      "ar": "Zone10: من التواصل إلى عميل"
+    }
   }
 }
