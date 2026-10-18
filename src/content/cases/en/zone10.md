@@ -107,7 +107,7 @@ Zone10 had a working Google Search acquisition channel, supported by dedicated m
 
 Across those active periods, I managed more than **SAR{{metric:zone10.spend.number}} (US${{metric:zone10.spend-usd.number}})** in ad spend across {{metric:zone10.campaigns.value}} campaigns. More than {{metric:zone10.contacts.value}} people contacted the business through this acquisition setup.
 
-Following up with the client connected campaign response to sales: **{{metric:zone10.customer-conversion}} of the people who contacted the business became clients**.
+**{{metric:zone10.customer-conversion}} of the people who contacted the business became clients**.
 
 My responsibility covered the connected journey. When performance pointed to an issue, I could work on the keyword, ad, page or measurement, then follow the decision through the same acquisition setup.
 

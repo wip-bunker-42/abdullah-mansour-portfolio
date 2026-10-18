@@ -307,8 +307,8 @@
       "ar": "25.13 ريال سعودي"
     },
     "label": {
-      "en": "Calculated client acquisition cost",
-      "ar": "متوسط تكلفة اكتساب العميل المحسوب"
+      "en": "Average client acquisition cost",
+      "ar": "متوسط تكلفة اكتساب العميل"
     }
   },
   "tahliq.meta.customer-cost-usd": {
@@ -319,8 +319,8 @@
       "ar": "6.70 دولار أمريكي"
     },
     "label": {
-      "en": "Calculated acquisition cost in USD",
-      "ar": "تكلفة اكتساب العميل المحسوبة بالدولار"
+      "en": "Average client acquisition cost in USD",
+      "ar": "متوسط تكلفة اكتساب العميل بالدولار"
     }
   },
   "zone10.customer-conversion": {
