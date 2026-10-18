@@ -5,7 +5,7 @@ title: "AI Agents & Model Operations | Abdullah Mansour"
 description: "Model selection, hosting and agent integration for {{metric:ai.users.value}} people, with a shared environment below US${{metric:ai.cost.value}} per working day and merged LocalAI contributions."
 heading: "Models, agents and integration: building a shared AI environment."
 lead: "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. {{metric:ai.users.value}} people gained an execution path for suitable tasks, with the environment running below US${{metric:ai.cost.value}} during the working day and stronger models retained where needed."
-updatedAt: "2026-10-16"
+updatedAt: "2026-10-18"
 draft: false
 ---
 
@@ -31,11 +31,21 @@ The work required decisions about the task, the capability it needed, the model 
 
 ## Integration exposed problems worth fixing at their source {#contributions}
 
-I traced a LocalAI compatibility issue affecting Codex, directed AI agents through the fix and reviewed the change and checks. The contribution was accepted into the upstream project.
+### Keeping Codex and LocalAI working together
+
+Codex exposed gaps in LocalAI's WebSocket response handling: warm-up requests needed to complete without generating output, and continuing a conversation needed its full history. Response storage also needed to keep each caller's data isolated.
+
+I traced the problem, directed AI agents through the repair and reviewed the implementation and checks. The contribution covered warm-up handling, complete conversation continuation, response ownership and failure sequencing.
+
+Regression tests exercised connection isolation, successive conversation turns, concurrent requests and failures during streaming. The fix, its tests and the accompanying usage documentation were accepted and merged into LocalAI.
 
 [LocalAI compatibility contribution — #11608](https://github.com/mudler/LocalAI/pull/11608)
 
-I also tested documentation claims about combining image processing and faster generation, then submitted a correction supported by runtime evidence. That contribution was accepted and merged too.
+### Checking the guidance against actual operation
+
+The documentation said speculative decoding was disabled when image processing was active. I checked that claim against the backend and tested a configuration combining vision input with Multi-Token Prediction (MTP).
+
+Successful image requests and runtime logs showed both capabilities operating together. I submitted corrected guidance, the configuration example and the checks operators could use to verify their own setup. This contribution was also accepted and merged.
 
 [LocalAI documentation correction — #11700](https://github.com/mudler/LocalAI/pull/11700)
 
@@ -46,6 +56,8 @@ I also tested documentation claims about combining image processing and faster g
 ![{{evidence:ai-localai-11700.alt}}](/media/evidence/ai-operations/02-localai-11700.png)
 
 *A documentation correction supported by practical testing and accepted upstream.*
+
+[Explore my wider contributions to AI tools, workflow reliability and accessibility](/resume/#open-source-contributions)
 
 ## What changed for the team {#outcome}
 

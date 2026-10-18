@@ -243,17 +243,52 @@
   "contributions": [
     {
       "title": {
-        "en": "Codex WebSocket compatibility improvements",
-        "ar": "تحسين توافق Codex عبر WebSocket"
+        "en": "LocalAI — Codex WebSocket compatibility and response isolation",
+        "ar": "LocalAI — توافق Codex عبر WebSocket وعزل الاستجابات"
       },
       "url": "https://github.com/mudler/LocalAI/pull/11608"
     },
     {
       "title": {
-        "en": "Runtime-tested vision and acceleration documentation",
-        "ar": "تصحيح توثيق الرؤية وتسريع التوليد باختبارات تشغيل"
+        "en": "LocalAI — runtime-tested vision and acceleration documentation",
+        "ar": "LocalAI — تصحيح توثيق الرؤية وتسريع التوليد باختبارات تشغيل"
       },
       "url": "https://github.com/mudler/LocalAI/pull/11700"
+    },
+    {
+      "title": {
+        "en": "OpenClaw — live agent identity updates in chat",
+        "ar": "OpenClaw — تحديث هوية الوكيل داخل المحادثة"
+      },
+      "url": "https://github.com/openclaw/openclaw/pull/142581"
+    },
+    {
+      "title": {
+        "en": "n8n-skills — skill discovery and installation fixes",
+        "ar": "n8n-skills — إصلاح اكتشاف المهارات وتثبيتها"
+      },
+      "url": "https://github.com/czlonkowski/n8n-skills/pull/33"
+    },
+    {
+      "title": {
+        "en": "Navigation Sounds for NVDA — browse-mode navigation feedback",
+        "ar": "Navigation Sounds لقارئ الشاشة NVDA — أصوات التنقل في وضع التصفح"
+      },
+      "url": "https://github.com/ahmedthebest31/navsounds/pull/38"
+    },
+    {
+      "title": {
+        "en": "FSRS Python bindings — upstream default parameters",
+        "ar": "تكامل FSRS مع Python — توحيد القيم الافتراضية مع المصدر"
+      },
+      "url": "https://github.com/open-spaced-repetition/fsrs-rs-python/pull/73"
+    },
+    {
+      "title": {
+        "en": "WinUtil — service configuration fix and validation",
+        "ar": "WinUtil — تصحيح إعداد الخدمة والتحقق من الإعدادات"
+      },
+      "url": "https://github.com/ChrisTitusTech/winutil/pull/4972"
     }
   ]
 }
