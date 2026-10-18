@@ -5,7 +5,7 @@ title: "About Abdullah Mansour | AIMansour."
 description: "Abdullah Mansour’s approach to marketing decisions, the experience behind his work and how AI expands delivery under his brand, AIMansour."
 heading: "The decisions behind the result are what interest me."
 lead: "While reviewing campaigns at Digital Brandria, I found conversion-tracking errors alongside low-quality leads in campaigns that appeared cost-effective in the reports."
-updatedAt: "2026-10-16"
+updatedAt: "2026-10-18"
 draft: false
 ---
 
@@ -62,6 +62,16 @@ When intensive usage became expensive, I built a shared environment for an open-
 Putting AI into the operation means deciding what to delegate, preparing the environment, connecting the tools, training the people using them and assessing the effect on time, cost and delivery.
 
 [Explore the shared AI environment](/work/ai-operations/)
+
+## Following a problem into the tool itself {#open-source}
+
+Practical use has also taken me into the tools' own code and documentation. I have {{metric:open-source.merged}} contributions merged across {{metric:open-source.projects}} open-source projects, spanning AI integration, workflow reliability and accessibility.
+
+In OpenClaw, I contributed a fix that keeps the agent's name and avatar current inside an open chat while preserving the session and unsent draft. In Navigation Sounds for NVDA, I worked on keyboard-navigation feedback and compatibility as the screen reader evolved.
+
+The work follows the same discipline I bring to marketing: identify the problem, make a focused change, check what happens and work through feedback. The public contribution records make that process visible.
+
+[Review the contributions and their outcomes](/resume/#open-source-contributions)
 
 ## What I want to contribute next {#next}
 

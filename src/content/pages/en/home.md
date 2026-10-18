@@ -5,7 +5,7 @@ title: "Abdullah Mansour | Digital Marketing & Growth Specialist"
 description: "Acquisition, content and SEO by Abdullah Mansour, with practical AI expertise that expands research, execution and problem-solving."
 heading: "I build the path from market demand to customer action."
 lead: "I connect paid search, content, SEO, landing pages and measurement, taking responsibility from the first commercial question through delivery and improvement."
-updatedAt: "2026-10-16"
+updatedAt: "2026-10-18"
 draft: false
 ---
 
@@ -45,6 +45,10 @@ For Sorouh, I carried search research and content architecture through to a publ
 At Tahliq, I built tools and workflows, trained the team and created a shared AI environment to address intensive usage costs. That also involved resolving integration problems and contributions accepted into LocalAI.
 
 Behind that delivery is experience in model selection, agent direction and building and connecting tools. I apply it according to the objective, time and budget.
+
+**{{metric:open-source.merged}} contributions merged across {{metric:open-source.projects}} open-source projects.** My work includes Codex compatibility in LocalAI, live identity updates in OpenClaw and installation fixes in n8n-skills. Each has a public record of the problem, the change and its acceptance.
+
+[See the merged contributions](/resume/#open-source-contributions)
 
 [Explore the team operations case](/work/ai-operations/)
 
