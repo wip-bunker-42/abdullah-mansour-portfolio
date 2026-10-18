@@ -2,10 +2,10 @@
 key: "case:zone10"
 locale: "en"
 title: "Zone10: Google Search Acquisition | Abdullah Mansour"
-description: "How Abdullah Mansour built Zone10’s search campaigns, landing pages and tracking, with {{metric:zone10.contacts}} people contacting the business over the project."
+description: "How Abdullah Mansour built Zone10’s search campaigns, landing pages and tracking, with {{metric:zone10.contacts}} people contacting the business across {{metric:zone10.active-months}} of active advertising."
 heading: "Giving Zone10 a measurable way to reach people already searching."
-lead: "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that acquisition setup over the project."
-updatedAt: "2026-10-16"
+lead: "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that setup, with {{metric:zone10.active-months}} of active advertising scheduled around the company’s capacity for new work."
+updatedAt: "2026-10-18"
 draft: false
 ---
 
@@ -52,10 +52,10 @@ For the campaign shown, **February 1–18, 2026** produced:
 | Clicks | 131 |
 | Recorded conversion actions | 33 |
 | Conversion rate | 25.19% |
-| Cost per conversion action | US$12.42 |
+| Cost per conversion action | SAR46.57 (US$12.42) |
 
 
-Conversions in this report track interactions with the contact buttons. Costs for this reporting window are presented as USD equivalents using **US$1 = EGP 47.01** on **February 18, 2026**, rounded to two decimal places. This reference rate is the midpoint of that day’s published buying and selling rates, rounded to two decimals. The original Google Ads screenshots retain the Egyptian billing currency; the business and target market were in Saudi Arabia. [Exchange-rate reference](https://en.firstbankeg.com/12408).
+Conversion actions track interactions with the call and WhatsApp buttons. The reports come from an Egyptian billing account; amounts here are shown in SAR and USD.
 
 ![{{evidence:zone-overview.alt}}](/media/evidence/zone10/01-riyadh-performance.png)
 
@@ -63,12 +63,12 @@ Conversions in this report track interactions with the contact buttons. Costs fo
 
 ![{{evidence:zone-location.alt}}](/media/evidence/zone10/03-riyadh-location.png)
 
-*Riyadh targeting, at the USD equivalent of US$12.42 per conversion action. The original screenshot uses the Egyptian billing currency; the conversion basis is stated with the results.*
+*Riyadh targeting: SAR46.57 (US$12.42) per recorded conversion action.*
 
 The detail helped explain the response:
 
 - The primary landing page recorded **27 conversion actions from 116 clicks**, a **23.28% conversion rate**.
-- The phrase-match keyword **“التصميم الداخلي”** recorded **9 conversions from 28 clicks**, a **32.14% conversion rate** and **US$8.52 cost per conversion**.
+- The phrase-match keyword **“التصميم الداخلي”** recorded **9 conversions from 28 clicks**, a **32.14% conversion rate**, at **SAR31.95 (US$8.52) per conversion**.
 
 ![{{evidence:zone-landing-report.alt}}](/media/evidence/zone10/04-landing-page-performance.png)
 
@@ -80,17 +80,32 @@ The detail helped explain the response:
 
 That evidence supported developing more specific campaigns, messages and pages for different audience segments. The project expanded to {{metric:zone10.campaigns.value}} campaigns and {{metric:zone10.pages.value}} landing pages.
 
-## Search terms kept the work connected to actual demand {#optimization}
+## Filtering search intent before spending on it {#optimization}
 
-I reviewed search-term reports continuously, adding negative keywords and adjusting bids, budgets, ads and page elements according to traffic relevance and conversion performance.
+Interior-design searches came from people with different needs: hiring a provider, learning a skill, finding a job or choosing software. Separating those intents was one of the project's main challenges.
 
-Broad, phrase and exact match each had a place where appropriate. Their use followed the intent of the search and the evidence from the campaign.
+I built negative-keyword lists covering searches for:
+
+- Free services and resources.
+- Courses and training.
+- Jobs and employment.
+- Software and tools.
+
+Search-term reports guided ongoing updates to those lists. The aim was to direct the budget toward people looking for the design and fit-out services the company actually offered.
+
+I also adjusted bids, budgets, ads and page elements according to traffic relevance and conversion performance. Broad, phrase and exact match each had a place where appropriate, informed by the search intent and campaign results.
+
+## Acquisition paced to the work the company could take on {#capacity}
+
+The engagement ran from December 2025 to April 2026, with **{{metric:zone10.active-months}} of active advertising in total**, spread across separate periods. When the company had enough client work to fill its capacity, we paused the campaigns. We restarted them when it could take on new projects.
+
+Campaign timing followed a commercial decision: generate new demand when the business had room to serve it.
 
 ## What the business gained {#outcome}
 
 Zone10 had a working Google Search acquisition channel, supported by dedicated messaging, pages and a measurement setup for further improvement.
 
-Across December 2025–April 2026, I managed more than US${{metric:zone10.spend.number}} in ad spend across {{metric:zone10.campaigns.value}} campaigns. More than {{metric:zone10.contacts.value}} people contacted the business through the project.
+Across those active periods, I managed more than **SAR{{metric:zone10.spend.number}} (US${{metric:zone10.spend-usd.number}})** in ad spend across {{metric:zone10.campaigns.value}} campaigns. More than {{metric:zone10.contacts.value}} people contacted the business through this acquisition setup.
 
 My responsibility covered the connected journey. When performance pointed to an issue, I could work on the keyword, ad, page or measurement, then follow the decision through the same acquisition setup.
 

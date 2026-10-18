@@ -35,7 +35,7 @@ The name reflects that additional capacity within my marketing practice. I asses
 
 ## Three decisions from the work {#decisions}
 
-For Zone10, the opportunity was people already searching for interiors services in Riyadh. I connected the keywords and ads to dedicated landing pages, call and WhatsApp actions, and measurement. I could then work on the part of that journey the performance pointed to.
+For Zone10, deciding which searches to exclude was part of the budget decision. I built negative-keyword lists for free resources, courses, job searches and software, and refined them through search-term reports to keep the campaigns focused on demand for the company’s services.
 
 For Sorouh, seventeen services across ten cities offered {{metric:sorouh.possibilities.value}} possible page combinations. I selected {{metric:sorouh.local.value}} service-and-city pages with a reason to exist: relevant demand, a distinct intent and useful content.
 

@@ -19,7 +19,7 @@ draft: false
 
 ## عمل يمكن الرجوع إلى نتائجه {#results}
 
-- **{{metric:zone10.contacts}} شخصًا تواصلوا** مع Zone10 عبر منظومة Google Ads بنيتها وأدرتها خلال فترة المشروع.
+- **{{metric:zone10.contacts}} شخصًا تواصلوا** مع Zone10 عبر منظومة Google Ads بنيتها وأدرتها — {{metric:zone10.active-months}} من التشغيل الفعلي على فترات.
 - **{{metric:elkhabar.views}} مشاهدة** عبر منصات الخبر بوضوح، خلال نحو أربعة أشهر من النشر الفعلي.
 - **أكثر من {{metric:elkhabar.saved.value}} ساعات وفّرتها في يوم النشر النشط** بأتمتة توزيع محتوى الخبر بوضوح عبر {{metric:elkhabar.platforms.value}} منصات.
 - **{{metric:experience.clients}} عميلًا** توليت العمل عليهم ضمن تعاوني مع وكالة تحليق.
