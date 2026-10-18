@@ -31,7 +31,7 @@
           "Developed tracking, analytics, CRM and automation workflows using Python, n8n and AI tools.",
           "Designed and hosted AI agents, configured Codex and Claude Code, built MCP integrations and custom skills, and trained the team to use them in daily work.",
           "Evaluated models and operating environments, then built a shared model setup serving {{metric:ai.users.value}} people at less than US${{metric:ai.cost.value}} during the working day, with stronger models allocated to harder tasks.",
-          "Diagnosed AI tooling problems and used agents to develop fixes, with contributions to LocalAI, OpenClaw and n8n-skills."
+          "Diagnosed compatibility problems in the shared AI environment and directed agent-assisted fixes accepted into LocalAI."
         ],
         "ar": [
           "توليت العمل على مشاريع أكثر من {{metric:experience.clients.value}} عميلًا، شملت حملات Google Ads ومواقع وصفحات هبوط وتأسيس SEO والتتبع.",
@@ -41,7 +41,7 @@
           "طورت سير عمل للتتبع والتحليل وCRM والأتمتة باستخدام Python وn8n وأدوات AI.",
           "صممت واستضفت وكلاء AI، وجهزت Codex وClaude Code وتكاملات MCP ومهارات مخصصة، ودربت الفريق على استخدامها في العمل اليومي.",
           "قيّمت النماذج وبيئات التشغيل، وبنيت بيئة AI مشتركة لفريق من {{metric:ai.users.value}} أشخاص بتكلفة تشغيل أقل من {{metric:ai.cost.value}} دولارات خلال يوم العمل، مع تخصيص النماذج الأقوى للمهام الأصعب.",
-          "تتبعت مشكلات أدوات AI ونفذت إصلاحات بمساعدة الوكلاء، وقدمت مساهمات في LocalAI وOpenClaw وn8n-skills."
+          "تتبعت مشكلات التوافق في بيئة AI المشتركة، ووجهت إصلاحات بمساعدة الوكلاء قُبلت في LocalAI."
         ]
       }
     },
@@ -268,27 +268,6 @@
         "ar": "n8n-skills — إصلاح اكتشاف المهارات وتثبيتها"
       },
       "url": "https://github.com/czlonkowski/n8n-skills/pull/33"
-    },
-    {
-      "title": {
-        "en": "Navigation Sounds for NVDA — browse-mode navigation feedback",
-        "ar": "Navigation Sounds لقارئ الشاشة NVDA — أصوات التنقل في وضع التصفح"
-      },
-      "url": "https://github.com/ahmedthebest31/navsounds/pull/38"
-    },
-    {
-      "title": {
-        "en": "FSRS Python bindings — upstream default parameters",
-        "ar": "تكامل FSRS مع Python — توحيد القيم الافتراضية مع المصدر"
-      },
-      "url": "https://github.com/open-spaced-repetition/fsrs-rs-python/pull/73"
-    },
-    {
-      "title": {
-        "en": "WinUtil — service configuration fix and validation",
-        "ar": "WinUtil — تصحيح إعداد الخدمة والتحقق من الإعدادات"
-      },
-      "url": "https://github.com/ChrisTitusTech/winutil/pull/4972"
     }
   ]
 }

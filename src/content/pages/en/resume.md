@@ -28,33 +28,24 @@ October 2025–May 2026 · Run alongside client engagements
 
 [Read the project case](/work/elkhabar-bewodooh/)
 
-## Open-source contributions {#open-source-contributions}
+## Selected contributions to AI tools {#open-source-contributions}
 
-**{{metric:open-source.merged}} contributions merged across {{metric:open-source.projects}} open-source projects.** The work spans AI integration, workflow reliability and accessibility, with the changes and review history available on GitHub.
+Practical work with AI also includes fixing the tools behind the workflow. These accepted contributions cover model integration, tested operating guidance and skill installation.
 
-### LocalAI — integration and runtime verification
+### LocalAI — supporting the shared AI environment
 
-- [Codex WebSocket compatibility — #11608](https://github.com/mudler/LocalAI/pull/11608): supported warm-up requests and complete conversation continuation, strengthened response isolation and failure handling, and added regression coverage.
-- [Vision and generation-acceleration guidance — #11700](https://github.com/mudler/LocalAI/pull/11700): corrected an outdated compatibility restriction using runtime evidence and added a combined configuration example.
+- [Codex compatibility — #11608](https://github.com/mudler/LocalAI/pull/11608): repaired connection and conversation handling, strengthened response isolation and added regression tests.
+- [Runtime-tested operating guidance — #11700](https://github.com/mudler/LocalAI/pull/11700): tested vision input alongside generation acceleration and corrected the documentation using runtime evidence.
 
-[Read the operational context](/work/ai-operations/#contributions)
+[Read why the team needed these changes](/work/ai-operations/#contributions)
 
-### OpenClaw — a consistent chat experience
+### OpenClaw — continuity in agent conversations
 
-[Live agent identity updates — #142581](https://github.com/openclaw/openclaw/pull/142581): made names and avatars refresh inside an open chat without reloading or losing the current session and draft, with a browser regression test.
+[Live agent identity updates — #142581](https://github.com/openclaw/openclaw/pull/142581): made the agent's name and avatar update inside an open chat while preserving the current session and unsent draft, with a browser regression test.
 
 ### n8n-skills — restoring skill installation
 
-[Skill discovery and installation fix — #33](https://github.com/czlonkowski/n8n-skills/pull/33): corrected YAML errors that prevented two skills from being discovered and installed.
-
-### Navigation Sounds for NVDA — accessible navigation
-
-[Browse-mode navigation feedback — #38](https://github.com/ahmedthebest31/navsounds/pull/38): improved navigation sounds through NVDA's extension point, with compatibility handling and tests for keyboard navigation and sound selection.
-
-### Further merged contributions
-
-- [FSRS Python bindings — #73](https://github.com/open-spaced-repetition/fsrs-rs-python/pull/73): replaced outdated copied defaults with the upstream parameters so the Python integration follows its source.
-- [WinUtil — #4972](https://github.com/ChrisTitusTech/winutil/pull/4972): corrected a Windows service startup setting and added validation to catch similar configuration errors.
+[Skill discovery and installation fix — #33](https://github.com/czlonkowski/n8n-skills/pull/33): corrected two skill descriptors that blocked discovery and installation in the community n8n-skills collection.
 
 ## Education and continued learning {#education}
 

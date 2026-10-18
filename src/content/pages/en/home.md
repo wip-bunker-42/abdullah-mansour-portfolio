@@ -46,9 +46,7 @@ At Tahliq, I built tools and workflows, trained the team and created a shared AI
 
 Behind that delivery is experience in model selection, agent direction and building and connecting tools. I apply it according to the objective, time and budget.
 
-**{{metric:open-source.merged}} contributions merged across {{metric:open-source.projects}} open-source projects.** My work includes Codex compatibility in LocalAI, live identity updates in OpenClaw and installation fixes in n8n-skills. Each has a public record of the problem, the change and its acceptance.
-
-[See the merged contributions](/resume/#open-source-contributions)
+[Selected contributions to AI tools](/resume/#open-source-contributions)
 
 [Explore the team operations case](/work/ai-operations/)
 
