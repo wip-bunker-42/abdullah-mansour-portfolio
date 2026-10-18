@@ -57,21 +57,17 @@ Running it alongside client work made the production process a practical concern
 
 At Tahliq, I designed and hosted AI agents, configured Codex and Claude Code, developed custom skills and connected tools through MCP. I trained the team to use that setup for research, execution and automation.
 
-When intensive usage became expensive, I built a shared environment for an open-source model serving {{metric:ai.users.value}} people. When compatibility problems got in the way, I traced them and used AI agents to develop fixes accepted into LocalAI itself.
+When intensive usage became expensive, I built a shared environment for an open-source model serving {{metric:ai.users.value}} people.
 
 Putting AI into the operation means deciding what to delegate, preparing the environment, connecting the tools, training the people using them and assessing the effect on time, cost and delivery.
 
 [Explore the shared AI environment](/work/ai-operations/)
 
-## Following a problem into the tool itself {#open-source}
+## When the tool itself needed a fix {#open-source}
 
-Practical use has also taken me into the tools' own code and documentation. I have {{metric:open-source.merged}} contributions merged across {{metric:open-source.projects}} open-source projects, spanning AI integration, workflow reliability and accessibility.
+Compatibility problems between Codex and the shared environment led me into LocalAI itself. I traced the issue, directed AI agents through the repair and reviewed the tests. The fix was accepted into the original project, with the implementation and review available publicly.
 
-In OpenClaw, I contributed a fix that keeps the agent's name and avatar current inside an open chat while preserving the session and unsent draft. In Navigation Sounds for NVDA, I worked on keyboard-navigation feedback and compatibility as the screen reader evolved.
-
-The work follows the same discipline I bring to marketing: identify the problem, make a focused change, check what happens and work through feedback. The public contribution records make that process visible.
-
-[Review the contributions and their outcomes](/resume/#open-source-contributions)
+[Selected contributions to AI tools](/resume/#open-source-contributions)
 
 ## What I want to contribute next {#next}
 

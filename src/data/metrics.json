@@ -203,18 +203,6 @@
       "ar": "عميلًا توليت العمل معهم في تحليق"
     }
   },
-  "open-source.merged": {
-    "id": "open-source.merged",
-    "value": 7,
-    "display": { "en": "7", "ar": "7" },
-    "label": { "en": "Merged open-source contributions", "ar": "مساهمات مفتوحة المصدر مدموجة" }
-  },
-  "open-source.projects": {
-    "id": "open-source.projects",
-    "value": 6,
-    "display": { "en": "6", "ar": "6" },
-    "label": { "en": "Open-source projects", "ar": "مشاريع مفتوحة المصدر" }
-  },
   "experience.landing-pages": {
     "id": "experience.landing-pages",
     "value": 200,

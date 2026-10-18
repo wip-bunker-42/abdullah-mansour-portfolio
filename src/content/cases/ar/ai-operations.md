@@ -57,7 +57,7 @@ draft: false
 
 *تصحيح للتوثيق استند إلى اختبار فعلي، وقُبل في المشروع الأصلي.*
 
-[اطلع على مساهماتي الأخرى في أدوات AI وسير العمل وإتاحة الاستخدام](/ar/resume/#open-source-contributions)
+[مساهمات مختارة في أدوات AI](/ar/resume/#open-source-contributions)
 
 ## ما تغير في طريقة العمل {#outcome}
 

@@ -57,7 +57,7 @@ Successful image requests and runtime logs showed both capabilities operating to
 
 *A documentation correction supported by practical testing and accepted upstream.*
 
-[Explore my wider contributions to AI tools, workflow reliability and accessibility](/resume/#open-source-contributions)
+[Selected contributions to AI tools](/resume/#open-source-contributions)
 
 ## What changed for the team {#outcome}
 
