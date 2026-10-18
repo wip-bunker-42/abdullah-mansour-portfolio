@@ -14,27 +14,27 @@
       "ar": "Zone10: تأسيس طريق من بحث Google إلى التواصل مع الشركة."
     },
     "summary": {
-      "en": "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that acquisition setup over the project.",
-      "ar": "بنيت منظومة اكتساب لشركة تصميم وتنفيذ ديكور في الرياض، من فهم الطلب والكلمات المفتاحية إلى الحملات وصفحات الهبوط والقياس. وخلال فترة المشروع، تواصل مع الشركة أكثر من {{metric:zone10.contacts.value}} شخصًا عبر هذه المنظومة."
+      "en": "A Riyadh interiors business needed a route from Google Search to its sales team. I built and managed the research, campaigns, landing pages and tracking. More than {{metric:zone10.contacts.value}} people contacted the company through that setup, with {{metric:zone10.active-months}} of active advertising scheduled around the company’s capacity for new work.",
+      "ar": "بنيت منظومة اكتساب لشركة تصميم وتنفيذ ديكور في الرياض، من فهم الطلب والكلمات إلى الحملات وصفحات الهبوط والقياس. تواصل مع الشركة أكثر من {{metric:zone10.contacts.value}} شخصًا عبر هذه المنظومة. إجمالي التشغيل الإعلاني: {{metric:zone10.active-months}} على فترات، بحسب قدرتها على استقبال مشاريع جديدة."
     },
     "published": true,
     "featured": true,
     "order": 0,
     "period": {
-      "en": "December 2025–April 2026",
-      "ar": "ديسمبر 2025–أبريل 2026"
+      "en": "December 2025–April 2026 · {{metric:zone10.active-months}} of active advertising",
+      "ar": "ديسمبر 2025–أبريل 2026 · {{metric:zone10.active-months}} من التشغيل الإعلاني الفعلي"
     },
     "market": {
       "en": "Riyadh, Saudi Arabia",
       "ar": "الرياض، السعودية"
     },
     "responsibility": {
-      "en": "Research, strategy, messaging, page creation, Google Ads setup, tracking, management and optimization",
-      "ar": "البحث، والاستراتيجية، والرسائل، وبناء الصفحات، وإعداد Google Ads والتتبع، والإدارة والتحسين"
+      "en": "Search demand and intent research, negative-keyword lists, messaging, landing pages, Google Ads setup, tracking and optimization",
+      "ar": "بحث الطلب ونية البحث، وقوائم الكلمات السلبية، والرسائل، وصفحات الهبوط، وإعداد Google Ads والتتبع والتحسين"
     },
     "delivery": {
-      "en": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · More than US${{metric:zone10.spend.number}} in total ad spend",
-      "ar": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · أكثر من {{metric:zone10.spend.number}} دولار أمريكي إنفاق إعلاني إجمالي"
+      "en": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · {{metric:zone10.spend}} ({{metric:zone10.spend-usd}}) in ad spend",
+      "ar": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · إنفاق إعلاني {{metric:zone10.spend}} ({{metric:zone10.spend-usd}})"
     },
     "facts": {
       "en": [
@@ -48,15 +48,15 @@
         },
         {
           "label": "Period",
-          "value": "December 2025–April 2026"
+          "value": "December 2025–April 2026 · {{metric:zone10.active-months}} of active advertising"
         },
         {
           "label": "My responsibility",
-          "value": "Research, strategy, messaging, page creation, Google Ads setup, tracking, management and optimization"
+          "value": "Search demand and intent research, negative-keyword lists, messaging, landing pages, Google Ads setup, tracking and optimization"
         },
         {
           "label": "Delivery",
-          "value": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · More than US${{metric:zone10.spend.number}} in total ad spend"
+          "value": "{{metric:zone10.campaigns.value}} campaigns · {{metric:zone10.pages.value}} landing pages · {{metric:zone10.spend}} ({{metric:zone10.spend-usd}}) in ad spend"
         },
         {
           "label": "Metric",
@@ -76,7 +76,7 @@
         },
         {
           "label": "Cost per conversion action",
-          "value": "US$12.42"
+          "value": "SAR46.57 (US$12.42)"
         }
       ],
       "ar": [
@@ -90,15 +90,15 @@
         },
         {
           "label": "الفترة",
-          "value": "ديسمبر 2025–أبريل 2026"
+          "value": "ديسمبر 2025–أبريل 2026 · {{metric:zone10.active-months}} من التشغيل الإعلاني الفعلي"
         },
         {
           "label": "مسؤوليتي",
-          "value": "البحث، والاستراتيجية، والرسائل، وبناء الصفحات، وإعداد Google Ads والتتبع، والإدارة والتحسين"
+          "value": "بحث الطلب ونية البحث، وقوائم الكلمات السلبية، والرسائل، وصفحات الهبوط، وإعداد Google Ads والتتبع والتحسين"
         },
         {
           "label": "نطاق التنفيذ",
-          "value": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · أكثر من {{metric:zone10.spend.number}} دولار أمريكي إنفاق إعلاني إجمالي"
+          "value": "{{metric:zone10.campaigns.value}} حملات Google Ads · {{metric:zone10.pages.value}} صفحات هبوط · إنفاق إعلاني {{metric:zone10.spend}} ({{metric:zone10.spend-usd}})"
         },
         {
           "label": "المؤشر",
@@ -118,14 +118,16 @@
         },
         {
           "label": "تكلفة إجراء التحويل",
-          "value": "12.42 دولار أمريكي"
+          "value": "SAR46.57 (US$12.42)"
         }
       ]
     },
     "metricIds": [
       "zone10.contacts",
+      "zone10.active-months",
       "zone10.campaigns",
-      "zone10.spend"
+      "zone10.spend",
+      "zone10.spend-usd"
     ],
     "evidenceIds": [
       "zone-overview",

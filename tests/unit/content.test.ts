@@ -54,5 +54,5 @@ test('private or unsupported person properties cannot enter public facts', async
 test('editing a shared operating cost preserves unrelated original report amounts', async () => {
   const content=await loadSiteContent();content.metrics['ai.cost']!.value=9;
   const report=parseDocument(await readFile('src/content/cases/en/zone10.md','utf8'));
-  assert.ok(resolveReferences(report.markdown,'en',content).includes('US$8.52 cost per conversion'));
+  assert.ok(resolveReferences(report.markdown,'en',content).includes('SAR31.95 (US$8.52)'));
 });

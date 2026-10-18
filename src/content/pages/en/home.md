@@ -19,7 +19,7 @@ Hiring for your team? [Let’s discuss the role](/contact/).
 
 ## A few results to start with {#results}
 
-- **{{metric:zone10.contacts}} people contacted Zone10** through the Google Ads acquisition setup I built and managed over the project.
+- **{{metric:zone10.contacts}} people contacted Zone10** through the Google Ads acquisition setup I built and managed — {{metric:zone10.active-months}} of active advertising across separate periods.
 - **{{metric:elkhabar.views}} views across platforms** for my independent media project, across roughly four months of active publishing.
 - **More than {{metric:elkhabar.saved.value}} hours saved per active publishing day** by automating the media project’s distribution across {{metric:elkhabar.platforms.value}} platforms.
 - **{{metric:experience.clients}} clients** personally handled through my work with Tahliq Digital Agency.

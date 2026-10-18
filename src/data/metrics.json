@@ -37,14 +37,14 @@
   },
   "zone10.spend": {
     "id": "zone10.spend",
-    "value": 4000,
+    "value": 15000,
     "display": {
-      "en": "US$4,000+",
-      "ar": "US$4,000+"
+      "en": "SAR15,000+",
+      "ar": "SAR15,000+"
     },
     "label": {
-      "en": "Managed ad spend",
-      "ar": "إنفاق إعلاني مُدار"
+      "en": "Total ad spend",
+      "ar": "إجمالي الإنفاق الإعلاني"
     }
   },
   "elkhabar.views": {
@@ -213,6 +213,30 @@
     "label": {
       "en": "Landing pages created for Tahliq",
       "ar": "صفحة هبوط أنشأتها لتحليق"
+    }
+  },
+  "zone10.spend-usd": {
+    "id": "zone10.spend-usd",
+    "value": 4000,
+    "display": {
+      "en": "US$4,000+",
+      "ar": "US$4,000+"
+    },
+    "label": {
+      "en": "Total ad spend in USD",
+      "ar": "إجمالي الإنفاق بالدولار"
+    }
+  },
+  "zone10.active-months": {
+    "id": "zone10.active-months",
+    "value": 2,
+    "display": {
+      "en": "2 months",
+      "ar": "شهران"
+    },
+    "label": {
+      "en": "Active advertising",
+      "ar": "التشغيل الإعلاني الفعلي"
     }
   }
 }
