@@ -2,9 +2,9 @@
 key: "home"
 locale: "en"
 title: "Abdullah Mansour | Digital Marketing & Growth Specialist"
-description: "Acquisition, content and SEO by Abdullah Mansour, with practical AI expertise that expands research, execution and problem-solving."
+description: "Meta Ads, Google Ads, content and SEO by Abdullah Mansour, supported by practical AI expertise in research, delivery and problem-solving."
 heading: "I build the path from market demand to customer action."
-lead: "I connect paid search, content, SEO, landing pages and measurement, taking responsibility from the first commercial question through delivery and improvement."
+lead: "{{profile:summary}}"
 updatedAt: "2026-10-18"
 draft: false
 ---
@@ -19,16 +19,19 @@ Hiring for your team? [Let’s discuss the role](/contact/).
 
 ## A few results to start with {#results}
 
-- **{{metric:zone10.contacts}} people contacted Zone10** through the Google Ads acquisition setup I built and managed — {{metric:zone10.active-months}} of active advertising across separate periods.
+- **{{metric:tahliq.meta.customers.number}} clients acquired for Tahliq** through a Gulf-targeted Meta Ads campaign.
+- **{{metric:zone10.customer-conversion}} of people who contacted Zone10 became clients**, based on follow-up with the business.
 - **{{metric:elkhabar.views}} views across platforms** for my independent media project, across roughly four months of active publishing.
-- **More than {{metric:elkhabar.saved.value}} hours saved per active publishing day** by automating the media project’s distribution across {{metric:elkhabar.platforms.value}} platforms.
-- **{{metric:experience.clients}} clients** personally handled through my work with Tahliq Digital Agency.
+- **{{metric:sorouh.pages.value}} indexable pages** delivered for Sorouh's local search presence.
 
-## I check what a conversion means before scaling it {#approach}
+## Meta Ads brought clients to the agency itself {#approach}
 
-At Digital Brandria, campaign reviews uncovered tracking errors while some apparently inexpensive campaigns were attracting low-quality leads.
+I launched a Meta Ads campaign for Tahliq targeting audiences in the Gulf. It generated **{{metric:tahliq.meta.conversations.number}} WhatsApp conversation starts** and brought the agency **{{metric:tahliq.meta.customers.number}} clients**.
 
-That is the kind of detail that changes the next decision. Before increasing spend, I want to understand the action being counted, the traffic behind it and its relevance to the business.
+The advertised offer was Google Ads services. Customers bought Google Ads management, SEO, websites, landing pages and consultations.
+
+- **{{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}})** average cost per WhatsApp conversation.
+- **{{metric:tahliq.meta.customer-conversion}}** conversion from conversations to clients.
 
 ## AI expands what I can deliver in marketing {#ai}
 
@@ -54,7 +57,7 @@ Behind that delivery is experience in model selection, agent direction and build
 
 ### Paid acquisition and conversion
 
-Search intent, offers, Google Ads, landing pages and tracking that connects the response to the campaign behind it.
+Meta Ads and Google Ads, audience and search intent, offers, landing pages and tracking that connects campaign response to business outcomes.
 
 [See Zone10](/work/zone10/)
 
