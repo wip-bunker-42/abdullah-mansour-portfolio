@@ -27,6 +27,8 @@ pnpm exec tsx scripts/smoke-live.ts https://aimansour.com
 
 No scheduled job sends test mail. Launch verification sends one clearly labelled message and separately confirms inbox arrival.
 
+The read-only smoke check uses `dist/profile.json` from the verified release as its readiness target. Immediately after upload, `/profile.json` and `/api/profile` can briefly expose different asset revisions. Before checking the remaining routes, the gate polls both canonical paths with revalidation every five seconds for at most 60 seconds. Both must return the exact verified profile bytes; two matching older profiles cannot pass. Each request has a timeout capped at ten seconds and the remaining wait budget. Only valid HTTP 200 profiles with stale content are retried. HTTP, JSON/schema, network and certificate failures stop immediately; persistent drift reports expected/observed SHA-256 hashes without dumping profile contents. Header, ETag, analytics, crawler and other smoke assertions remain strict.
+
 ## Headers and caching
 
 Generated `_headers` covers static responses. Exact hashes authorize theme initialization, JSON-LD and the critical styles embedded in HTML; no unsafe inline/eval permissions are used. Embedding the small stylesheets removes render-blocking CSS requests on a first visit. Both inline and external CSS count toward the compressed budget. Worker form errors receive equivalent security/noindex/no-store headers. Hashed Astro assets are immutable. HTML, profile exports and the CV revalidate. JSON/Markdown have explicit MIME and public read CORS; GET and HEAD share ETags. The CV is served as an attachment with a useful filename.
@@ -39,7 +41,9 @@ Only apex HTTPS and `www` canonicalization are managed for this project. Preserv
 
 ## Rollback
 
-Before replacing a deployed Worker, record its current version using `pnpm exec wrangler versions list`. Roll back a bad release with `pnpm exec wrangler rollback <version-id>` and rerun the read-only smoke check. Then revert/fix the corresponding source revision through a PR so the next passing `main` does not restore the faulty version. Reverting a PDF uses the same path and revalidation; it does not require content generation.
+Before replacing a deployed Worker, record its current version using `pnpm exec wrangler versions list` and map that version to its source SHA and successful CI release run. Prepare rollback verification in a separate checkout pinned to that source SHA: install its locked dependencies and restore the matching `portfolio-<sha>` verified artifact from that run into the checkout. If the artifact has expired, rebuild that exact source revision with its locked dependencies and complete the normal quality checks before using its output.
+
+Roll back a bad release with `pnpm exec wrangler rollback <version-id>`, then run the read-only smoke check from the prepared checkout with the restored version's source and `dist`. Never use the attempted release's `dist/profile.json` to verify an older restored version: the readiness target and route list must belong to the version being verified. Then revert/fix the corresponding source revision through a PR so the next passing `main` does not restore the faulty version. Reverting a PDF uses the same path and revalidation; it does not require content generation.
 
 The first portfolio deployment has no prior portfolio Worker version. Subsequent release IDs and launch evidence are recorded in `docs/quality/acceptance.md`. Do not roll back or modify the unrelated services already using other subdomains.
 
@@ -49,7 +53,7 @@ PR #1 merged as `641ad0cdd97046c96b3e59c8acbb22c26121031c`. Its verified release
 
 The apex custom domain belongs to `aimansour-portfolio`. The proxied `www` CNAME points to the apex. Zone redirect ruleset `7eec0168d24f466788a422e9505490a9` contains the single scoped rule `783d50cf395e4bd19e2574598601d474` (`portfolio_https_apex`). Its condition is `(http.host eq "www.aimansour.com") or ((http.host eq "aimansour.com") and (not ssl))`; the target is `concat("https://aimansour.com", http.request.uri.path)`, status 301, preserving the query string. Existing mail records and other services were preserved.
 
-The initial post-deploy read happened before the brand-new apex record had reached the runner's DNS resolver. The failed-job rerun passed after propagation. The smoke entry point now waits only for transient `ENOTFOUND`/`EAI_AGAIN` results, up to 31 attempts spaced ten seconds apart. HTTP and certificate errors fail immediately; assertions are never retried or weakened. Tests cover successful recovery, exhaustion and permanent failures.
+The initial post-deploy read happened before the brand-new apex record had reached the runner's DNS resolver. The failed-job rerun passed after propagation. DNS readiness waits only for transient `ENOTFOUND`/`EAI_AGAIN` results, up to 31 attempts spaced ten seconds apart. HTTP and certificate errors fail immediately. This resolver check is separate from the bounded profile convergence gate described above. Tests cover successful recovery, exhaustion and permanent failures.
 
 The implementation follow-ups merged through PR #2 (`e7bed5878a2af0f83c88ee12301f4945d1496520`) and PR #3 (`134289d2999e310af7355f91793e5d508cad2b0c`). The accepted implementation release is Worker version `5f8eac62-873a-461f-8076-11d37d05a13d`, with a green Quality/deployment run at [GitHub Actions](https://github.com/wip-bunker-42/abdullah-mansour-portfolio/actions/runs/38992926464).
 
