@@ -41,7 +41,9 @@ Only apex HTTPS and `www` canonicalization are managed for this project. Preserv
 
 ## Rollback
 
-Before replacing a deployed Worker, record its current version using `pnpm exec wrangler versions list`. Roll back a bad release with `pnpm exec wrangler rollback <version-id>` and rerun the read-only smoke check. Then revert/fix the corresponding source revision through a PR so the next passing `main` does not restore the faulty version. Reverting a PDF uses the same path and revalidation; it does not require content generation.
+Before replacing a deployed Worker, record its current version using `pnpm exec wrangler versions list` and map that version to its source SHA and successful CI release run. Prepare rollback verification in a separate checkout pinned to that source SHA: install its locked dependencies and restore the matching `portfolio-<sha>` verified artifact from that run into the checkout. If the artifact has expired, rebuild that exact source revision with its locked dependencies and complete the normal quality checks before using its output.
+
+Roll back a bad release with `pnpm exec wrangler rollback <version-id>`, then run the read-only smoke check from the prepared checkout with the restored version's source and `dist`. Never use the attempted release's `dist/profile.json` to verify an older restored version: the readiness target and route list must belong to the version being verified. Then revert/fix the corresponding source revision through a PR so the next passing `main` does not restore the faulty version. Reverting a PDF uses the same path and revalidation; it does not require content generation.
 
 The first portfolio deployment has no prior portfolio Worker version. Subsequent release IDs and launch evidence are recorded in `docs/quality/acceptance.md`. Do not roll back or modify the unrelated services already using other subdomains.
 
