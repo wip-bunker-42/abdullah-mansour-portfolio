@@ -562,8 +562,8 @@
       "ar": "يوسف الشريف: تنسيق المحتوى والتوزيع خلف حضور رقمي أقوى."
     },
     "summary": {
-      "en": "At Digital Brandria, I developed the strategy for Sky News Arabia presenter Youssef El Sherif and led a {{metric:youssef.team.value}}-person team across content and distribution. Average YouTube views doubled within six weeks, supported by presenter coaching, consistent digital identity and simultaneous livestreaming.",
-      "ar": "ضمن عملي في Digital Brandria، وضعت استراتيجية الإعلامي يوسف الشريف، مذيع Sky News Arabia، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص في المحتوى والتوزيع. تضاعف متوسط مشاهدات YouTube خلال ستة أسابيع، مع تدريب المذيع وتوحيد الهوية وتجهيز البث المتزامن."
+      "en": "At Digital Brandria, I developed the strategy for Sky News Arabia presenter Youssef El Sherif and led a {{metric:youssef.team.value}}-person team across content and distribution. Average YouTube views reached {{metric:youssef.growth}} their previous level within six weeks, supported by presenter coaching, consistent digital identity and simultaneous livestreaming.",
+      "ar": "ضمن عملي في Digital Brandria، وضعت استراتيجية الإعلامي يوسف الشريف، مذيع Sky News Arabia، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص في المحتوى والتوزيع. وصل متوسط مشاهدات YouTube إلى {{metric:youssef.growth}} المستوى السابق خلال ستة أسابيع، مع تدريب المذيع وتوحيد الهوية وتجهيز البث المتزامن."
     },
     "published": true,
     "featured": false,

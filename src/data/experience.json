@@ -75,7 +75,7 @@
         "en": [
           "Worked as a strategic partner to the CEO across client strategy, market and competitor research, proposals, pricing and feasibility studies, translating findings into delivery decisions across agency accounts.",
           "Planned and oversaw Safarni’s {{metric:safarni.spend}} awareness campaign over {{metric:safarni.duration}}, targeting Egyptians in Egypt and the Gulf and generating {{metric:safarni.views}} of views across social platforms.",
-          "Developed the strategy and proposal for Sky News Arabia presenter Youssef El Sherif and led a {{metric:youssef.team.value}}-person team that doubled average YouTube video views within six weeks. Coached the presenter on hooks, content and production tools, enabled simultaneous livestreaming and standardized his digital identity.",
+          "Developed the strategy and proposal for Sky News Arabia presenter Youssef El Sherif and led a {{metric:youssef.team.value}}-person team that raised average YouTube video views to {{metric:youssef.growth}} their previous level within six weeks. Coached the presenter on hooks, content and production tools, enabled simultaneous livestreaming and standardized his digital identity.",
           "Audited Google Ads accounts, websites and conversion tracking, uncovering measurement errors and lead-quality assessment issues. Resolved Google Ads policy problems for beauty and aesthetics clients.",
           "Used Semrush and Ahrefs for keyword, competitor and content gap research. Developed content pillars and SEO articles for Korraa in aesthetics and Salamy in mental health; audited WordPress websites and implemented improvements with Yoast SEO.",
           "Managed backlink acquisition, including prospect assessment, target-page selection and paid placement coordination, as part of client SEO plans.",
@@ -84,7 +84,7 @@
         "ar": [
           "عملت شريكًا استراتيجيًا مباشرًا للرئيس التنفيذي في استراتيجيات العملاء وبحث السوق والمنافسين والعروض والتسعير ودراسات الجدوى، وربطت نتائج التحليل بقرارات التنفيذ عبر حسابات الوكالة.",
           "خططت وأشرفت على حملة الوعي بعلامة سفرني Safarni بإنفاق {{metric:safarni.spend}} خلال {{metric:safarni.duration}}، باستهداف المصريين في مصر والخليج، وحققت {{metric:safarni.views}} المشاهدات عبر المنصات الاجتماعية.",
-          "وضعت الاستراتيجية والمقترح للإعلامي يوسف الشريف، مذيع Sky News Arabia، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص ضاعف متوسط مشاهدات YouTube خلال ستة أسابيع. دربته على الافتتاحيات والمحتوى وأدوات الإنتاج، وجهزت البث المتزامن ووحّدت هويته الرقمية.",
+          "وضعت الاستراتيجية والمقترح للإعلامي يوسف الشريف، مذيع Sky News Arabia، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص؛ ووصل متوسط مشاهدات YouTube إلى {{metric:youssef.growth}} المستوى السابق خلال ستة أسابيع. دربته على الافتتاحيات والمحتوى وأدوات الإنتاج، وجهزت البث المتزامن ووحّدت هويته الرقمية.",
           "راجعت حسابات Google Ads والمواقع وتتبع التحويلات، وكشفت أخطاء القياس وتقييم جودة العملاء المحتملين، وعالجت مشكلات سياسات Google Ads لعملاء قطاع التجميل.",
           "استخدمت Semrush وAhrefs لبحث الكلمات والمنافسين وفجوات المحتوى. طورت محاور المحتوى ومقالات SEO لصالح Korraa في التجميل وSalamy في الصحة النفسية، وراجعت مواقع WordPress ونفذت تحسينات باستخدام Yoast SEO.",
           "أدرت اكتساب الروابط الخلفية، من تقييم مواقع النشر واختيار الصفحات المستهدفة إلى تنسيق الروابط المدفوعة ضمن خطط SEO للعملاء.",
@@ -216,6 +216,10 @@
       "institution": {
         "en": "Al-Azhar University",
         "ar": "جامعة الأزهر"
+      },
+      "qualification": {
+        "en": "Bachelor’s Degree",
+        "ar": "درجة البكالوريوس"
       }
     }
   ],
