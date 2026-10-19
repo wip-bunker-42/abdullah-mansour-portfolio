@@ -5,11 +5,13 @@ title: "Experience & Résumé | Abdullah Mansour"
 description: "Abdullah Mansour’s experience in acquisition, content, SEO and measurement, with AI expertise that supports delivery and team operations."
 heading: "Abdullah Mansour"
 lead: "**Digital Marketing & Growth Specialist**"
-updatedAt: "2026-10-18"
+updatedAt: "2026-10-19"
 draft: false
 ---
 
-Digital marketing and growth specialist with 3+ years of experience across agencies, clients and independent projects, spanning Meta Ads, Google Ads, content strategy, SEO and measurement. Advanced practical AI expertise expands my ability to research, execute, automate and build solutions that save time and improve team delivery.
+I lead paid acquisition, content and search strategy for businesses in Egypt and the Gulf. My work includes {{metric:tahliq.meta.customers.number}} clients acquired for Tahliq, {{metric:experience.google-accounts.value}} Google Ads accounts managed for Saudi service businesses, and a media venture that reached {{metric:elkhabar.views}} views in {{metric:elkhabar.growth-window}}.
+
+Alongside campaign and content delivery, I work on commercial proposals, feasibility, websites, analytics and automation that improves delivery speed and service margins.
 
 [Contact me about a role](/contact/)
 
@@ -19,12 +21,12 @@ Digital marketing and growth specialist with 3+ years of experience across agenc
 
 **Founder · Content Strategy & Growth**
 
-October 2025–May 2026 · Run alongside client engagements
+Built alongside client engagements · Audience growth in {{metric:elkhabar.growth-window}}
 
 - Identified an opportunity for timely news analysis and built the content and audience acquisition strategy around it.
 - Owned research, scripts, filming, publishing, community management and performance analysis.
-- Generated more than {{metric:elkhabar.views.number}} views across roughly four months of active publishing, with the Facebook audience reaching around {{metric:elkhabar.followers.number}} followers.
-- Developed filming tools and automated publishing across {{metric:elkhabar.platforms.value}} platforms, saving more than {{metric:elkhabar.saved.value}} hours on active publishing days.
+- Reached {{metric:elkhabar.views}} views across platforms and {{metric:elkhabar.followers}} Facebook followers in {{metric:elkhabar.growth-window}}, gaining entry to Meta’s monetization program.
+- Developed filming tools and automated publishing and scheduling across {{metric:elkhabar.platforms.value}} platforms at zero cost, saving more than {{metric:elkhabar.saved.value}} hours on active publishing days.
 
 [Read the project case](/work/elkhabar-bewodooh/)
 
@@ -49,7 +51,9 @@ Practical work with AI also includes fixing the tools behind the workflow. These
 
 ## Education and continued learning {#education}
 
-**Al-Azhar University — Faculty of Islamic Da‘wah**
+**Al-Azhar University**
+
+Bachelor’s Degree
 
 Self-directed learning through Coursera, Udemy and YouTube, alongside credentials from Google, Meta and Almentor. Continued learning is put into practice through project delivery and performance review.
 

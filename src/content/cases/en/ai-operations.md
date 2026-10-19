@@ -2,16 +2,16 @@
 key: "case:ai-operations"
 locale: "en"
 title: "AI Agents & Model Operations | Abdullah Mansour"
-description: "Model selection, hosting and agent integration for {{metric:ai.users.value}} people, with a shared environment below US${{metric:ai.cost.value}} per working day and merged LocalAI contributions."
-heading: "Models, agents and integration: building a shared AI environment."
-lead: "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. {{metric:ai.users.value}} people gained an execution path for suitable tasks, with the environment running below US${{metric:ai.cost.value}} during the working day and stronger models retained where needed."
-updatedAt: "2026-10-18"
+description: "Daily AI costs reduced from {{metric:ai.previous-cost}} to under US${{metric:ai.cost.value}} for {{metric:ai.users.value}} people, through model selection, agent integration and team training."
+heading: "From {{metric:ai.previous-cost}} to under US${{metric:ai.cost.value}} per working day."
+lead: "I built a shared AI environment for {{metric:ai.users.value}} people at Tahliq, reducing daily operating costs by more than {{metric:ai.cost-reduction.value}}%. I selected and hosted models, connected them to agent tools, trained the team and resolved integration problems through fixes accepted into LocalAI."
+updatedAt: "2026-10-19"
 draft: false
 ---
 
 ## The more useful AI became, the harder its usage was to manage {#constraint}
 
-As the team used agents for more work, usage limits became an operational constraint. The choices included waiting for a reset, buying additional capacity or managing growing consumption-based costs.
+Daily AI spending had reached {{metric:ai.previous-cost}}. As the team used agents for more work, usage limits became an operational constraint. The choices included waiting for a reset, buying additional capacity or managing growing consumption-based costs.
 
 The work needed a way to allocate tasks that supported continued delivery and made higher-capability models available where their contribution mattered most.
 
@@ -61,7 +61,7 @@ Successful image requests and runtime logs showed both capabilities operating to
 
 ## What changed for the team {#outcome}
 
-{{metric:ai.users.value}} people gained a shared execution path for suitable tasks, with the hosted environment running at less than US${{metric:ai.cost.value}} during the working day. Stronger models remained in use for planning, supervision and harder tasks.
+Daily operating costs fell from **{{metric:ai.previous-cost}} to under US${{metric:ai.cost.value}}**, a reduction of more than **{{metric:ai.cost-reduction.value}}%**, while serving **{{metric:ai.users.value}} people** through the shared environment. Stronger models remained in use for planning, supervision and harder tasks.
 
 The project brings together several levels of my AI expertise: model selection and hosting, agent integration, task direction, output review and following a problem into the original tool when the solution requires it.
 
