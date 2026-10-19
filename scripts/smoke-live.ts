@@ -1,14 +1,17 @@
+import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {loadSiteContent} from '../src/content/read.ts';
 import {getPublishedRoutes} from '../src/i18n/routes.ts';
-import {PublicProfileSchema} from '../src/lib/public-profile.ts';
 import {waitForPublicDns} from './wait-for-dns.ts';
+import {waitForProfileRelease} from './wait-for-profile.ts';
 import {verifyAnalyticsInstallation} from './analytics.ts';
 const requireValue=(condition:unknown,message:string)=>{if(!condition)throw Error(message);};
 export async function smokeLive(baseUrl:string):Promise<void> {
   const base=new URL(baseUrl);const content=await loadSiteContent();const routes=getPublishedRoutes(content);
+  const expectedProfile=await readFile(new URL('../dist/profile.json',import.meta.url),'utf8');
   requireValue((await waitForPublicDns(new URL('/',base).href)).status===200,'Published homepage is unavailable');
+  await waitForProfileRelease(base.origin,expectedProfile);
   const get=(path:string,init:RequestInit={})=>fetch(new URL(path,base),{...init,signal:AbortSignal.timeout(20_000)});
   for(const route of routes) {
     const response=await get(route.path,{headers:{Accept:'text/html','User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/155.0.0.0 Safari/537.36'}});requireValue(response.status===200,`${route.path}: expected 200, got ${response.status}`);
@@ -20,8 +23,6 @@ export async function smokeLive(baseUrl:string):Promise<void> {
     requireValue(response.headers.get('cache-control')?.includes('must-revalidate'),`${route.path}: expected revalidation`);
     const md=await get(route.markdownPath!);requireValue(md.status===200&&md.headers.get('content-type')?.includes('text/markdown'),`${route.path}: Markdown representation unavailable`);
   }
-  const profile=await get('/profile.json');const profileBytes=await profile.text();const api=await get('/api/profile');
-  requireValue(profile.status===200&&api.status===200&&await api.text()===profileBytes,'Public profile representations differ');PublicProfileSchema.parse(JSON.parse(profileBytes));
   for(const path of ['/profile.json','/api/profile','/profile.schema.json','/openapi.json','/ar/work/index.md','/llms.txt','/llms-full.txt']) {
     const response=await get(path);const head=await get(path,{method:'HEAD'});
     requireValue(response.status===200&&head.status===200,`${path}: GET/HEAD unavailable`);
