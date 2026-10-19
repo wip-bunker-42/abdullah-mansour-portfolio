@@ -2,91 +2,80 @@
 key: "home"
 locale: "en"
 title: "Abdullah Mansour | Digital Marketing & Growth Specialist"
-description: "Meta Ads, Google Ads, content and SEO by Abdullah Mansour, supported by practical AI expertise in research, delivery and problem-solving."
+description: "Customer acquisition, content growth and SEO by Abdullah Mansour: Meta Ads, Google Ads, commercial strategy and AI automation for faster delivery."
 heading: "I build the path from market demand to customer action."
 lead: "{{profile:summary}}"
-updatedAt: "2026-10-18"
+updatedAt: "2026-10-19"
 draft: false
 ---
 
-My AI expertise expands what I can deliver: deeper research, faster execution and tools that reduce repetitive work, creating more room for analysis and improvement.
+I combine campaign ownership with content, websites and analytics, then improve the process behind delivery through practical AI and automation.
 
 [Explore my work](/work/) · [Experience & résumé](/resume/)
 
-Hiring for your team? [Let’s discuss the role](/contact/).
+## Results across acquisition, content and delivery {#results}
 
+- **{{metric:tahliq.meta.customers.number}} clients acquired for Tahliq**, at {{metric:tahliq.meta.customer-cost-usd}} in advertising spend per acquired client.
+- **{{metric:zone10.contacts}} people contacted Zone10; {{metric:zone10.customer-conversion}} became clients**, over {{metric:zone10.active-months}} of active advertising.
+- **{{metric:experience.google-accounts.value}} Google Ads accounts** managed for Saudi service businesses.
+- **{{metric:elkhabar.views}} views and {{metric:elkhabar.followers}} Facebook followers** for my media venture in {{metric:elkhabar.growth-window}}.
 
+## An audience decision that brought the agency {{metric:tahliq.meta.customers.number}} clients {#approach}
 
-## A few results to start with {#results}
+At Tahliq, I proposed targeting Egyptian business owners across all {{metric:tahliq.gcc-countries.value}} GCC countries. The offer addressed a practical problem: getting found on Google in competitive local markets, through a website, SEO and Google Ads matched to what each business already had.
 
-- **{{metric:tahliq.meta.customers.number}} clients acquired for Tahliq** through a Gulf-targeted Meta Ads campaign.
-- **{{metric:zone10.customer-conversion}} of people who contacted Zone10 became clients**, based on follow-up with the business.
-- **{{metric:elkhabar.views}} views across platforms** for my independent media project, across roughly four months of active publishing.
-- **{{metric:sorouh.pages.value}} indexable pages** delivered for Sorouh's local search presence.
+I shaped the offer, directed the video and messaging, set the targeting, and launched and optimized the Meta campaign. It generated **{{metric:tahliq.meta.conversations.number}} WhatsApp conversations and {{metric:tahliq.meta.customers.number}} agency clients**.
 
-## Meta Ads brought clients to the agency itself {#approach}
-
-I launched a Meta Ads campaign for Tahliq targeting audiences in the Gulf. It generated **{{metric:tahliq.meta.conversations.number}} WhatsApp conversation starts** and brought the agency **{{metric:tahliq.meta.customers.number}} clients**.
-
-The advertised offer was Google Ads services. Customers bought Google Ads management, SEO, websites, landing pages and consultations.
-
-- **{{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}})** average cost per WhatsApp conversation.
+- **{{metric:tahliq.meta.customer-cost-sar}} ({{metric:tahliq.meta.customer-cost-usd}})** in advertising spend per acquired client.
+- **{{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}})** per WhatsApp conversation.
 - **{{metric:tahliq.meta.customer-conversion}}** conversion from conversations to clients.
 
-## AI expands what I can deliver in marketing {#ai}
+Clients bought websites, Google Ads management, SEO and social media services according to their needs. Acquisition was paused when the team’s delivery capacity was full.
 
-### Less repetition, more time to improve the work
+## Better operating economics, faster delivery {#ai}
 
-For Elkhabar Bewodooh, I built tools around filming and publishing across {{metric:elkhabar.platforms.value}} platforms. Distribution automation saved more than {{metric:elkhabar.saved.value}} hours on active publishing days, making more time available for research, content and performance review.
+### Client websites: days to around one hour
 
-### Taking the plan into delivery
+I built an AI-assisted workflow used for **{{metric:delivery.sites}} client websites**, reducing delivery to around {{metric:delivery.hours.value}} hour after receiving the client’s information, including the content management system, analytics and launch. Client-owned hosting and a domain-price research workflow eliminated hosting costs and reduced domain purchase costs by **{{metric:delivery.domain-savings}}**.
 
-For Sorouh, I carried search research and content architecture through to a published website with SEO and measurement, using AI in development. My responsibility extended from deciding what to build to reviewing what reached the visitor.
+### A shared AI environment: {{metric:ai.previous-cost}} to under US${{metric:ai.cost.value}} a day
 
-### A capability the team can use
+I selected models, connected agents and trained the team, reducing daily AI operating costs by more than **{{metric:ai.cost-reduction.value}}%** for **{{metric:ai.users.value}} users**. Integration fixes were accepted into LocalAI.
 
-At Tahliq, I built tools and workflows, trained the team and created a shared AI environment to address intensive usage costs. That also involved resolving integration problems and contributions accepted into LocalAI.
+### Publishing: {{metric:elkhabar.platforms.value}} platforms at zero cost
 
-Behind that delivery is experience in model selection, agent direction and building and connecting tools. I apply it according to the objective, time and budget.
+For Elkhabar Bewodooh, I automated publishing and scheduling across **{{metric:elkhabar.platforms.value}} platforms at zero cost**, saving **{{metric:elkhabar.saved}} per active publishing day** and releasing time for research, production and analysis.
 
-[Selected contributions to AI tools](/resume/#open-source-contributions)
-
-[Explore the team operations case](/work/ai-operations/)
+[Explore the AI operations case](/work/ai-operations/) · [Selected open-source contributions](/resume/#open-source-contributions)
 
 ## Where I contribute {#capabilities}
 
 ### Paid acquisition and conversion
 
-Meta Ads and Google Ads, audience and search intent, offers, landing pages and tracking that connects campaign response to business outcomes.
+Google Ads and Meta Ads, audience and search intent, offers, landing pages, retargeting and conversion tracking. My experience spans {{metric:experience.google-accounts.value}} Google Ads accounts for Saudi service businesses and {{metric:experience.concurrent-accounts.value}} advertising accounts managed concurrently.
 
 [See Zone10](/work/zone10/)
 
 ### Content and audience growth
 
-Editorial opportunities, hooks, pacing and distribution, developed through retention, sharing and audience response.
+Content strategy, hooks, retention, production and distribution, from my own media venture to leading a {{metric:youssef.team.value}}-person team for Sky News Arabia presenter Youssef El Sherif.
 
-[See Elkhabar Bewodooh](/work/elkhabar-bewodooh/)
+[See Elkhabar Bewodooh](/work/elkhabar-bewodooh/) · [See the team project](/work/youssef-el-sherif/)
 
-### SEO and the site behind it
+### SEO and website delivery
 
-Search research, content architecture, technical implementation and measurement of the pages that prompt contact.
+Keyword and competitor research, content pillars, WordPress optimization, local search architecture and technical implementation, with analytics and automated quality checks.
 
 [See Sorouh](/work/sorouh/)
 
-### Team delivery and better ways of working
+## Agency strategy and responsibility for delivery {#experience}
 
-Clear tasks, output review and practical training in tools and workflows. I led {{metric:youssef.team.value}} people on Youssef El Sherif’s project, helping average YouTube video views reach {{metric:youssef.growth}} their previous level within the first six weeks.
+At Tahliq, I handled work for more than {{metric:experience.clients.value}} clients. At Digital Brandria, I worked directly with the CEO on client strategy, proposals, pricing and feasibility, alongside campaign and content delivery.
 
-[See the team delivery project](/work/youssef-el-sherif/)
+That included Safarni’s {{metric:safarni.spend}} awareness campaign and a market study that led a client not to proceed with a proposed app in Al-Arish.
 
-## Built through practical responsibility {#experience}
+[More about my approach](/about/)
 
-My path into marketing has been shaped by self-directed learning and work with agencies and clients in Egypt, the Gulf and international markets. I have delivered projects myself, reviewed team output, led a {{metric:youssef.team.value}}-person project team and built a media venture of my own.
+## Tell me what your team needs to achieve {#next}
 
-That range helps me shape the approach and carry delivery through with the team. My AI expertise gives me more ways to build the solution, reduce repetitive effort and address obstacles to delivery.
-
-[More about me](/about/)
-
-## Tell me what the role needs to achieve {#next}
-
-I’m interested in digital marketing and growth roles where commercial judgment and practical AI expertise can move the work forward and strengthen how the team delivers.
+I’m interested in digital marketing and growth roles where I can connect commercial strategy with campaign, content and website delivery, and improve how the team works through analytics and automation.

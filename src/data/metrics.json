@@ -63,8 +63,8 @@
     "id": "elkhabar.followers",
     "value": 17000,
     "display": {
-      "en": "≈17K",
-      "ar": "≈17K"
+      "en": "17K",
+      "ar": "17K"
     },
     "label": {
       "en": "Facebook followers",
@@ -163,8 +163,8 @@
       "ar": "<US$8"
     },
     "label": {
-      "en": "Shared environment / working day",
-      "ar": "تشغيل البيئة المشتركة / يوم عمل"
+      "en": "Current AI cost / working day",
+      "ar": "تكلفة تشغيل AI الحالية / يوم عمل"
     }
   },
   "youssef.team": {
@@ -333,6 +333,162 @@
     "label": {
       "en": "Zone10: contacts becoming clients",
       "ar": "Zone10: من التواصل إلى عميل"
+    }
+  },
+  "experience.google-accounts": {
+    "id": "experience.google-accounts",
+    "value": 23,
+    "display": {
+      "en": "23",
+      "ar": "23"
+    },
+    "label": {
+      "en": "Google Ads accounts managed",
+      "ar": "حساب Google Ads أدرتها"
+    }
+  },
+  "experience.concurrent-accounts": {
+    "id": "experience.concurrent-accounts",
+    "value": 4,
+    "display": {
+      "en": "4",
+      "ar": "4"
+    },
+    "label": {
+      "en": "Advertising accounts managed concurrently",
+      "ar": "حسابات إعلانية أدرتها بالتزامن"
+    }
+  },
+  "tahliq.gcc-countries": {
+    "id": "tahliq.gcc-countries",
+    "value": 6,
+    "display": {
+      "en": "6",
+      "ar": "6"
+    },
+    "label": {
+      "en": "GCC countries in the acquisition audience",
+      "ar": "دول خليجية شملها جمهور الاكتساب"
+    }
+  },
+  "delivery.sites": {
+    "id": "delivery.sites",
+    "value": 60,
+    "display": {
+      "en": "~60",
+      "ar": "نحو 60"
+    },
+    "label": {
+      "en": "Client websites delivered through the workflow",
+      "ar": "موقعًا للعملاء أُنجز عبر المنظومة"
+    }
+  },
+  "delivery.hours": {
+    "id": "delivery.hours",
+    "value": 1,
+    "display": {
+      "en": "~1 hour",
+      "ar": "نحو ساعة"
+    },
+    "label": {
+      "en": "Website delivery after receiving client information",
+      "ar": "تسليم الموقع بعد استلام بيانات العميل"
+    }
+  },
+  "delivery.hosting-savings": {
+    "id": "delivery.hosting-savings",
+    "value": 100,
+    "display": {
+      "en": "100%",
+      "ar": "100%"
+    },
+    "label": {
+      "en": "Hosting costs eliminated",
+      "ar": "خفض تكاليف الاستضافة"
+    }
+  },
+  "delivery.domain-savings": {
+    "id": "delivery.domain-savings",
+    "value": 90,
+    "display": {
+      "en": "90%",
+      "ar": "90%"
+    },
+    "label": {
+      "en": "Reduction in domain purchase costs",
+      "ar": "خفض تكلفة شراء النطاقات"
+    }
+  },
+  "ai.previous-cost": {
+    "id": "ai.previous-cost",
+    "value": 100,
+    "display": {
+      "en": "US$100",
+      "ar": "100 دولار"
+    },
+    "label": {
+      "en": "Previous AI spend / working day",
+      "ar": "الإنفاق السابق على AI / يوم عمل"
+    }
+  },
+  "ai.cost-reduction": {
+    "id": "ai.cost-reduction",
+    "value": 92,
+    "display": {
+      "en": ">92%",
+      "ar": ">92%"
+    },
+    "label": {
+      "en": "Reduction in daily AI operating costs",
+      "ar": "خفض تكلفة تشغيل AI اليومية"
+    }
+  },
+  "elkhabar.growth-window": {
+    "id": "elkhabar.growth-window",
+    "value": 4,
+    "display": {
+      "en": "under four months",
+      "ar": "أقل من أربعة أشهر"
+    },
+    "label": {
+      "en": "Time to the audience growth milestone",
+      "ar": "مدة الوصول إلى نتيجة نمو الجمهور"
+    }
+  },
+  "safarni.spend": {
+    "id": "safarni.spend",
+    "value": 5000,
+    "display": {
+      "en": "US$5,000",
+      "ar": "5,000 دولار"
+    },
+    "label": {
+      "en": "Brand awareness campaign spend",
+      "ar": "إنفاق حملة الوعي بالعلامة"
+    }
+  },
+  "safarni.duration": {
+    "id": "safarni.duration",
+    "value": 1,
+    "display": {
+      "en": "one month",
+      "ar": "شهر واحد"
+    },
+    "label": {
+      "en": "Brand awareness campaign duration",
+      "ar": "مدة حملة الوعي بالعلامة"
+    }
+  },
+  "safarni.views": {
+    "id": "safarni.views",
+    "value": "millions",
+    "display": {
+      "en": "millions",
+      "ar": "ملايين"
+    },
+    "label": {
+      "en": "Views across social platforms",
+      "ar": "مشاهدات عبر المنصات الاجتماعية"
     }
   }
 }

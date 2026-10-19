@@ -11,7 +11,7 @@ const { content, document, locale } = Astro.props;
 const m = t(locale);
 const section = (id: string) => document.sections.find(s => s.id === id);
 const selected = content.projects.filter(p => p.published && p.featured).sort((a,b) => a.order - b.order);
-const metrics = ['tahliq.meta.customers', 'zone10.customer-conversion', 'elkhabar.views', 'sorouh.pages'].map(id => content.metrics[id]!);
+const metrics = ['tahliq.meta.customers', 'zone10.customer-conversion', 'experience.google-accounts', 'elkhabar.views'].map(id => content.metrics[id]!);
 const approach = section('approach'); const ai = section('ai'); const experience = section('experience'); const next = section('next');
 ---
 <div class="container">
@@ -35,6 +35,6 @@ const approach = section('approach'); const ai = section('ai'); const experience
     <div>{selected.map((project, i) => <WorkRow project={project} content={content} locale={locale} reverse={i === 1}/>)}</div>
   </section>}
   {ai && <section class="section capability-section" aria-labelledby="ai-heading"><div><h2 id="ai-heading">{ai.heading}</h2><ul class="capabilities">{content.experience.capabilities.slice(0,6).map(c => <li>{c.name[locale]}</li>)}</ul></div><div class="prose" set:html={ai.html}/></section>}
-  {experience && <section class="section experience-summary" aria-labelledby="experience-heading"><div><h2 id="experience-heading">{experience.heading}</h2><p class="muted">{content.experience.positions.map(p => p.organization[locale]).join(' · ')}</p></div><a class="text-link" href={getRoute('resume', locale).path}>{m.experience}</a></section>}
+  {experience && <section class="section experience-summary" aria-labelledby="experience-heading"><div><h2 id="experience-heading">{experience.heading}</h2><div class="prose" set:html={experience.html}/></div><a class="text-link" href={getRoute('resume', locale).path}>{m.experience}</a></section>}
   <section class="home-closing" aria-labelledby="closing-heading"><h2 id="closing-heading">{next?.heading || m.footer}</h2>{next && <div class="prose" set:html={next.html}/>}<a class="button button--primary" href={getRoute('contact', locale).path}>{m.contact}</a></section>
 </div>

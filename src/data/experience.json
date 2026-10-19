@@ -24,34 +24,28 @@
       },
       "details": {
         "en": [
-          "Personally handled work for more than {{metric:experience.clients.value}} clients across paid advertising, websites, landing pages, SEO foundations and tracking.",
-          "Launched Meta Ads campaigns to acquire clients for Tahliq itself, alongside Google Ads and Meta Ads campaigns for agency clients.",
-          "A Gulf-targeted campaign generated {{metric:tahliq.meta.conversations.number}} WhatsApp conversation starts and acquired {{metric:tahliq.meta.customers.number}} clients for the agency, a {{metric:tahliq.meta.customer-conversion}} conversation-to-client conversion rate.",
-          "The campaign promoted Google Ads services; sales included Google Ads management, SEO, websites, landing pages and consultations.",
-          "Average cost per WhatsApp conversation: {{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}}). Average client acquisition cost: {{metric:tahliq.meta.customer-cost-sar}} ({{metric:tahliq.meta.customer-cost-usd}}).",
-          "Provided Meta Ads consulting alongside hands-on campaign delivery.",
-          "Created more than {{metric:experience.landing-pages.value}} landing pages for the agency, connecting messaging, offers and page experience to conversion goals.",
-          "Contributed to offer design, channel strategy, marketing funnels, budget allocation and performance review.",
-          "Reviewed team output, guided delivery and contributed to proposals, sales meetings and client advisory work.",
-          "Developed tracking, analytics, CRM and automation workflows using Python, n8n and AI tools.",
-          "Designed and hosted AI agents, configured Codex and Claude Code, built MCP integrations and custom skills, and trained the team to use them in daily work.",
-          "Evaluated models and operating environments, then built a shared model setup serving {{metric:ai.users.value}} people at less than US${{metric:ai.cost.value}} during the working day, with stronger models allocated to harder tasks.",
-          "Diagnosed compatibility problems in the shared AI environment and directed agent-assisted fixes accepted into LocalAI."
+          "Owned delivery for more than {{metric:experience.clients.value}} clients across paid media, websites, SEO and measurement; created {{metric:experience.landing-pages}} landing pages supporting Google Ads campaigns and conversion goals.",
+          "Managed {{metric:experience.concurrent-accounts.value}} advertising accounts concurrently across Google Ads and Meta Ads, covering setup, budget allocation, creative direction, retargeting and optimization.",
+          "Proposed Egyptian business owners across all {{metric:tahliq.gcc-countries.value}} GCC countries as an acquisition audience. Developed the website, SEO and Google Ads offer, directed video creative and targeting, and launched and optimized the Meta campaign.",
+          "The campaign generated {{metric:tahliq.meta.conversations.number}} WhatsApp conversation starts and acquired {{metric:tahliq.meta.customers.number}} clients for Tahliq, a {{metric:tahliq.meta.customer-conversion}} conversation-to-client conversion rate. Clients bought websites, Google Ads management, SEO and social media services according to their needs.",
+          "Advertising spend averaged {{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}}) per WhatsApp conversation and {{metric:tahliq.meta.customer-cost-sar}} ({{metric:tahliq.meta.customer-cost-usd}}) per acquired client. Paused acquisition when delivery capacity was full.",
+          "Built an AI-assisted workflow used for {{metric:delivery.sites}} client websites, reducing delivery from days to around {{metric:delivery.hours.value}} hour after receiving client information, including the CMS, analytics and launch.",
+          "Eliminated hosting costs and reduced domain purchase costs by {{metric:delivery.domain-savings}} through client-owned Cloudflare accounts and a workflow comparing purchase and renewal prices, improving service margins and price competitiveness.",
+          "Reduced daily AI operating costs from {{metric:ai.previous-cost}} to under US${{metric:ai.cost.value}} for {{metric:ai.users.value}} users, a reduction of more than {{metric:ai.cost-reduction.value}}%. Configured agents, custom skills and MCP integrations, and trained the team to use them.",
+          "Used Python and the Google Ads API to accelerate keyword research, filtering and account workflows; implemented GA4, Google Tag Manager and contact tracking, and automated weekly client reporting.",
+          "Advised clients, reviewed team delivery and contributed to commercial proposals and sales meetings. Diagnosed AI integration problems and directed fixes accepted upstream into LocalAI."
         ],
         "ar": [
-          "توليت العمل على مشاريع أكثر من {{metric:experience.clients.value}} عميلًا، شملت الحملات الإعلانية ومواقع وصفحات هبوط وتأسيس SEO والتتبع.",
-          "أطلقت حملات Meta Ads لاكتساب عملاء لوكالة تحليق نفسها، إلى جانب حملات Google Ads وMeta Ads لصالح عملاء الوكالة.",
-          "حققت حملة استهدفت جمهورًا في الخليج {{metric:tahliq.meta.conversations.number}} محادثة بدأت عبر واتساب، واكتسبت الوكالة منها {{metric:tahliq.meta.customers.number}} عميل، بنسبة تحوّل من المحادثات إلى العملاء بلغت {{metric:tahliq.meta.customer-conversion}}.",
-          "روّجت الحملة لخدمات إعلانات Google؛ وشملت المبيعات إدارة إعلانات Google وSEO والمواقع وصفحات الهبوط والاستشارات.",
-          "متوسط تكلفة محادثة واتساب: {{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}}). ومتوسط تكلفة اكتساب العميل: {{metric:tahliq.meta.customer-cost-sar}} ({{metric:tahliq.meta.customer-cost-usd}}).",
-          "قدمت استشارات في Meta Ads بالتوازي مع عملي في إطلاق الحملات وتنفيذها.",
-          "أنشأت أكثر من {{metric:experience.landing-pages.value}} صفحة هبوط لصالح الوكالة، وربطت الرسائل والعروض وتجربة الصفحة بهدف التحويل.",
-          "شاركت في تصميم العروض التسويقية، ووضع استراتيجيات القنوات ومسارات التحويل، وتوزيع الميزانيات، ومراجعة الأداء.",
-          "راجعت أعمال الفريق، ووجهت التنفيذ، وشاركت في إعداد المقترحات واجتماعات المبيعات وتقديم الاستشارات للعملاء.",
-          "طورت سير عمل للتتبع والتحليل وCRM والأتمتة باستخدام Python وn8n وأدوات AI.",
-          "صممت واستضفت وكلاء AI، وجهزت Codex وClaude Code وتكاملات MCP ومهارات مخصصة، ودربت الفريق على استخدامها في العمل اليومي.",
-          "قيّمت النماذج وبيئات التشغيل، وبنيت بيئة AI مشتركة لفريق من {{metric:ai.users.value}} أشخاص بتكلفة تشغيل أقل من {{metric:ai.cost.value}} دولارات خلال يوم العمل، مع تخصيص النماذج الأقوى للمهام الأصعب.",
-          "تتبعت مشكلات التوافق في بيئة AI المشتركة، ووجهت إصلاحات بمساعدة الوكلاء قُبلت في LocalAI."
+          "توليت التنفيذ لأكثر من {{metric:experience.clients.value}} عميلًا عبر الإعلانات والمواقع وSEO والقياس، وأنشأت {{metric:experience.landing-pages}} صفحة هبوط تخدم حملات Google Ads وأهداف التحويل.",
+          "أدرت {{metric:experience.concurrent-accounts.value}} حسابات إعلانية بالتزامن عبر Google Ads وMeta Ads، من التأسيس وتوزيع الميزانيات إلى توجيه الإبداع وإعادة الاستهداف والتحسين.",
+          "اقترحت استهداف أصحاب الأعمال المصريين في دول الخليج الـ{{metric:tahliq.gcc-countries.value}}. صممت عرض المواقع وSEO وGoogle Ads، ووجهت الفيديو والرسالة والاستهداف، ثم أطلقت حملة Meta وحسّنتها.",
+          "حققت الحملة {{metric:tahliq.meta.conversations.number}} محادثة بدأت عبر واتساب، واكتسبت تحليق منها {{metric:tahliq.meta.customers.number}} عميل، بنسبة تحوّل {{metric:tahliq.meta.customer-conversion}}. شملت الخدمات المبيعة المواقع وإدارة Google Ads وSEO والسوشيال ميديا بحسب احتياج كل عميل.",
+          "بلغ متوسط الإنفاق الإعلاني {{metric:tahliq.meta.conversation-cost-sar}} ({{metric:tahliq.meta.conversation-cost-usd}}) للمحادثة، و{{metric:tahliq.meta.customer-cost-sar}} ({{metric:tahliq.meta.customer-cost-usd}}) لاكتساب العميل. أوقفت الاكتساب مؤقتًا عندما امتلأت قدرة الفريق على التسليم.",
+          "بنيت منظومة مدعومة بالذكاء الاصطناعي استُخدمت لإنجاز {{metric:delivery.sites}} موقعًا للعملاء، وخفضت التسليم من أيام إلى نحو ساعة بعد استلام البيانات، شاملة لوحة إدارة المحتوى والقياس والنشر.",
+          "ألغيت تكاليف الاستضافة وخفضت تكلفة شراء النطاقات {{metric:delivery.domain-savings}}، باستخدام حساب Cloudflare لكل عميل وسير عمل يقارن أسعار الشراء والتجديد، لتحسين هامش الربح والقدرة على تقديم أسعار تنافسية.",
+          "خفضت تكلفة تشغيل AI اليومية من {{metric:ai.previous-cost}} إلى أقل من {{metric:ai.cost.value}} دولارات لفريق من {{metric:ai.users.value}} أشخاص؛ أي أكثر من {{metric:ai.cost-reduction.value}}%. جهزت الوكلاء والمهارات وتكاملات MCP، ودربت الفريق على استخدامها.",
+          "استخدمت Python وGoogle Ads API لتسريع بحث الكلمات وفرزها وسير عمل الحسابات، ونفذت إعدادات GA4 وGoogle Tag Manager وتتبع التواصل وأتمتة التقارير الأسبوعية للعملاء.",
+          "قدمت استشارات للعملاء، وراجعت تنفيذ الفريق، وشاركت في العروض التجارية واجتماعات البيع. تتبعت مشكلات تكامل AI ووجهت إصلاحات قُبلت في LocalAI."
         ]
       }
     },
@@ -79,18 +73,22 @@
       },
       "details": {
         "en": [
-          "Worked directly with the CEO on market and competitor research, strategy, commercial proposals, pricing proposals and feasibility studies.",
-          "Audited campaigns, ad accounts, websites and SEO, identifying conversion-tracking errors and issues affecting the assessment of lead quality.",
-          "Led a {{metric:youssef.team.value}}-person team on media presenter Youssef El Sherif’s digital presence project, assigning work and reviewing delivery and performance.",
-          "Coordinated improvements to thumbnails, video openings, clips, publishing schedules, content discoverability and comment management.",
-          "Contributed to a team effort that raised average YouTube video views to {{metric:youssef.growth}} their previous level within the project’s first six weeks."
+          "Worked as a strategic partner to the CEO across client strategy, market and competitor research, proposals, pricing and feasibility studies, translating findings into delivery decisions across agency accounts.",
+          "Planned and oversaw Safarni’s {{metric:safarni.spend}} awareness campaign over {{metric:safarni.duration}}, targeting Egyptians in Egypt and the Gulf and generating {{metric:safarni.views}} of views across social platforms.",
+          "Developed the strategy and proposal for Sky News Arabia presenter Youssef El Sherif and led a {{metric:youssef.team.value}}-person team that raised average YouTube video views to {{metric:youssef.growth}} their previous level within six weeks. Coached the presenter on hooks, content and production tools, enabled simultaneous livestreaming and standardized his digital identity.",
+          "Audited Google Ads accounts, websites and conversion tracking, uncovering measurement errors and lead-quality assessment issues. Resolved Google Ads policy problems for beauty and aesthetics clients.",
+          "Used Semrush and Ahrefs for keyword, competitor and content gap research. Developed content pillars and SEO articles for Korraa in aesthetics and Salamy in mental health; audited WordPress websites and implemented improvements with Yoast SEO.",
+          "Managed backlink acquisition, including prospect assessment, target-page selection and paid placement coordination, as part of client SEO plans.",
+          "Produced market research and a feasibility study for a proposed app in Al-Arish. The client adopted my recommendation not to proceed with development."
         ],
         "ar": [
-          "عملت مباشرة مع الرئيس التنفيذي في بحث الأسواق والمنافسين، وإعداد الاستراتيجيات والمقترحات التجارية وعروض الأسعار ودراسات الجدوى.",
-          "راجعت حملات وحسابات إعلانية ومواقع وSEO، وكشفت أخطاء في تتبع التحويلات ومشكلات تؤثر في تقييم جودة العملاء المحتملين.",
-          "قدت فريقًا من {{metric:youssef.team.value}} أشخاص في مشروع الحضور الرقمي للإعلامي يوسف الشريف، ووزعت المهام وتابعت التنفيذ والأداء.",
-          "نسقت تطوير العناوين والصور المصغرة والمقاطع القصيرة وجدولة النشر وتحسين قابلية العثور على المحتوى وإدارة التعليقات.",
-          "ساهم عمل الفريق في وصول متوسط مشاهدات فيديوهات YouTube إلى {{metric:youssef.growth}} المستوى السابق خلال أول ستة أسابيع من المشروع."
+          "عملت شريكًا استراتيجيًا مباشرًا للرئيس التنفيذي في استراتيجيات العملاء وبحث السوق والمنافسين والعروض والتسعير ودراسات الجدوى، وربطت نتائج التحليل بقرارات التنفيذ عبر حسابات الوكالة.",
+          "خططت وأشرفت على حملة الوعي بعلامة سفرني Safarni بإنفاق {{metric:safarni.spend}} خلال {{metric:safarni.duration}}، باستهداف المصريين في مصر والخليج، وحققت {{metric:safarni.views}} المشاهدات عبر المنصات الاجتماعية.",
+          "وضعت الاستراتيجية والمقترح للإعلامي يوسف الشريف، مذيع Sky News Arabia، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص؛ ووصل متوسط مشاهدات YouTube إلى {{metric:youssef.growth}} المستوى السابق خلال ستة أسابيع. دربته على الافتتاحيات والمحتوى وأدوات الإنتاج، وجهزت البث المتزامن ووحّدت هويته الرقمية.",
+          "راجعت حسابات Google Ads والمواقع وتتبع التحويلات، وكشفت أخطاء القياس وتقييم جودة العملاء المحتملين، وعالجت مشكلات سياسات Google Ads لعملاء قطاع التجميل.",
+          "استخدمت Semrush وAhrefs لبحث الكلمات والمنافسين وفجوات المحتوى. طورت محاور المحتوى ومقالات SEO لصالح Korraa في التجميل وSalamy في الصحة النفسية، وراجعت مواقع WordPress ونفذت تحسينات باستخدام Yoast SEO.",
+          "أدرت اكتساب الروابط الخلفية، من تقييم مواقع النشر واختيار الصفحات المستهدفة إلى تنسيق الروابط المدفوعة ضمن خطط SEO للعملاء.",
+          "أعددت بحث السوق ودراسة الجدوى لتطبيق مقترح في العريش، واعتمد العميل توصيتي بعدم المضي في التطوير."
         ]
       }
     },
@@ -118,14 +116,18 @@
       },
       "details": {
         "en": [
-          "Delivered digital marketing work across acquisition, content, SEO and the technical foundations of conversion.",
-          "Worked with clients in Egypt, Saudi Arabia, the UAE, Kuwait and Jordan, and markets including the United States, Canada, Brazil and Australia.",
+          "Across agency and independent work, managed {{metric:experience.google-accounts.value}} Google Ads accounts for Saudi service businesses, including contracting, interior design, fit-out, relocation and other local services.",
+          "Delivered acquisition campaigns, SEO, websites and analytics for clients in Egypt, Saudi Arabia, the UAE, Kuwait and Jordan, alongside international engagements.",
+          "Audited a Riyadh B2B company’s Google Ads account through Mostaql, corrected negative-keyword and account-structure issues, and built a dedicated landing page with conversion tracking. Earned a five-star review.",
+          "Implemented and tested Meta Pixel events on client websites and a digital-products store; provided advertising consultations to clients in Egypt and the Gulf.",
           "Earned five-star ratings on Upwork and Mostaql."
         ],
         "ar": [
-          "نفذت مشاريع في التسويق الرقمي واكتساب العملاء والمحتوى وSEO والبنية التقنية المرتبطة بالتحويل.",
-          "عملت مع عملاء في مصر والسعودية والإمارات والكويت والأردن، وأسواق منها الولايات المتحدة وكندا والبرازيل وأستراليا.",
-          "حصلت على تقييم 5 نجوم على Upwork ومستقل."
+          "عبر عملي مع الوكالات والعملاء المستقلين، أدرت {{metric:experience.google-accounts.value}} حساب Google Ads لشركات خدمات في السعودية، تشمل المقاولات والتصميم الداخلي والتنفيذ ونقل الأثاث وخدمات محلية أخرى.",
+          "نفذت حملات اكتساب وSEO ومواقع وقياسًا لعملاء في مصر والسعودية والإمارات والكويت والأردن، إلى جانب مشاريع في أسواق دولية.",
+          "راجعت حساب Google Ads لشركة B2B في الرياض عبر مستقل، وعالجت مشكلات الكلمات السلبية وهيكلة الحساب، وبنيت صفحة هبوط مخصصة مع تتبع التحويلات. حصل المشروع على تقييم خمس نجوم.",
+          "ركبت واختبرت أحداث Meta Pixel في مواقع العملاء ومتجر منتجات رقمية، وقدمت استشارات إعلانية لعملاء في مصر والخليج.",
+          "حصلت على تقييم خمس نجوم على Upwork ومستقل."
         ]
       }
     }
@@ -149,8 +151,8 @@
         "ar": "Performance Marketing"
       },
       "scope": {
-        "en": "Meta Ads and Google Ads campaigns, audience targeting, keyword and search-term research, negative keywords, budget allocation and performance review. Meta Ads consulting.",
-        "ar": "حملات Meta Ads وGoogle Ads، واستهداف الجمهور، وبحث الكلمات وعبارات البحث، والكلمات السلبية، وتوزيع الميزانية ومراجعة الأداء، إلى جانب استشارات Meta Ads."
+        "en": "Google Search and YouTube campaigns; Meta lead generation, WhatsApp and messaging, calls, traffic, awareness and retargeting. Audience strategy, keyword research, negative keywords, creative direction, budgets and optimization.",
+        "ar": "حملات Google Search وYouTube، وحملات Meta للعملاء المحتملين وواتساب والرسائل والاتصالات والزيارات والوعي وإعادة الاستهداف؛ مع استراتيجية الجمهور والكلمات السلبية وتوجيه الإبداع والميزانيات والتحسين."
       }
     },
     {
@@ -160,8 +162,8 @@
         "ar": "التحويل والقياس"
       },
       "scope": {
-        "en": "Landing pages, GA4, Google Tag Manager, Microsoft Clarity and contact-action tracking",
-        "ar": "صفحات الهبوط، GA4، Google Tag Manager، Microsoft Clarity، تتبع إجراءات التواصل"
+        "en": "Campaign landing pages, GA4, Google Tag Manager, Microsoft Clarity, Meta Pixel event testing and contact-action tracking.",
+        "ar": "صفحات هبوط الحملات وGA4 وGoogle Tag Manager وMicrosoft Clarity واختبار أحداث Meta Pixel وتتبع إجراءات التواصل."
       }
     },
     {
@@ -182,8 +184,8 @@
         "ar": "SEO"
       },
       "scope": {
-        "en": "Local SEO, search intent, content architecture, internal linking, technical SEO, Search Console and Ahrefs",
-        "ar": "Local SEO، بحث النية، بنية المحتوى، الربط الداخلي، Technical SEO، Search Console، Ahrefs"
+        "en": "Semrush and Ahrefs research, technical audits, content pillars, SEO articles, WordPress and Yoast, backlink acquisition and local search architecture. Bilingual SEO, structured data and machine-readable content for AI discovery.",
+        "ar": "البحث باستخدام Semrush وAhrefs، والأوديت التقني، ومحاور المحتوى ومقالات SEO، وWordPress وYoast، واكتساب الروابط وبنية البحث المحلي؛ مع SEO ثنائي اللغة والبيانات المنظمة والمحتوى القابل للقراءة الآلية."
       }
     },
     {
@@ -204,16 +206,20 @@
         "ar": "تطوير التشغيل والبناء"
       },
       "scope": {
-        "en": "Python, n8n, CRM workflows, AI-assisted tool development, model hosting with LocalAI and llama.cpp, and team training",
-        "ar": "Python، n8n، CRM Workflows، برمجة أدوات بمساعدة AI، تشغيل نماذج عبر LocalAI وllama.cpp، تدريب الفرق"
+        "en": "Python, Google Ads API, n8n, automated client reporting and AI-assisted website delivery. Cost optimization, model hosting with LocalAI and llama.cpp, and practical team training.",
+        "ar": "Python وGoogle Ads API وn8n وتقارير العملاء الآلية وتسليم المواقع بمساعدة AI؛ مع تحسين التكلفة وتشغيل النماذج عبر LocalAI وllama.cpp وتدريب الفرق."
       }
     }
   ],
   "education": [
     {
       "institution": {
-        "en": "Al-Azhar University — Faculty of Islamic Da‘wah",
-        "ar": "جامعة الأزهر — كلية الدعوة الإسلامية"
+        "en": "Al-Azhar University",
+        "ar": "جامعة الأزهر"
+      },
+      "qualification": {
+        "en": "Bachelor’s Degree",
+        "ar": "درجة البكالوريوس"
       }
     }
   ],
@@ -253,20 +259,6 @@
   "contributions": [
     {
       "title": {
-        "en": "LocalAI — Codex WebSocket compatibility and response isolation",
-        "ar": "LocalAI — توافق Codex عبر WebSocket وعزل الاستجابات"
-      },
-      "url": "https://github.com/mudler/LocalAI/pull/11608"
-    },
-    {
-      "title": {
-        "en": "LocalAI — runtime-tested vision and acceleration documentation",
-        "ar": "LocalAI — تصحيح توثيق الرؤية وتسريع التوليد باختبارات تشغيل"
-      },
-      "url": "https://github.com/mudler/LocalAI/pull/11700"
-    },
-    {
-      "title": {
         "en": "OpenClaw — live agent identity updates in chat",
         "ar": "OpenClaw — تحديث هوية الوكيل داخل المحادثة"
       },
@@ -278,6 +270,20 @@
         "ar": "n8n-skills — إصلاح اكتشاف المهارات وتثبيتها"
       },
       "url": "https://github.com/czlonkowski/n8n-skills/pull/33"
+    },
+    {
+      "title": {
+        "en": "LocalAI — Codex WebSocket compatibility and response isolation",
+        "ar": "LocalAI — توافق Codex عبر WebSocket وعزل الاستجابات"
+      },
+      "url": "https://github.com/mudler/LocalAI/pull/11608"
+    },
+    {
+      "title": {
+        "en": "LocalAI — runtime-tested vision and acceleration documentation",
+        "ar": "LocalAI — تصحيح توثيق الرؤية وتسريع التوليد باختبارات تشغيل"
+      },
+      "url": "https://github.com/mudler/LocalAI/pull/11700"
     }
   ]
 }

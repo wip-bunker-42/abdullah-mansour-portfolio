@@ -2,10 +2,10 @@
 key: "case:elkhabar-bewodooh"
 locale: "en"
 title: "Elkhabar Bewodooh: Content Growth | Abdullah Mansour"
-description: "A media venture reaching {{metric:elkhabar.views}} views across roughly four active publishing months, with content experiments and AI-assisted production tools."
+description: "A media venture reaching {{metric:elkhabar.views}} views in {{metric:elkhabar.growth-window}}, with content experiments and AI-assisted production tools."
 heading: "A media project built around the moment people wanted an explanation."
-lead: "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed {{metric:elkhabar.views.number}} views across roughly four months of active publishing."
-updatedAt: "2026-10-16"
+lead: "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed {{metric:elkhabar.views.number}} views in {{metric:elkhabar.growth-window}}."
+updatedAt: "2026-10-19"
 draft: false
 ---
 
@@ -21,7 +21,7 @@ The topic and angle mattered. So did how quickly a considered explanation could 
 
 I chose a filming format that required less editing and developed an AI-assisted tool to control the phone from my computer, pause and resume recording, and transfer the footage.
 
-I then built a publishing tool for distribution across {{metric:elkhabar.platforms.value}} platforms. Time saved in filming would have had less value if the upload and publishing process remained a bottleneck.
+I then built a zero-cost publishing and scheduling tool for distribution across {{metric:elkhabar.platforms.value}} platforms, without opening each platform separately or paying for a social media management service. Time saved in filming would have had less value if the upload and publishing process remained a bottleneck.
 
 On active publishing days, I averaged six videos. Publishing automation saved more than {{metric:elkhabar.saved.value}} hours of daily work, helping me run the project alongside client engagements.
 
@@ -78,7 +78,7 @@ For **March 1–May 31, 2026**, Facebook recorded:
 
 *Facebook views for March 1–May 31, 2026. The non-follower share helps assess distribution beyond the existing audience.*
 
-The non-follower share helped assess whether the content was reaching new people. The Facebook audience eventually grew to around **{{metric:elkhabar.followers.number}} followers**, and the page was accepted into Meta’s monetization program.
+The non-follower share helped assess whether the content was reaching new people. The Facebook audience eventually grew to **{{metric:elkhabar.followers.number}} followers**, and the page was accepted into Meta’s monetization program.
 
 Other platforms showed audience response within their respective reporting windows:
 

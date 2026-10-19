@@ -170,15 +170,15 @@
       "ar": "الخبر بوضوح: الوصول إلى الجمهور في الفجوة بين الخبر وتفسيره."
     },
     "summary": {
-      "en": "News traveled quickly. Useful analysis often arrived later. I built Elkhabar Bewodooh around that gap, owning strategy, content and distribution while using AI for research and to build filming and publishing tools. It passed {{metric:elkhabar.views.number}} views across roughly four months of active publishing.",
-      "ar": "رصدت فرصة في سرعة تقديم التحليل، وبنيت حولها مشروعًا إعلاميًا من الصفر. توليت الاستراتيجية والمحتوى والتوزيع، واستخدمت AI في البحث وبناء أدوات التصوير والنشر. وصل المشروع إلى أكثر من {{metric:elkhabar.views.number}} مشاهدة خلال نحو أربعة أشهر من النشر الفعلي."
+      "en": "I built an independent media venture around timely news analysis, owning strategy, content and distribution. It reached {{metric:elkhabar.views}} views and {{metric:elkhabar.followers}} Facebook followers in {{metric:elkhabar.growth-window}}. A zero-cost publishing workflow across {{metric:elkhabar.platforms.value}} platforms saved {{metric:elkhabar.saved}} per active publishing day.",
+      "ar": "بنيت مشروعًا إعلاميًا حول تقديم تحليل الأخبار في توقيته، وتوليت الاستراتيجية والمحتوى والتوزيع. حقق {{metric:elkhabar.views}} مشاهدة و{{metric:elkhabar.followers}} متابع على Facebook خلال {{metric:elkhabar.growth-window}}. وأتمتت النشر عبر {{metric:elkhabar.platforms.value}} منصات بتكلفة صفرية، لتوفير {{metric:elkhabar.saved.value}} ساعات وأكثر في يوم النشر."
     },
     "published": true,
     "featured": true,
     "order": 1,
     "period": {
-      "en": "October 2025–May 2026, with roughly four months of active publishing",
-      "ar": "أكتوبر 2025–مايو 2026؛ نحو أربعة أشهر من النشر الفعلي"
+      "en": "Audience growth in {{metric:elkhabar.growth-window}}",
+      "ar": "نمو الجمهور خلال {{metric:elkhabar.growth-window}}"
     },
     "market": {
       "en": "Facebook, TikTok and YouTube",
@@ -200,7 +200,7 @@
         },
         {
           "label": "Period",
-          "value": "October 2025–May 2026, with roughly four months of active publishing"
+          "value": "Audience growth in {{metric:elkhabar.growth-window}}"
         },
         {
           "label": "Starting point",
@@ -262,7 +262,7 @@
         },
         {
           "label": "الفترة",
-          "value": "أكتوبر 2025–مايو 2026؛ نحو أربعة أشهر من النشر الفعلي"
+          "value": "نمو الجمهور خلال {{metric:elkhabar.growth-window}}"
         },
         {
           "label": "البداية",
@@ -456,12 +456,12 @@
       "ar": "تشغيل AI والأتمتة"
     },
     "headline": {
-      "en": "Models, agents and integration: building a shared AI environment.",
-      "ar": "بناء بيئة AI للفريق، من اختيار النموذج إلى تشغيل الوكلاء."
+      "en": "From {{metric:ai.previous-cost}} to under US${{metric:ai.cost.value}} per working day.",
+      "ar": "من {{metric:ai.previous-cost}} إلى أقل من {{metric:ai.cost.value}} دولارات ليوم عمل."
     },
     "summary": {
-      "en": "At Tahliq, I evaluated models, built a shared operating environment, connected it to agent tools and worked through problems exposed by actual use. {{metric:ai.users.value}} people gained an execution path for suitable tasks, with the environment running below US${{metric:ai.cost.value}} during the working day and stronger models retained where needed.",
-      "ar": "داخل تحليق، توليت تقييم النماذج وبناء بيئة تشغيل مشتركة وربطها بأدوات الوكلاء، ومعالجة مشكلات ظهرت في الاستخدام الفعلي. أصبح لفريق من {{metric:ai.users.value}} أشخاص مسار لتنفيذ المهام المناسبة بأقل من {{metric:ai.cost.value}} دولارات لتشغيل البيئة خلال يوم العمل، مع توزيع العمل بين نماذج مستضافة وأخرى أعلى قدرة."
+      "en": "I built and integrated a shared AI environment for {{metric:ai.users.value}} people at Tahliq, reducing daily operating costs from {{metric:ai.previous-cost}} to under US${{metric:ai.cost.value}}. The work combined model selection, agent integration and team training, with compatibility fixes accepted into LocalAI.",
+      "ar": "بنيت وربطت بيئة AI مشتركة لفريق من {{metric:ai.users.value}} أشخاص في تحليق، وخفضت تكلفة التشغيل اليومية من {{metric:ai.previous-cost}} إلى أقل من {{metric:ai.cost.value}} دولارات. جمعت المسؤولية اختيار النماذج وتكامل الوكلاء وتدريب الفريق، مع إصلاحات توافق قُبلت في LocalAI."
     },
     "published": true,
     "featured": false,
@@ -494,7 +494,7 @@
         },
         {
           "label": "Problem",
-          "value": "Intensive usage costs reaching around $100, alongside subscription limits that interrupted work"
+          "value": "Daily AI spend of {{metric:ai.previous-cost}} and subscription limits that interrupted delivery"
         },
         {
           "label": "My responsibility",
@@ -516,7 +516,7 @@
         },
         {
           "label": "المشكلة",
-          "value": "تكلفة استخدام مكثف تصل إلى قرابة 100 دولار، وحدود اشتراكات تعطل استمرارية العمل"
+          "value": "إنفاق يومي على AI قدره {{metric:ai.previous-cost}}، وحدود اشتراكات تعطل التنفيذ"
         },
         {
           "label": "مسؤوليتي",
@@ -529,8 +529,10 @@
       ]
     },
     "metricIds": [
-      "ai.users",
-      "ai.cost"
+      "ai.previous-cost",
+      "ai.cost",
+      "ai.cost-reduction",
+      "ai.users"
     ],
     "evidenceIds": [
       "ai-localai-11608",
@@ -560,8 +562,8 @@
       "ar": "يوسف الشريف: تنسيق المحتوى والتوزيع خلف حضور رقمي أقوى."
     },
     "summary": {
-      "en": "At Digital Brandria, I led the digital presence project for media presenter Youssef El Sherif, coordinating {{metric:youssef.team.value}} people across content and distribution. Average YouTube video views reached {{metric:youssef.growth}} their previous level within the first six weeks of the project.",
-      "ar": "ضمن عملي في Digital Brandria، توليت استراتيجية وتنفيذ مشروع الحضور الرقمي للإعلامي يوسف الشريف، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص. خلال أول ستة أسابيع من العمل، وصل متوسط مشاهدات فيديوهاته على YouTube إلى {{metric:youssef.growth}} المستوى السابق."
+      "en": "At Digital Brandria, I developed the strategy for Sky News Arabia presenter Youssef El Sherif and led a {{metric:youssef.team.value}}-person team across content and distribution. Average YouTube views reached {{metric:youssef.growth}} their previous level within six weeks, supported by presenter coaching, consistent digital identity and simultaneous livestreaming.",
+      "ar": "ضمن عملي في Digital Brandria، وضعت استراتيجية الإعلامي يوسف الشريف، مذيع Sky News Arabia، وقدت فريقًا من {{metric:youssef.team.value}} أشخاص في المحتوى والتوزيع. وصل متوسط مشاهدات YouTube إلى {{metric:youssef.growth}} المستوى السابق خلال ستة أسابيع، مع تدريب المذيع وتوحيد الهوية وتجهيز البث المتزامن."
     },
     "published": true,
     "featured": false,

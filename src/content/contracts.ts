@@ -24,7 +24,7 @@ export const ProfileSchema = z.strictObject({
 export const ExperienceSchema = z.strictObject({
   positions: z.array(z.strictObject({ id: z.string(), organization: local, title: local, period: local, type: local, location: local, details: z.strictObject({ en: z.array(z.string()), ar: z.array(z.string()) }) })),
   capabilities: z.array(z.strictObject({ id: z.string(), name: local, scope: local })),
-  education: z.array(z.strictObject({ institution: local })),
+  education: z.array(z.strictObject({ institution: local, qualification: local.optional() })),
   credentials: z.array(z.strictObject({ name: local, issuer: z.string(), date: z.string().optional() })),
   contributions: z.array(z.strictObject({ title: local, url: z.url() })),
 });

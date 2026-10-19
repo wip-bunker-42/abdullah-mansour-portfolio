@@ -8,6 +8,16 @@ import { buildPublicProfile, PublicProfileSchema } from '../../src/lib/public-pr
 import { renderPublicMarkdown, publishExports } from '../../scripts/build-exports.ts';
 import { getRoute } from '../../src/i18n/routes.ts';
 
+test('public education preserves approved qualifications and accepts institution-only records', async () => {
+  const content=await loadSiteContent();
+  const institution=content.experience.education[0]!.institution;
+  const approved={institution,qualification:{en:'Bachelor’s Degree',ar:'درجة البكالوريوس'}};
+  const qualified={...content,experience:{...content.experience,education:[approved]}};
+  assert.deepEqual(buildPublicProfile(qualified).education,[approved]);
+  const institutionOnly={...content,experience:{...content.experience,education:[{institution}]}};
+  assert.deepEqual(buildPublicProfile(institutionOnly).education,[{institution}]);
+});
+
 test('public exports share identity, locale routing and publication state', async () => {
   const content=await loadSiteContent(); const root=await mkdtemp(join(tmpdir(),'aimansour-exports-'));
   try {
