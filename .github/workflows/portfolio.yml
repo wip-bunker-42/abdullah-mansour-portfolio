@@ -110,6 +110,6 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: pnpm exec wrangler deploy
-      - name: Verify public reads
+      - name: Verify public routes
         if: steps.revision.outputs.current == 'true'
-        run: pnpm exec tsx scripts/smoke-live.ts https://aimansour.com
+        run: pnpm exec tsx scripts/smoke-live.ts

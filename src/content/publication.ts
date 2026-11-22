@@ -2,6 +2,7 @@ import type { Project, SiteContent } from './contracts.ts';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import type { RootContent } from 'mdast';
 import { getRoute } from '../i18n/routes.ts';
+import { legacyOrigin } from '../lib/site-identity.ts';
 
 export function getPublishedProjects(content: SiteContent): Project[] {
   return content.projects.filter(p => p.published).sort((a,b) => a.order - b.order);
@@ -10,6 +11,7 @@ export function getPublishedProjects(content: SiteContent): Project[] {
 // Keep historical mentions readable when a case is withdrawn, without linking to a 404.
 // Source positions preserve the author's formatting, tables and evidence exactly.
 export function publicationAwareMarkdown(markdown: string, content: SiteContent): string {
+  const localOrigins = new Set([new URL(content.profile.url).origin, legacyOrigin]);
   const hidden = new Set(content.projects.filter(p => !p.published).flatMap(p => (['en', 'ar'] as const).flatMap(locale => {
     const route = getRoute(`case:${p.id}`, locale);
     return [route.path, route.path.slice(0, -1), route.markdownPath!];
@@ -22,7 +24,7 @@ export function publicationAwareMarkdown(markdown: string, content: SiteContent)
     const url = node.type === 'link' ? node.url : node.type === 'linkReference' ? definitions.get(node.identifier) : undefined;
     if (url) {
       const target = new URL(url, content.profile.url);
-      if (target.origin === new URL(content.profile.url).origin && hidden.has(target.pathname)) {
+      if (localOrigins.has(target.origin) && hidden.has(target.pathname)) {
         const children = (node as Extract<RootContent, { type: 'link' | 'linkReference' }>).children;
         const start = node.position?.start.offset; const end = node.position?.end.offset;
         if (start !== undefined && end !== undefined) {

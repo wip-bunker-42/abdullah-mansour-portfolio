@@ -1,5 +1,6 @@
 import { handleContact } from './contact.ts';
 import { createContactEmail } from './delivery.ts';
+import profile from '../src/data/profile.json';
 import shells from '../.generated/contact-shells.json';
 import securityHeaders from '../.generated/security-headers.json';
 export default {
@@ -8,7 +9,7 @@ export default {
     if (url.pathname === '/api/contact') {
       const local=url.hostname==='127.0.0.1'||url.hostname==='localhost';
       const response=await handleContact(request, {
-        allowedOrigins:local?['http://127.0.0.1:8787','http://localhost:8787']:['https://aimansour.com'],
+        allowedOrigins:local?['http://127.0.0.1:8787','http://localhost:8787']:[profile.url],
         checkRateLimit:async key=>(await env.CONTACT_RATE_LIMITER.limit({key})).success,
         send:async values=>{await env.CONTACT_EMAIL.send(createContactEmail(values));}, shells,
       });

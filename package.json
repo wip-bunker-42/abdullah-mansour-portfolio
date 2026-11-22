@@ -18,7 +18,7 @@
     "check:privacy": "tsx scripts/check-privacy.ts",
     "check:budgets": "tsx scripts/check-budgets.ts",
     "test:browser": "playwright test",
-    "preview:worker": "wrangler dev --local --ip 127.0.0.1 --port 8787",
+    "preview:worker": "wrangler dev --local --ip 127.0.0.1 --port 8787 --local-upstream 127.0.0.1:8787",
     "test": "tsx --test tests/unit/*.test.ts",
     "test:unit": "tsx --test tests/unit/*.test.ts"
   },
