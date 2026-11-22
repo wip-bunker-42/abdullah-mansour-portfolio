@@ -29,7 +29,9 @@ test('native Worker errors preserve the full Arabic page with security headers',
   expect(response.status()).toBe(400);expect(response.headers()['x-robots-tag']).toContain('noindex');expect(response.headers()['content-security-policy']).toContain("object-src 'none'");
   const html=await response.text();expect(html).toContain('lang="ar"');expect(html).toContain('&lt;script&gt;example');expect(html).toContain('data-contact-form');expect(html).toContain('site-footer');
 });
-test('the production hostname does not accept a local browser origin',async({request})=>{
-  const response=await request.post('/api/contact',{headers:{Host:'aimansour.com',Origin:'http://localhost:8787'},data:{}});
-  expect(response.status()).toBe(403);
+test('the local contact API accepts validation only from a local browser origin',async({request})=>{
+  for(const [origin,status] of [['http://127.0.0.1:8787',400],['https://aimansour.com',403]] as const) {
+    const response=await request.post('/api/contact',{headers:{Origin:origin},data:{}});
+    expect(response.status()).toBe(status);
+  }
 });

@@ -7,10 +7,9 @@ import { getPublishedRoutes, getRoute } from '../src/i18n/routes.ts';
 import { buildPublicProfile, PublicProfileSchema } from '../src/lib/public-profile.ts';
 import { resolveReferences } from '../src/content/references.ts';
 import { publicationAwareMarkdown } from '../src/content/publication.ts';
-const origin='https://aimansour.com';
-const absolute=(path:string)=>new URL(path,origin).href;
 function absoluteMarkdown(markdown:string,canonical:string):string {return markdown.replace(/(!?\[[^\]]*\]\()([^\s)]+)([^)]*\))/g,(_all,prefix:string,url:string,suffix:string)=>`${prefix}${url.startsWith('/')||url.startsWith('#')?new URL(url,canonical).href:url}${suffix}`);}
 export function renderPublicMarkdown(content:SiteContent,route:Route):string {
+  const absolute=(path:string)=>new URL(path,content.profile.url).href;
   const doc=content.documents.find(d=>d.key===route.key&&d.locale===route.locale&&!d.draft);if(!doc||!route.indexable)throw Error('Cannot export unpublished document');
   const ar=route.locale==='ar';const locale=route.locale;
   const project=content.projects.find(p=>`case:${p.id}`===route.key&&p.published);
@@ -25,6 +24,8 @@ export function renderPublicMarkdown(content:SiteContent,route:Route):string {
 }
 const xml=(text:string)=>text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 export async function publishExports(content:SiteContent,distDir:string):Promise<void> {
+  const origin=new URL(content.profile.url).origin;
+  const absolute=(path:string)=>new URL(path,origin).href;
   const root=resolve(distDir); const write=async(path:string,value:string)=>{const target=resolve(root,`.${path}`);if(!target.startsWith(root))throw Error('Export outside output');await mkdir(dirname(target),{recursive:true});await writeFile(target,value);};
   // Remove previously generated case Markdown when called against an existing build.
   for(const id of projectIds)for(const locale of ['en','ar']as const)await rm(resolve(root,`.${getRoute(`case:${id}`,locale).markdownPath!}`),{force:true});

@@ -2,7 +2,7 @@
 
 ## Cloudflare resources
 
-The dedicated Worker is `aimansour-portfolio`, serving the canonical HTTPS apex `aimansour.com`. Static Assets handle ordinary reads, published profile/Markdown resources and closest-locale 404s. Only `/api/contact` runs the Worker first. `wrangler.jsonc` is the non-secret configuration.
+The dedicated Worker is `aimansour-portfolio`, serving `https://portfolio.aimansour.com`. Static Assets handle ordinary reads, published profile/Markdown resources and closest-locale 404s. Only `/api/contact` runs the Worker first. `wrangler.jsonc` is the non-secret configuration. The public Person ID remains `https://aimansour.com/#person` across the move.
 
 `CONTACT_EMAIL` is restricted to the owner's verified Gmail destination. The sender is fixed under `aimansour.com`; the visitor is Reply-To. Sending to a verified destination is free with Email Routing; arbitrary visitor auto-replies are outside this setup. `CONTACT_RATE_LIMITER` allows three accepted attempts per IP per 60 seconds at a Cloudflare location. There is no message database or logging of form fields.
 
@@ -22,12 +22,12 @@ pnpm check:site
 pnpm check:worker
 pnpm exec wrangler deploy --dry-run
 pnpm exec wrangler deploy
-pnpm exec tsx scripts/smoke-live.ts https://aimansour.com
+pnpm exec tsx scripts/smoke-live.ts
 ```
 
 No scheduled job sends test mail. Launch verification sends one clearly labelled message and separately confirms inbox arrival.
 
-The read-only smoke check uses `dist/profile.json` from the verified release as its readiness target. Immediately after upload, `/profile.json` and `/api/profile` can briefly expose different asset revisions. Before checking the remaining routes, the gate polls both canonical paths with revalidation every five seconds for at most 60 seconds. Both must return the exact verified profile bytes; two matching older profiles cannot pass. Each request has a timeout capped at ten seconds and the remaining wait budget. Only valid HTTP 200 profiles with stale content are retried. HTTP, JSON/schema, network and certificate failures stop immediately; persistent drift reports expected/observed SHA-256 hashes without dumping profile contents. Header, ETag, analytics, crawler and other smoke assertions remain strict.
+The public smoke check uses `dist/profile.json` from the verified release as its readiness target. Immediately after upload, `/profile.json` and `/api/profile` can briefly expose different asset revisions. Before checking the remaining routes, the gate polls both canonical paths with revalidation every five seconds for at most 60 seconds. Both must return the exact verified profile bytes; two matching older profiles cannot pass. Each request has a timeout capped at ten seconds and the remaining wait budget. Only valid HTTP 200 profiles with stale content are retried. HTTP, JSON/schema, network and certificate failures stop immediately; persistent drift reports expected/observed SHA-256 hashes without dumping profile contents. The production contact checks submit empty forms that stop at origin or field validation, before delivery.
 
 ## Headers and caching
 
@@ -37,13 +37,25 @@ Private contact shells and generated Worker/security types live under `.generate
 
 ## Canonical redirects and DNS scope
 
-Only apex HTTPS and `www` canonicalization are managed for this project. Preserve path/query when redirecting `www` to the apex. The generated `_redirects` contains exact known `/en/` aliases; do not add a wildcard that turns unknown URLs into soft 404s. Keep unrelated subdomains and all existing MX/DKIM/SPF records intact.
+The three managed web hosts are `aimansour.com`, `www.aimansour.com`, and `portfolio.aimansour.com`. Cloudflare's Single Redirects for the migration run before the general HTTP/`www` rules. They send GET and HEAD requests for known old URLs from either apex host directly to their canonical HTTPS portfolio URLs with a `301` and preserve the query string. The rules cover the published English and Arabic pages, their known English aliases, and stable public downloads, evidence and exports. Keep the known path sets fixed to the legacy site. The portfolio also generates exact `/en/` aliases for its own host.
+
+The separate `aimansour-coming-soon` Worker owns `aimansour.com` during the transition. Its homepage returns `200` with `noindex, follow`, links to both portfolio languages, and revalidates through a fresh response on each navigation. Unknown paths return `404`. The apex `/` and `/api/contact` are available for the new site. The old `/sitemap.xml` redirects to the portfolio sitemap in its own rule so the new site can reclaim that path independently. Once the new site goes live, replace the apex Worker's Custom Domain binding with the new site's origin, remove the legacy sitemap redirect when the new sitemap is ready, and remove only the exact legacy entries that the new site intentionally reuses. Keep the other redirects for at least one year. Keep unrelated subdomains and existing mail records intact.
+
+The temporary page can be built and deployed independently when needed:
+
+```sh
+pnpm exec tsx scripts/build-coming-soon.ts
+pnpm exec wrangler dev --config wrangler.coming-soon.jsonc --local --port 8790
+pnpm exec wrangler deploy --config wrangler.coming-soon.jsonc
+```
 
 ## Rollback
 
 Before replacing a deployed Worker, record its current version using `pnpm exec wrangler versions list` and map that version to its source SHA and successful CI release run. Prepare rollback verification in a separate checkout pinned to that source SHA: install its locked dependencies and restore the matching `portfolio-<sha>` verified artifact from that run into the checkout. If the artifact has expired, rebuild that exact source revision with its locked dependencies and complete the normal quality checks before using its output.
 
 Roll back a bad release with `pnpm exec wrangler rollback <version-id>`, then run the read-only smoke check from the prepared checkout with the restored version's source and `dist`. Never use the attempted release's `dist/profile.json` to verify an older restored version: the readiness target and route list must belong to the version being verified. Then revert/fix the corresponding source revision through a PR so the next passing `main` does not restore the faulty version. Reverting a PDF uses the same path and revalidation; it does not require content generation.
+
+To unwind the hostname migration itself, restore the pre-move Cloudflare redirect configuration and reattach the apex to `aimansour-portfolio` together with restoring its pre-move version. A Worker version rollback alone does not roll back Cloudflare routing changes.
 
 The first portfolio deployment has no prior portfolio Worker version. Subsequent release IDs and launch evidence are recorded in `docs/quality/acceptance.md`. Do not roll back or modify the unrelated services already using other subdomains.
 

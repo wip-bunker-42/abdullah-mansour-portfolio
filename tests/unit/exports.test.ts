@@ -26,8 +26,16 @@ test('public exports share identity, locale routing and publication state', asyn
     assert.equal(await readFile(join(root,'api/profile'),'utf8'),bytes);
     const profile=PublicProfileSchema.parse(JSON.parse(bytes));
     assert.equal(profile.schemaVersion,1); assert.ok(profile.alternateNames.includes('Abdallah Mansour'));
-    assert.equal(profile.resume.language,'en');assert.equal(profile.resume.url,'https://aimansour.com/files/abdullah-mansour-cv.pdf');
+    assert.equal(profile.url,'https://portfolio.aimansour.com');
+    assert.equal(profile.resume.language,'en');assert.equal(profile.resume.url,'https://portfolio.aimansour.com/files/abdullah-mansour-cv.pdf');
     assert.ok(!('phone' in profile.contact));assert.equal(profile.id,'https://aimansour.com/#person');
+    const sitemap=await readFile(join(root,'sitemap.xml'),'utf8');
+    assert.match(sitemap,/<loc>https:\/\/portfolio\.aimansour\.com\/ar\/<\/loc>/);
+    assert.doesNotMatch(sitemap,/https:\/\/aimansour\.com/);
+    assert.match(await readFile(join(root,'robots.txt'),'utf8'),/^Sitemap: https:\/\/portfolio\.aimansour\.com\/sitemap\.xml$/m);
+    assert.match(await readFile(join(root,'ar','index.md'),'utf8'),/^> Canonical: https:\/\/portfolio\.aimansour\.com\/ar\/$/m);
+    const api=JSON.parse(await readFile(join(root,'openapi.json'),'utf8'));
+    assert.equal(api.servers[0].url,'https://portfolio.aimansour.com');
     const changed=structuredClone(content);changed.metrics['zone10.contacts']!.display.en='351+';
     changed.projects.find(p=>p.id==='zone10')!.published=true;
     assert.match(renderPublicMarkdown(changed,getRoute('case:zone10','en')),/351\+/);
